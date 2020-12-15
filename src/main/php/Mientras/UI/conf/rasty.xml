@@ -1,0 +1,313 @@
+<rasty-application>
+
+	<!-- declaración de las páginas -->
+	<page name="Login" location="pages/login/Login.page" url="login"/>
+
+
+	<page name="AdminHome"   location="pages/home/AdminHome.page" url="admin/home"/>
+	<page name="AdminMovimientos"   location="pages/home/AdminMovimientos.page" url="admin/movimientos"/>
+
+
+	<page name="TiposProducto"   location="pages/tiposProducto/TiposProducto.page" url="tiposProducto"/>
+	<page name="TipoProductoAgregar"   location="pages/tiposProducto/agregar/TipoProductoAgregar.page" url="tiposProducto/agregar"/>
+	<page name="TipoProductoModificar"   location="pages/tiposProducto/modificar/TipoProductoModificar.page" url="tiposProducto/modificar"/>
+
+	<page name="TiposDispositivo"   location="pages/tiposDispositivo/TiposDispositivo.page" url="tiposDispositivo"/>
+	<page name="TipoDispositivoAgregar"   location="pages/tiposDispositivo/agregar/TipoDispositivoAgregar.page" url="tiposDispositivo/agregar"/>
+	<page name="TipoDispositivoModificar"   location="pages/tiposDispositivo/modificar/TipoDispositivoModificar.page" url="tiposDispositivo/modificar"/>
+
+	<page name="MarcasProducto"   location="pages/marcasProducto/MarcasProducto.page" url="marcasProducto"/>
+	<page name="MarcaProductoAgregar"   location="pages/marcasProducto/agregar/MarcaProductoAgregar.page" url="marcasProducto/agregar"/>
+	<page name="MarcaProductoModificar"   location="pages/marcasProducto/modificar/MarcaProductoModificar.page" url="marcasProducto/modificar"/>
+
+	<page name="Ivas"   location="pages/ivas/Ivas.page" url="ivas"/>
+	<page name="IvaAgregar"   location="pages/ivas/agregar/IvaAgregar.page" url="ivas/agregar"/>
+	<page name="IvaModificar"   location="pages/ivas/modificar/IvaModificar.page" url="ivas/modificar"/>
+
+
+
+	<page name="ConceptoGastos"   location="pages/conceptoGastos/ConceptoGastos.page" url="conceptoGastos"/>
+	<page name="ConceptoGastoAgregar"   location="pages/conceptoGastos/agregar/ConceptoGastoAgregar.page" url="conceptoGastos/agregar"/>
+	<page name="ConceptoGastoModificar"   location="pages/conceptoGastos/modificar/ConceptoGastoModificar.page" url="conceptoGastos/modificar"/>
+
+	<page name="ConceptoMovimientos"   location="pages/conceptoMovimientos/ConceptoMovimientos.page" url="conceptoMovimientos"/>
+	<page name="ConceptoMovimientoAgregar"   location="pages/conceptoMovimientos/agregar/ConceptoMovimientoAgregar.page" url="conceptoMovimientos/agregar"/>
+	<page name="ConceptoMovimientoModificar"   location="pages/conceptoMovimientos/modificar/ConceptoMovimientoModificar.page" url="conceptoMovimientos/modificar"/>
+
+	<page name="Gastos"   location="pages/gastos/Gastos.page" url="gastos"/>
+	<page name="GastoAgregar"   location="pages/gastos/agregar/GastoAgregar.page" url="gastos/agregar"/>
+	<page name="GastoPagar"   location="pages/gastos/pagar/GastoPagar.page" url="gastos/pagar"/>
+	<page name="GastoAnular"   location="pages/gastos/anular/GastoAnular.page" url="gastos/anular"/>
+
+	<page name="Productos"   location="pages/productos/Productos.page" url="productos"/>
+	<page name="ProductoAgregar"   location="pages/productos/agregar/ProductoAgregar.page" url="productos/agregar"/>
+	<page name="ProductoModificar"   location="pages/productos/modificar/ProductoModificar.page" url="productos/modificar"/>
+	<page name="StockProductoModificar"   location="pages/productos/stock/StockProductoModificar.page" url="productos/stock/modificar"/>
+
+
+	<page name="Parametros"   location="pages/parametros/Parametros.page" url="parametros"/>
+
+	<page name="ParametroModificar"   location="pages/parametros/modificar/ParametroModificar.page" url="parametros/modificar"/>
+
+	<page name="Clientes"   location="pages/clientes/Clientes.page" url="clientes"/>
+	<page name="ClienteAgregar"   location="pages/clientes/agregar/ClienteAgregar.page" url="clientes/agregar"/>
+	<page name="ClienteModificar"   location="pages/clientes/modificar/ClienteModificar.page" url="clientes/modificar"/>
+
+	<page name="ClientesCtaCte"   location="pages/clientes/ClientesCtaCte.page" url="clientesCtaCte"/>
+
+	<page name="Proveedors"   location="pages/proveedors/Proveedors.page" url="proveedores"/>
+	<page name="ProveedorAgregar"   location="pages/proveedors/agregar/ProveedorAgregar.page" url="proveedores/agregar"/>
+	<page name="ProveedorModificar"   location="pages/proveedors/modificar/ProveedorModificar.page" url="proveedores/modificar"/>
+
+
+
+	<page name="Combos"   location="pages/combos/Combos.page" url="combos"/>
+	<page name="ComboAgregar"   location="pages/combos/agregar/ComboAgregar.page" url="combos/agregar"/>
+	<page name="ComboModificar"   location="pages/combos/modificar/ComboModificar.page" url="combos/modificar"/>
+
+
+	<page name="Ventas"   location="pages/ventas/Ventas.page" url="ventas"/>
+	<page name="VentaAgregar"   location="pages/ventas/agregar/VentaAgregar.page" url="ventas/agregar"/>
+	<page name="VentaCobrar"   location="pages/ventas/cobrar/VentaCobrar.page" url="ventas/cobrar"/>
+	<page name="VentaAnular"   location="pages/ventas/anular/VentaAnular.page" url="ventas/anular"/>
+	<page name="VentaCobrarTarjeta"   location="pages/ventas/cobrar/VentaCobrarTarjeta.page" url="ventas/cobrar/tarjeta"/>
+	<page name="VentaDevolver"   location="pages/ventas/devolver/VentaDevolver.page" url="ventas/devolver"/>
+	<page name="VentaAgregarProducto"   location="pages/ventas/agregar/VentaAgregarProducto.page" url="ventas/agregar/producto"/>
+
+	<page name="MovimientosCaja"   location="pages/cajas/MovimientosCaja.page" url="cajas/movimientos"/>
+	<page name="MovimientosCajaTarjeta"   location="pages/cajas/MovimientosCajaTarjeta.page" url="cajas/tarjetas/movimientos"/>
+	<page name="MovimientosCajaCtaCte"   location="pages/cajas/MovimientosCajaCtaCte.page" url="cajas/ctasctes/movimientos"/>
+	<page name="MovimientosVenta"   location="pages/ventas/MovimientosVenta.page" url="ventas/movimientos"/>
+	<page name="MovimientosCtaCte"   location="pages/clientes/MovimientosCtaCte.page" url="clientes/ctacte/movimientos"/>
+	<page name="MovimientosGasto"   location="pages/gastos/MovimientosGasto.page" url="gastos/movimientos"/>
+	<page name="MovimientosPedido"   location="pages/pedidos/MovimientosPedido.page" url="pedidos/movimientos"/>
+
+
+	<page name="CobrarCtaCte"   location="pages/clientes/cobrarCtaCte/CobrarCtaCte.page" url="cuentasCorrientes/cobrar"/>
+	<page name="ActualizarCtaCte"   location="pages/clientes/actualizarCtaCte/ActualizarCtaCte.page" url="cuentasCorrientes/actualizar"/>
+
+	<page name="Presupuestos"   location="pages/presupuestos/Presupuestos.page" url="presupuestos"/>
+	<page name="PresupuestoAgregar"   location="pages/presupuestos/agregar/PresupuestoAgregar.page" url="presupuestos/agregar"/>
+	<page name="PresupuestoAprobar"   location="pages/presupuestos/aprobar/PresupuestoAprobar.page" url="presupuestos/aprobar"/>
+	<page name="PresupuestoAnular"   location="pages/presupuestos/anular/PresupuestoAnular.page" url="presupuestos/anular"/>
+
+
+	<page name="BalanceDia"   location="pages/balances/BalanceDia.page" url="balances/dia"/>
+	<page name="BalanceCajas"   location="pages/balances/BalanceCajas.page" url="balances/cajas"/>
+	<page name="BalanceMes"   location="pages/balances/BalanceMes.page" url="balances/mes"/>
+	<page name="BalanceAnio"   location="pages/balances/BalanceAnio.page" url="balances/anio"/>
+
+
+	<page name="Pedidos"   location="pages/pedidos/Pedidos.page" url="pedidos"/>
+	<page name="PedidoAgregar"   location="pages/pedidos/agregar/PedidoAgregar.page" url="pedidos/agregar"/>
+	<page name="PedidoPagar"   location="pages/pedidos/pagar/PedidoPagar.page" url="pedidos/pagar"/>
+	<page name="PedidoAnular"   location="pages/pedidos/anular/PedidoAnular.page" url="pedidos/anular"/>
+	<page name="PedidoAnularRecibir"   location="pages/pedidos/anular/PedidoAnularRecibir.page" url="pedidos/anular/recibir"/>
+	<page name="PedidoRecibir"   location="pages/pedidos/recibir/PedidoRecibir.page" url="pedidos/recibir"/>
+    <page name="PedidoVer"   location="pages/pedidos/ver/PedidoVer.page" url="pedidos/ver"/>
+
+	<!-- declaración de los componentes -->
+	<component name="HeaderNav" location="components/header" />
+	<component name="HeaderNavMetro" location="components/header" />
+
+	<component name="FooterMientras" location="components/footer" />
+
+	<component name="GastoBox"   location="components/boxes/gasto"/>
+	<component name="VentaBox"   location="components/boxes/venta"/>
+	<component name="VentaSinDevolucionesBox"   location="components/boxes/venta"/>
+	<component name="CuentaCorrienteBox"   location="components/boxes/cuentaCorriente"/>
+
+	<component name="PresupuestoBox"   location="components/boxes/presupuesto"/>
+
+	<component name="BalanceDia"   location="components/stats/balance"/>
+	<component name="BalanceCajas"   location="components/stats/balance"/>
+	<component name="BalanceMes"   location="components/stats/balance"/>
+	<component name="BalanceAnio"   location="components/stats/balance"/>
+
+	<component name="PedidoBox"   location="components/boxes/pedido"/>
+
+	<component name="AccesosRapidos" location="components/filter/producto" />
+
+	<!-- forms -->
+
+	<component name="TipoProductoForm"   location="components/form/tipoProducto"/>
+	<component name="TipoDispositivoForm"   location="components/form/tipoDispositivo"/>
+	<component name="MarcaProductoForm"   location="components/form/marcaProducto"/>
+	<component name="IvaForm"   location="components/form/iva"/>
+	<component name="EstadoForm"   location="components/form/estado"/>
+	<component name="ConceptoGastoForm"   location="components/form/conceptoGasto"/>
+	<component name="ConceptoMovimientoForm"   location="components/form/conceptoMovimiento"/>
+	<component name="GastoForm"   location="components/form/gasto"/>
+	<component name="ProductoForm"   location="components/form/producto"/>
+
+	<component name="VentaForm"   location="components/form/venta"/>
+	<component name="ClienteForm"   location="components/form/cliente"/>
+	<component name="ProveedorForm"   location="components/form/proveedor"/>
+
+	<component name="VentaCobrarTarjetaForm"   location="components/form/venta"/>
+
+	<component name="ParametroForm"   location="components/form/parametro"/>
+
+	<component name="PresupuestoForm"   location="components/form/presupuesto"/>
+
+	<component name="ComboForm"   location="components/form/combo"/>
+
+	<component name="PedidoForm"   location="components/form/pedido"/>
+	<!-- filters -->
+
+	<component name="TipoProductoFilter"   location="components/filter/tipoProducto"/>
+	<component name="TipoDispositivoFilter"   location="components/filter/tipoDispositivo"/>
+	<component name="MarcaProductoFilter"   location="components/filter/marcaProducto"/>
+	<component name="IvaFilter"   location="components/filter/iva"/>
+	<component name="EstadoFilter"   location="components/filter/estado"/>
+	<component name="ConceptoGastoFilter"   location="components/filter/conceptoGasto"/>
+	<component name="ConceptoMovimientoFilter"   location="components/filter/conceptoMovimiento"/>
+	<component name="GastoFilter"   location="components/filter/gasto"/>
+	<component name="ProductoFilter"   location="components/filter/producto"/>
+
+	<component name="ClienteFilter"   location="components/filter/cliente"/>
+	<component name="ClienteCtaCteFilter"   location="components/filter/cliente"/>
+
+	<component name="ProveedorFilter"   location="components/filter/proveedor"/>
+
+
+	<component name="VentaFilter"   location="components/filter/venta"/>
+	<component name="MovimientoCajaFilter"   location="components/filter/movimiento"/>
+	<component name="MovimientoSaldoCajaFilter"   location="components/filter/movimiento"/>
+	<component name="MovimientoCajaTarjetaFilter"   location="components/filter/movimiento"/>
+	<component name="MovimientoCajaCtaCteFilter"   location="components/filter/movimiento"/>
+	<component name="MovimientoVentaFilter"   location="components/filter/movimiento"/>
+	<component name="HistoricoEstadoFilter"   location="components/filter/historicoEstado"/>
+	<component name="MovimientoGastoFilter"   location="components/filter/movimiento"/>
+	<component name="MovimientoPedidoFilter"   location="components/filter/movimiento"/>
+
+	<component name="ParametroFilter"   location="components/filter/parametro"/>
+
+	<component name="PresupuestoFilter"   location="components/filter/presupuesto"/>
+
+	<component name="ComboFilter"   location="components/filter/combo"/>
+
+	<component name="BalanceDiaFilter"   location="components/filter/balance"/>
+	<component name="BalanceMesFilter"   location="components/filter/balance"/>
+	<component name="BalanceAnioFilter"   location="components/filter/balance"/>
+
+	<component name="PedidoFilter"   location="components/filter/pedido"/>
+	<!-- pdfs -->
+	<component name="VentaPDF"   location="components/pdf/venta"/>
+	<component name="PresupuestoPDF"   location="components/pdf/presupuesto"/>
+
+	<!-- layouts -->
+	<component name="MientrasMetroLayout" location="layouts" />
+	<component name="MientrasLoginMetroLayout" location="layouts" />
+	<component name="MientrasHomeMetroLayout" location="layouts" />
+	<component name="RastySecurityLayout" location="layouts" />
+	<component name="RastyCatalogoLayout" location="layouts" />
+
+
+
+	<!-- declaración de las actions -->
+	<action name="Login" class="Mientras\UI\actions\login\Login" url="login"/>
+	<action name="Logout" class="Mientras\UI\actions\login\Logout" url="logout"/>
+
+
+	<action name="AgregarTipoProducto" class="Mientras\UI\actions\tiposProducto\AgregarTipoProducto" url="tiposProducto/agregar"/>
+	<action name="ModificarTipoProducto" class="Mientras\UI\actions\tiposProducto\ModificarTipoProducto" url="tiposProducto/modificar"/>
+	<action name="EliminarTipoProducto" class="Mientras\UI\actions\tiposProducto\EliminarTipoProducto" url="tiposProducto/eliminar"/>
+
+	<action name="AgregarTipoDispositivo" class="Mientras\UI\actions\tiposDispositivo\AgregarTipoDispositivo" url="tiposDispositivo/agregar"/>
+	<action name="ModificarTipoDispositivo" class="Mientras\UI\actions\tiposDispositivo\ModificarTipoDispositivo" url="tiposDispositivo/modificar"/>
+	<action name="EliminarTipoDispositivo" class="Mientras\UI\actions\tiposDispositivo\EliminarTipoDispositivo" url="tiposDispositivo/eliminar"/>
+
+	<action name="AgregarMarcaProducto" class="Mientras\UI\actions\marcasProducto\AgregarMarcaProducto" url="marcasProducto/agregar"/>
+	<action name="ModificarMarcaProducto" class="Mientras\UI\actions\marcasProducto\ModificarMarcaProducto" url="marcasProducto/modificar"/>
+	<action name="EliminarMarcaProducto" class="Mientras\UI\actions\marcasProducto\EliminarMarcaProducto" url="marcasProducto/eliminar"/>
+
+	<action name="AgregarIva" class="Mientras\UI\actions\ivas\AgregarIva" url="ivas/agregar"/>
+	<action name="ModificarIva" class="Mientras\UI\actions\ivas\ModificarIva" url="ivas/modificar"/>
+	<action name="EliminarIva" class="Mientras\UI\actions\ivas\EliminarIva" url="ivas/eliminar"/>
+
+
+	<action name="AgregarConceptoGasto" class="Mientras\UI\actions\conceptoGastos\AgregarConceptoGasto" url="conceptoGastos/agregar"/>
+	<action name="ModificarConceptoGasto" class="Mientras\UI\actions\conceptoGastos\ModificarConceptoGasto" url="conceptoGastos/modificar"/>
+	<action name="EliminarConceptoGasto" class="Mientras\UI\actions\conceptoGastos\EliminarConceptoGasto" url="conceptoGastos/eliminar"/>
+
+	<action name="AgregarConceptoMovimiento" class="Mientras\UI\actions\conceptoMovimientos\AgregarConceptoMovimiento" url="conceptoMovimientos/agregar"/>
+	<action name="ModificarConceptoMovimiento" class="Mientras\UI\actions\conceptoMovimientos\ModificarConceptoMovimiento" url="conceptoMovimientos/modificar"/>
+	<action name="EliminarConceptoMovimiento" class="Mientras\UI\actions\conceptoMovimientos\EliminarConceptoMovimiento" url="conceptoMovimientos/eliminar"/>
+
+	<action name="AgregarGasto" class="Mientras\UI\actions\gastos\AgregarGasto" url="gastos/agregar"/>
+	<action name="PagarGasto" class="Mientras\UI\actions\gastos\PagarGasto" url="gastos/pagar"/>
+	<action name="AnularGasto" class="Mientras\UI\actions\gastos\AnularGasto" url="gastos/anular"/>
+
+	<action name="AgregarProducto" class="Mientras\UI\actions\productos\AgregarProducto" url="productos/agregar"/>
+	<action name="ModificarProducto" class="Mientras\UI\actions\productos\ModificarProducto" url="productos/modificar"/>
+	<action name="EliminarProducto" class="Mientras\UI\actions\productos\EliminarProducto" url="productos/eliminar"/>
+	<action name="ModificarStockProducto" class="Mientras\UI\actions\productos\ModificarStockProducto" url="productos/stock/modificar"/>
+
+
+	<action name="AgregarCliente" class="Mientras\UI\actions\clientes\AgregarCliente" url="clientes/agregar"/>
+	<action name="ModificarCliente" class="Mientras\UI\actions\clientes\ModificarCliente" url="clientes/modificar"/>
+	<action name="EliminarCliente" class="Mientras\UI\actions\clientes\EliminarCliente" url="clientes/eliminar"/>
+
+	<action name="AgregarProveedor" class="Mientras\UI\actions\proveedors\AgregarProveedor" url="proveedores/agregar"/>
+	<action name="ModificarProveedor" class="Mientras\UI\actions\proveedors\ModificarProveedor" url="proveedores/modificar"/>
+	<action name="EliminarProveedor" class="Mientras\UI\actions\proveedors\EliminarProveedor" url="proveedores/eliminar"/>
+
+	<action name="ModificarParametro" class="Mientras\UI\actions\parametros\ModificarParametro" url="parametros/modificar"/>
+
+	<action name="AgregarCuentaCorrienteJson" class="Mientras\UI\actions\cuentasCorrientes\AgregarCuentaCorrienteJson" url="cuentasCorrientes/agregarJson"/>
+	<action name="CobrarCuentaCorriente" class="Mientras\UI\actions\cuentasCorrientes\CobrarCuentaCorriente" url="cuentasCorrientes/cobrar"/>
+	<action name="ActualizarCuentaCorriente" class="Mientras\UI\actions\cuentasCorrientes\ActualizarCuentaCorriente" url="cuentasCorrientes/actualizar"/>
+
+
+
+
+	<action name="AgregarVenta" class="Mientras\UI\actions\ventas\AgregarVenta" url="ventas/agregar"/>
+	<action name="AgregarDetalleVentaJson" class="Mientras\UI\actions\ventas\AgregarDetalleVentaJson" url="ventas/agregar/detalleJson"/>
+	<action name="ConsultarStockDetalleVentaJson" class="Mientras\UI\actions\ventas\ConsultarStockDetalleVentaJson" url="ventas/consultar/detalleJson"/>
+	<action name="BorrarDetalleVentaJson" class="Mientras\UI\actions\ventas\BorrarDetalleVentaJson" url="ventas/borrar/detalleJson"/>
+	<action name="CobrarVentaEfectivo" class="Mientras\UI\actions\ventas\CobrarVentaEfectivo" url="ventas/cobrar/efectivo"/>
+	<action name="CobrarVentaCtaCte" class="Mientras\UI\actions\ventas\CobrarVentaCtaCte" url="ventas/cobrar/ctacte"/>
+	<action name="AnularVenta" class="Mientras\UI\actions\ventas\AnularVenta" url="ventas/anular"/>
+	<action name="CobrarVentaTarjeta" class="Mientras\UI\actions\ventas\CobrarVentaTarjeta" url="ventas/cobrar/tarjeta"/>
+	<action name="SeleccionarTarjetaJson" class="Mientras\UI\actions\ventas\SeleccionarTarjetaJson" url="ventas/cobrar/seleccionarJson"/>
+	<action name="AgregarDevolucionVentaJson" class="Mientras\UI\actions\ventas\AgregarDevolucionVentaJson" url="ventas/devolver/devolucionJson"/>
+	<action name="BorrarDevolucionVentaJson" class="Mientras\UI\actions\ventas\BorrarDevolucionVentaJson" url="ventas/borrar/devolucionJson"/>
+	<action name="DevolverVenta" class="Mientras\UI\actions\ventas\DevolverVenta" url="ventas/devolver"/>
+	<action name="AgregarProductoVenta" class="Mientras\UI\actions\ventas\AgregarProductoVenta" url="ventas/agregar/productos"/>
+	<action name="AgregarComboVentaJson" class="Mientras\UI\actions\ventas\AgregarComboVentaJson" url="ventas/agregar/comboJson"/>
+
+	<action name="AgregarPresupuesto" class="Mientras\UI\actions\presupuestos\AgregarPresupuesto" url="presupuestos/agregar"/>
+	<action name="AgregarDetallePresupuestoJson" class="Mientras\UI\actions\presupuestos\AgregarDetallePresupuestoJson" url="presupuestos/agregar/detalleJson"/>
+	<action name="BorrarDetallePresupuestoJson" class="Mientras\UI\actions\presupuestos\BorrarDetallePresupuestoJson" url="presupuestos/borrar/detalleJson"/>
+	<action name="AprobarPresupuesto" class="Mientras\UI\actions\presupuestos\AprobarPresupuesto" url="presupuestos/aprobar"/>
+	<action name="AnularPresupuesto" class="Mientras\UI\actions\presupuestos\AnularPresupuesto" url="presupuestos/anular"/>
+
+	<action name="AgregarCombo" class="Mientras\UI\actions\combos\AgregarCombo" url="combos/agregar"/>
+	<action name="AgregarProductoComboJson" class="Mientras\UI\actions\combos\AgregarProductoComboJson" url="combos/agregar/detalleJson"/>
+	<action name="ConsultarStockProductoComboJson" class="Mientras\UI\actions\combos\ConsultarStockProductoComboJson" url="combos/consultar/detalleJson"/>
+	<action name="BorrarProductoComboJson" class="Mientras\UI\actions\combos\BorrarProductoComboJson" url="combos/borrar/detalleJson"/>
+	<action name="MostrarProductoComboJson" class="Mientras\UI\actions\combos\MostrarProductoComboJson" url="combos/mostrar/detalleJson"/>
+	<action name="ModificarCombo" class="Mientras\UI\actions\combos\ModificarCombo" url="combos/modificar"/>
+	<action name="EliminarCombo" class="Mientras\UI\actions\combos\EliminarCombo" url="combos/eliminar"/>
+
+	<action name="AgregarPedido" class="Mientras\UI\actions\pedidos\AgregarPedido" url="pedidos/agregar"/>
+	<action name="AgregarDetallePedidoJson" class="Mientras\UI\actions\pedidos\AgregarDetallePedidoJson" url="pedidos/agregar/detalleJson"/>
+	<action name="BorrarDetallePedidoJson" class="Mientras\UI\actions\pedidos\BorrarDetallePedidoJson" url="pedidos/borrar/detalleJson"/>
+	<action name="PagarPedido" class="Mientras\UI\actions\pedidos\PagarPedido" url="pedidos/pagar"/>
+	<action name="AnularPedido" class="Mientras\UI\actions\pedidos\AnularPedido" url="pedidos/anular"/>
+	<action name="RecibirPedido" class="Mientras\UI\actions\pedidos\RecibirPedido" url="pedidos/recibir"/>
+	<action name="AnularRecibirPedido" class="Mientras\UI\actions\pedidos\AnularRecibirPedido" url="pedidos/anular/recibir"/>
+
+
+	<action name="findEntities" class="Mientras\UI\actions\common\ListarEntitiesJson" url="findEntities"/>
+	<action name="findEntity" class="Mientras\UI\actions\common\GetEntityJson" url="findEntity"/>
+
+
+
+	<!-- RESTful API -->
+
+
+
+
+</rasty-application>
