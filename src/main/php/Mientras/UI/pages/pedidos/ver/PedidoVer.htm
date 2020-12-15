@@ -1,0 +1,39 @@
+<!-- BEGIN: main-->
+
+<style>
+
+</style>
+
+<div id="editar">
+
+	<div align="justify">
+		<p class="titulo">{title}</p>
+	</div>
+
+	<input type="hidden" value="{pedidoOid}" name="pedidoOid" />
+	
+		<fieldset class="pedido">
+			<legend>{pedido_legend}</legend>
+			
+			<rasty id="pedido" />
+			
+		</fieldset>
+	
+	<!-- BEGIN: msg_error -->
+	<fieldset class="ui-state-error">
+			{msg}	
+	</fieldset>
+	<!-- END: msg_error -->
+	<form  class="cuentas_form" id="buttons{inputId}">
+		<fieldset class="tblFooters">
+		
+			
+	
+			<button  class="shortcut" type="button"  id="input_button_2" onclick="javascript: history.back(); "><i class="icon-checkmark on-left"></i>{lbl_aceptar}</button>
+		
+		</fieldset>
+	</form>	
+	
+	
+</div>
+<!-- END: main-->
