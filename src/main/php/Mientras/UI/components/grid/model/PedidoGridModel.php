@@ -145,6 +145,13 @@ class PedidoGridModel extends EntityGridModel{
 			$options[] = $menuOption ;
 		}
 
+        $menuOption = new MenuOption();
+        $menuOption->setLabel( $this->localize( "menu.pedidos.ver") );
+        $menuOption->setPageName( "PedidoVer" );
+        $menuOption->addParam("pedidoOid",$item->getOid());
+        $menuOption->setIconClass( "icon-consultar" );
+        $options[] = $menuOption ;
+
 		$group->setMenuOptions( $options );
 
 		return array( $group );
