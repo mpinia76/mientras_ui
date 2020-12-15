@@ -1,0 +1,14 @@
+<rasty specificationClass="Mientras\UI\pages\clientes\MovimientosCtaCte" templateLocation="pages/clientes/MovimientosCtaCte.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+
+	<component id="movimientosFilter" type="MovimientoCajaFilter">
+		<param name="cuenta" value="cuentaCorriente" />
+		<param name="gridModelClazz" value="modelClazz" />
+		<param name="uicriteriaClazz" value="uicriteriaClazz" />
+		<param name="legend" value="legend" />
+		<param name="legendAgain" value="str:cuentaCorriente.movimientos.buscar.again" />
+		<param name="resultDiv" value="str:searchdiv" />
+	</component>
+	
+</rasty>

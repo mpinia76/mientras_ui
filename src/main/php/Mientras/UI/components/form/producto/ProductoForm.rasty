@@ -1,0 +1,143 @@
+<rasty specificationClass="Mientras\UI\components\form\producto\ProductoForm" templateLocation="ProductoForm.htm">
+
+	<param name="error" value="get:error" />
+
+	<component id="backSuccess" type="InputHidden">
+		<param name="inputId" value="str:backToOnSuccess" />
+		<param name="name" value="str:backToOnSuccess" />
+		<param name="value" value="backToOnSuccess" />
+	</component>
+
+	<component id="oid" type="InputHidden">
+		<param name="inputId" value="str:oid" />
+		<param name="name" value="str:oid" />
+		<param name="value" value="producto.oid" />
+	</component>
+
+	
+
+	<component id="nombre" type="InputText">
+		<param name="inputId" value="str:nombre" />
+		<param name="name" value="str:nombre" />
+		<param name="value" value="producto.nombre" />
+		<param name="requiredMessage" value="msg:producto.nombre.required" />
+		<param name="placeholder" value="msg:producto.nombre" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	
+	
+	<component id="tipoProducto" type="InputCombo">
+		<param name="inputId" value="str:tipoProducto" />
+		<param name="name" value="str:tipoProducto" />
+		<param name="value" value="producto.tipoProducto" />
+		<param name="options" value="tiposProducto" />
+		<param name="finder" value="tipoProductoFinderClazz" />
+		<param name="placeholder" value="msg:producto.tipoProducto" />
+	</component>
+	
+	<component id="marcaProducto" type="InputCombo">
+		<param name="inputId" value="str:marcaProducto" />
+		<param name="name" value="str:marcaProducto" />
+		<param name="value" value="producto.marcaProducto" />
+		<param name="options" value="marcasProducto" />
+		<param name="finder" value="marcaProductoFinderClazz" />
+		<param name="placeholder" value="msg:producto.marcaProducto" />
+	</component>
+	
+	<component id="iva" type="InputCombo">
+		<param name="inputId" value="str:iva" />
+		<param name="name" value="str:iva" />
+		<param name="value" value="producto.iva" />
+		<param name="options" value="ivas" />
+		<param name="finder" value="ivaFinderClazz" />
+		<param name="placeholder" value="msg:producto.iva" />
+	</component>
+
+	<component id="stock" type="InputNumber">
+		<param name="inputId" value="str:stock" />
+		<param name="name" value="str:stock" />
+		<param name="value" value="producto.stock" />
+		
+		<param name="placeholder" value="msg:producto.stock" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	<component id="stockMinimo" type="InputNumber">
+		<param name="inputId" value="str:stockMinimo" />
+		<param name="name" value="str:stockMinimo" />
+		<param name="value" value="producto.stockMinimo" />
+		
+		<param name="placeholder" value="msg:producto.stockMinimo" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+
+
+	<component id="costo" type="InputCurrency">
+		<param name="inputId" value="str:costo" />
+		<param name="name" value="str:costo" />
+		<param name="value" value="producto.costo" />
+		
+		<param name="placeholder" value="msg:producto.costo" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	
+	
+	<component id="porcentajeGanancia" type="InputCurrency">
+		<param name="inputId" value="str:porcentajeGanancia" />
+		<param name="name" value="str:porcentajeGanancia" />
+		<param name="value" value="producto.porcentajeGanancia" />
+		
+		<param name="placeholder" value="msg:producto.porcentajeGanancia" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	<component id="precioLista" type="InputCurrency">
+		<param name="inputId" value="str:precioLista" />
+		<param name="name" value="str:precioLista" />
+		<param name="value" value="producto.precioLista" />
+		
+		<param name="placeholder" value="msg:producto.precioLista" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	<component id="precioEfectivo" type="InputCurrency">
+		<param name="inputId" value="str:precioEfectivo" />
+		<param name="name" value="str:precioEfectivo" />
+		<param name="value" value="producto.precioEfectivo" />
+		
+		<param name="placeholder" value="msg:producto.precioEfectivo" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+
+	
+	
+	<component id="descripcion" type="InputTextArea">
+		<param name="inputId" value="str:descripcion" />
+		<param name="name" value="str:descripcion" />
+		<param name="value" value="producto.descripcion" />
+		<param name="placeholder" value="msg:producto.descripcion" />	
+		<param name="rows" value="str:5" />	
+	</component>
+	
+	
+	<component id="vencimiento" type="InputDate">
+		<param name="inputId" value="str:vencimiento" />
+		<param name="name" value="str:vencimiento" />
+		<param name="value" value="producto.vencimiento" />
+		<param name="placeholder" value="msg:producto.vencimiento" />
+		<param name="format" value="str:d/m/Y" />
+	</component>
+	
+	
+	
+	
+</rasty>

@@ -1,0 +1,13 @@
+<rasty specificationClass="Mientras\UI\pages\combos\agregar\ComboAgregar" templateLocation="pages/combos/agregar/ComboAgregar.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+
+	<component id="comboForm" type="ComboForm">
+		<param name="legend" value="msg:combo.agregar.legend" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="action" value="linkActionAgregarCombo" />
+		<param name="method" value="str:post" />
+		<param name="combo" value="combo" />
+	</component>
+	
+</rasty>

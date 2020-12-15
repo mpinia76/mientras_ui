@@ -1,0 +1,9 @@
+<rasty specificationClass="Mientras\UI\components\boxes\venta\VentaSinDevolucionesBox" templateLocation="VentaSinDevolucionesBox.htm">
+
+	<param name="ventaOid" value="get:ventaOid" />
+
+	
+
+	
+	
+</rasty>

@@ -1,0 +1,30 @@
+<!-- BEGIN: main-->
+<script>
+function cuentaCorrienteAgregarCallback( data ){
+
+	alert( data["productoOid"] );
+	alert( data["cuentaCorrienteOid"] );
+}
+</script>
+<style>
+</style>
+
+<div class="grid" >
+
+    <div id="productos_filtros" class="grid_filters">
+        
+        <rasty id="productosFilter" />
+        
+    </div>
+
+	<br class="clear">
+
+	<fieldset>
+        
+       	<legend>{legend_resultados}</legend>
+    		
+    	<div id="searchdiv" class="grid_searchdiv">
+		</div>
+    </fieldset>
+</div>
+<!-- END: main-->

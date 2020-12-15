@@ -1,0 +1,14 @@
+<rasty specificationClass="Mientras\UI\pages\cajas\MovimientosCaja" templateLocation="pages/cajas/MovimientosCaja.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+
+	<component id="movimientosFilter" type="MovimientoSaldoCajaFilter">
+		<param name="cuenta" value="cajaChica" />
+		<param name="gridModelClazz" value="modelClazz" />
+		<param name="uicriteriaClazz" value="uicriteriaClazz" />
+		<param name="legend" value="msg:caja.movimientos.buscar" />
+		<param name="legendAgain" value="msg:caja.movimientos.buscar.again" />
+		<param name="resultDiv" value="str:searchdiv" />
+	</component>
+	
+</rasty>

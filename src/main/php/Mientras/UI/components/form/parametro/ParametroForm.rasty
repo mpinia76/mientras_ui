@@ -1,0 +1,39 @@
+<rasty specificationClass="Mientras\UI\components\form\parametro\ParametroForm" templateLocation="ParametroForm.htm">
+
+	<param name="error" value="get:error" />
+
+	<component id="backSuccess" type="InputHidden">
+		<param name="inputId" value="str:backToOnSuccess" />
+		<param name="name" value="str:backToOnSuccess" />
+		<param name="value" value="backToOnSuccess" />
+	</component>
+
+	<component id="oid" type="InputHidden">
+		<param name="inputId" value="str:oid" />
+		<param name="name" value="str:oid" />
+		<param name="value" value="parametro.oid" />
+	</component>
+
+
+	<component id="nombre" type="InputText">
+		<param name="inputId" value="str:nombre" />
+		<param name="name" value="str:nombre" />
+		<param name="value" value="parametro.nombre" />
+		<param name="requiredMessage" value="msg:parametro.nombre.required" />
+		<param name="placeholder" value="msg:parametro.nombre" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	<component id="valor" type="InputCurrency">
+		<param name="inputId" value="str:valor" />
+		<param name="name" value="str:valor" />
+		<param name="value" value="parametro.valor" />
+		
+		<param name="placeholder" value="msg:parametro.valor" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	
+</rasty>

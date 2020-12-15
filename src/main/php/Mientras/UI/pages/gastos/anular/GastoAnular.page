@@ -1,0 +1,13 @@
+<rasty specificationClass="Mientras\UI\pages\gastos\anular\GastoAnular" templateLocation="pages/gastos/anular/GastoAnular.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+
+	<param name="gastoOid" value="get:gastoOid" />
+	
+	<param name="error" value="get:error" />
+	
+	<component id="gasto" type="GastoBox">
+		<param name="gasto" value="gasto" />
+	</component>
+	
+</rasty>

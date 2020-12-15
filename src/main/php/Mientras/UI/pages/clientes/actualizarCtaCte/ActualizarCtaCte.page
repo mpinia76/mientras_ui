@@ -1,0 +1,41 @@
+<rasty specificationClass="Mientras\UI\pages\clientes\actualizarCtaCte\ActualizarCtaCte" templateLocation="pages/clientes/actualizarCtaCte/ActualizarCtaCte.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+	<param name="monto" value="get:monto" />
+	<param name="observaciones" value="get:observaciones" />
+	<param name="error" value="get:error" />
+
+	<component id="cliente" type="InputFindEntity">
+		<param name="inputId" value="str:cliente" />
+		<param name="name" value="str:cliente" />
+		<param name="value" value="cliente" />
+		<param name="placeholder" value="msg:cobrarCtaCte.cliente" />
+		<param name="finder" value="clienteFinderClazz" />
+		<param name="hasPopup" value="boolean:true" />
+		<param name="popupFilterType" value="str:ClienteFilter" />
+		<param name="onSelectCallback" value="str:javascript:clientechange();" />
+	</component>
+	
+	<component id="ctacteBox" type="CuentaCorrienteBox">
+	</component>
+
+	<component id="monto" type="InputCurrency">
+		<param name="inputId" value="str:monto" />
+		<param name="name" value="str:monto" />
+		<param name="value" value="monto" />
+		<param name="requiredMessage" value="msg:cobrarCtaCte.monto.required" />
+		<param name="placeholder" value="msg:cobrarCtaCte.monto" />
+		<param name="autocomplete" value="str:off" />
+	</component>
+
+	<component id="observaciones" type="InputTextArea">
+		<param name="inputId" value="str:observaciones" />
+		<param name="name" value="str:observaciones" />
+		<param name="value" value="observaciones" />
+		<param name="placeholder" value="msg:cobrarCtaCte.observaciones.placeholder" />
+		<param name="autocomplete" value="str:off" />
+		<param name="rows" value="str:3" />
+	</component>
+
+	
+</rasty>

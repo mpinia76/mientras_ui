@@ -1,0 +1,110 @@
+<!-- BEGIN:main -->
+<script>
+
+
+function submitBuscarPresupuestos(){
+
+	$( "#page" ).val( 1 );
+	
+	//buscarPresupuestos();
+
+	submitBuscar("{WEB_PATH}", "#presupuestos_filter{id}", "#{resultDiv}");
+}
+
+function ordenarPresupuestos(name, type){
+
+	$( "#orderBy" ).val(name);
+	$( "#orderByType" ).val(type);
+	
+	submitBuscar("{WEB_PATH}", "#presupuestos_filter{id}", "#{resultDiv}");
+}
+
+function paginarPresupuestos(page){
+	$( "#page" ).val(page);
+
+	submitBuscar("{WEB_PATH}", "#presupuestos_filter{id}", "#{resultDiv}");
+}
+
+function seleccionarPresupuesto(event, presupuestoId, rowId, checkboxId){
+
+
+	/* muestro un pop con las opciones sobre el presupuesto */
+	
+	gotoLink("{linkSeleccionar}?oid="+presupuestoId);
+	
+}
+
+function aprobarCallback(data){
+
+	console.log( data["info"] );
+	submitBuscar("{WEB_PATH}", "#presupuestos_filter{id}", "#{resultDiv}");
+}
+
+
+$(document).ready(function(){
+
+	submitBuscar("{WEB_PATH}", "#presupuestos_filter{id}", "#{resultDiv}");
+
+	 $(".item input").keyup(function (e) {
+         if (e.keyCode == 13) {
+             // función para capturar el enter en el filtro default.
+        	 submitBuscar("{WEB_PATH}", "#presupuestos_filter{id}", "#{resultDiv}");
+         }
+     });
+	
+});
+
+
+</script>
+
+<div id="divPresupuestos{id}Toggle1" style="display:none">
+<form class="cuentas_form">
+		<fieldset>
+		<legend class="search_again" id="legend_buscar{id}_open">{legend_again}</legend>
+		</fieldset>
+</form>		
+</div>
+<div id="divPresupuestos{id}Toggle2">
+<form class="cuentas_form" id="presupuestos_filter{id}">
+
+		
+	<fieldset>
+		
+		<legend id="legend_buscar{id}">{legend}</legend>		
+
+		<div class="criteria_left">
+			<div class="item">
+			    <label for="fechaDesde">{lbl_fechaDesde}:</label>
+		    	<rasty id="fechaDesde" />
+			</div>
+			
+			<div class="item">
+			    <label for="fechaHasta">{lbl_fechaHasta}:</label>
+		    	<rasty id="fechaHasta" />
+			</div>
+		</div>
+		<div class="criteria_right">
+			<div class="item">
+			    <label for="filtroPredefinido">{lbl_predefinidos}:</label>
+		    	<rasty id="filtroPredefinido" />
+			</div>
+		</div>
+	</fieldset>
+	
+	<input type="hidden" name="model" value="{model}">
+	<input type="hidden" name="filter" value="{filter}">
+	<input type="hidden" name="sortCallback" value="ordenarPresupuestos">
+	<input type="hidden" name="paginationCallback" value="paginarPresupuestos">
+	<input type="hidden" name="selectRowCallback" value="{selectRowCallback}">
+	<input type="hidden" id="orderBy" name="orderBy" value="{orderBy}">
+	<input type="hidden" id="orderByType" name="orderByType" value="{orderByType}">
+	<input type="hidden" id="page" name="page" value="1">
+
+</form>
+<form  class="cuentas_form" id="buttons{id}">
+	<fieldset class="tblFooters">
+		<button id="input_submit_ajax_Presupuesto{id}"  type="button"  onclick="javascript: $( '#page' ).val( 1 ); submitBuscar('{WEB_PATH}', '#presupuestos_filter{id}', '#{resultDiv}');"><i class="icon-search on-left"></i>{lbl_submit}</button>
+	</fieldset>
+</form>	
+</div>
+<!-- END:main -->

@@ -1,0 +1,65 @@
+<rasty specificationClass="Mientras\UI\components\form\venta\VentaCobrarTarjetaForm" templateLocation="VentaCobrarTarjetaForm.htm">
+
+	<param name="error" value="get:error" />
+
+	<component id="backSuccess" type="InputHidden">
+		<param name="inputId" value="str:backToOnSuccess" />
+		<param name="name" value="str:backToOnSuccess" />
+		<param name="value" value="backToOnSuccess" />
+	</component>
+
+
+	<component id="tarjeta" type="InputCombo">
+		<param name="inputId" value="str:tarjeta" />
+		<param name="name" value="str:tarjeta" />
+		<param name="finder" value="tarjetaFinderClazz" />
+		<param name="options" value="tarjetas" />
+		
+	</component>
+
+	<component id="titular" type="InputText">
+		<param name="inputId" value="str:titular" />
+		<param name="name" value="str:titular" />
+		<param name="value" value="tarjeta.titular" />
+		<param name="requiredMessage" value="msg:tarjeta.titular.required" />
+		<param name="placeholder" value="msg:tarjeta.titular" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	<component id="marca" type="InputText">
+		<param name="inputId" value="str:marca" />
+		<param name="name" value="str:marca" />
+		<param name="value" value="tarjeta.marca" />
+		<param name="requiredMessage" value="msg:tarjeta.marca.required" />
+		<param name="placeholder" value="msg:tarjeta.marca" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	<component id="nro" type="InputText">
+		<param name="inputId" value="str:nro" />
+		<param name="name" value="str:nro" />
+		<param name="value" value="tarjeta.nro" />
+		<param name="requiredMessage" value="msg:tarjeta.nro.required" />
+		<param name="placeholder" value="msg:tarjeta.nro" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	<component id="monto" type="InputCurrency">
+		<param name="inputId" value="str:monto" />
+		<param name="name" value="str:monto" />
+		<param name="requiredMessage" value="msg:tarjeta.monto.required" />
+		<param name="placeholder" value="msg:tarjeta.monto" />
+		<param name="autocomplete" value="str:off" />
+	</component>
+	<component id="montoActualizado" type="InputCurrency">
+		<param name="inputId" value="str:montoActualizado" />
+		<param name="name" value="str:montoActualizado" />
+		
+		<param name="placeholder" value="msg:tarjeta.montoActualizado" />
+		<param name="autocomplete" value="str:off" />
+	</component>
+	
+</rasty>

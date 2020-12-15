@@ -1,0 +1,14 @@
+<rasty specificationClass="Mientras\UI\pages\tiposProducto\agregar\TipoProductoAgregar" templateLocation="pages/tiposProducto/agregar/TipoProductoAgregar.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+
+	<component id="tipoProductoForm" type="TipoProductoForm">
+		<param name="legend" value="msg:tipoProducto.agregar.legend" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="action" value="linkActionAgregarTipoProducto" />
+		<param name="method" value="str:post" />
+		<param name="tipoProducto" value="tipoProducto" />
+	</component>
+	
+</rasty>

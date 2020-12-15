@@ -1,0 +1,150 @@
+<rasty specificationClass="Mientras\UI\components\form\venta\VentaForm" templateLocation="VentaForm.htm">
+
+	<param name="error" value="get:error" />
+
+	<component id="backSuccess" type="InputHidden">
+		<param name="inputId" value="str:backToOnSuccess" />
+		<param name="name" value="str:backToOnSuccess" />
+		<param name="value" value="backToOnSuccess" />
+	</component>
+
+	<component id="oid" type="InputHidden">
+		<param name="inputId" value="str:oid" />
+		<param name="name" value="str:oid" />
+		<param name="value" value="venta.oid" />
+	</component>
+
+	<component id="nombre" type="InputText">
+		<param name="name" value="str:nombreProducto" />
+		<param name="inputId" value="str:nombreProducto" />
+		<param name="placeholder" value="msg:producto.nombre" />
+		
+	</component>
+	
+	<component id="tipoProducto" type="InputFindEntity">
+		<param name="inputId" value="str:tipoProducto" />
+		<param name="name" value="str:tipoProducto" />
+		
+		<param name="placeholder" value="msg:producto.tipoProducto" />
+		<param name="finder" value="tipoProductoFinderClazz" />
+		
+		<param name="popupFilterType" value="str:TipoProductoFilter" />
+		<param name="onSelectCallback" value="str:tipoProductochange" />
+	</component>
+	
+	<component id="marcaProducto" type="InputFindEntity">
+		<param name="inputId" value="str:marcaProducto" />
+		<param name="name" value="str:marcaProducto" />
+		
+		<param name="placeholder" value="msg:producto.marcaProducto" />
+		<param name="finder" value="marcaProductoFinderClazz" />
+		
+		<param name="popupFilterType" value="str:MarcaProductoFilter" />
+		<param name="onSelectCallback" value="str:marcaProductochange" />
+	</component>
+	
+	
+
+	<component id="fecha" type="InputDate">
+		<param name="inputId" value="str:fecha" />
+		<param name="name" value="str:fecha" />
+		<param name="value" value="venta.fecha" />
+		<param name="placeholder" value="msg:venta.fecha" />
+		<param name="format" value="str:d/m/Y" />
+		<param name="requiredMessage" value="msg:venta.fecha.required" />
+	</component>
+
+	<component id="cliente" type="InputFindEntity">
+		<param name="inputId" value="str:cliente" />
+		<param name="name" value="str:cliente" />
+		<param name="value" value="venta.cliente" />
+		<param name="placeholder" value="msg:venta.cliente" />
+		<param name="finder" value="clienteFinderClazz" />
+		<param name="hasPopup" value="boolean:true" />
+		<param name="popupFilterType" value="str:ClienteFilter" />
+		<param name="requiredMessage" value="msg:venta.cliente.required" />
+		<param name="hasAddEntity" value="boolean:true" />
+		<param name="popupFormType" value="str:ClienteForm" />
+		<param name="popupFormAction" value="linkActionAgregarCliente" />
+		<param name="popupFormCallback" value="str:VentaAgregar" />
+	</component>
+	
+		
+	
+	<component id="observaciones" type="InputText">
+		<param name="inputId" value="str:observaciones" />
+		<param name="name" value="str:observaciones" />
+		<param name="value" value="venta.observaciones" />
+		<param name="placeholder" value="msg:venta.observaciones.placeholder" />
+		<param name="autocomplete" value="str:off" />
+		<param name="styleCss" value="str:uppercase" />		
+	</component>
+	
+	
+	<component id="detallePrecioLista" type="InputCurrency">
+		<param name="inputId" value="str:detallePrecioLista" />
+		<param name="name" value="str:detallePrecioLista" />
+		<param name="value" value="detalle.precioLista" />
+		
+		<param name="placeholder" value="msg:venta.detalle.precioLista" />
+		<param name="autocomplete" value="str:off" />
+	</component>
+	
+	<component id="detallePrecioEfectivo" type="InputCurrency">
+		<param name="inputId" value="str:detallePrecioEfectivo" />
+		<param name="name" value="str:detallePrecioEfectivo" />
+		<param name="value" value="detalle.precioEfectivo" />
+		<param name="placeholder" value="msg:venta.detalle.precioEfectivo" />
+		<param name="autocomplete" value="str:off" />
+	</component>
+	
+	<component id="detallePrecio" type="InputCurrency">
+		<param name="inputId" value="str:detallePrecio" />
+		<param name="name" value="str:detallePrecio" />
+		<param name="value" value="detalle.precio" />
+		<param name="requiredMessage" value="msg:venta.detalle.precio.required" />
+		<param name="placeholder" value="msg:venta.detalle.precio" />
+		<param name="autocomplete" value="str:off" />
+	</component>
+	
+	<component id="detalleCosto" type="InputHidden">
+		<param name="inputId" value="str:detalleCosto" />
+		<param name="name" value="str:detalleCosto" />
+		<param name="value" value="detalle.costo" />
+	</component>
+	
+	<component id="detalleCantidad" type="InputNumber">
+		<param name="inputId" value="str:detalleCantidad" />
+		<param name="name" value="str:detalleCantidad" />
+		<param name="value" value="detalle.cantidad" />
+		<param name="requiredMessage" value="msg:venta.detalle.cantidad.required" />
+		<param name="placeholder" value="msg:venta.detalle.cantidad" />
+		<param name="autocomplete" value="str:off" />
+	</component>
+	
+	<component id="detalleProducto" type="InputFindEntity">
+		<param name="inputId" value="str:detalleProducto" />
+		<param name="name" value="str:detalleProducto" />
+		<param name="value" value="detalle.producto" />
+		<param name="placeholder" value="msg:venta.detalle.producto" />
+		<param name="finder" value="productoFinderClazz" />
+		<param name="hasPopup" value="boolean:true" />
+		<param name="popupFilterType" value="str:ProductoFilter" />
+		<param name="onSelectCallback" value="str:productochange" />
+		
+	</component>
+
+
+	<component id="detalleCombo" type="InputFindEntity">
+		<param name="inputId" value="str:detalleCombo" />
+		<param name="name" value="str:detalleCombo" />
+		<param name="value" value="detalle.combo" />
+		<param name="placeholder" value="msg:venta.detalle.combo" />
+		<param name="finder" value="comboFinderClazz" />
+		<param name="hasPopup" value="boolean:true" />
+		<param name="popupFilterType" value="str:ComboFilter" />
+		<param name="onSelectCallback" value="str:combochange" />
+		
+	</component>
+	
+</rasty>

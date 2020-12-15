@@ -1,0 +1,13 @@
+<rasty specificationClass="Mientras\UI\pages\proveedors\Proveedors" templateLocation="pages/proveedors/Proveedors.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+
+	<component id="proveedorsFilter" type="ProveedorFilter">
+		<param name="gridModelClazz" value="modelClazz" />
+		<param name="uicriteriaClazz" value="uicriteriaClazz" />
+		<param name="legend" value="msg:proveedor.buscar" />
+		<param name="legendAgain" value="msg:proveedor.buscar.again" />
+		<param name="resultDiv" value="str:searchdiv" />
+	</component>
+	
+</rasty>

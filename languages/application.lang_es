@@ -1,0 +1,1578 @@
+{
+
+	"common.campos_obligatorios":"Campos requeridos",
+
+	"app.title":"Mientras Tanto",
+
+	"app.pdf.footer":"Mientras Tanto",
+	
+	"menu.page":"Opciones de la página",
+	"menu.main":"Menú de navegación",
+	"menu.main.reload":"Actualizar la página",
+	"menu.main.panel":"Panel de trabajo",
+	
+	"menu.admin":"Administración",
+	"menu.admin_home":"Tablero de control",
+	"menu.empleado_home":"Panel de trabajo",
+
+	"menu.agencia": "Negocio",
+
+	"menu.stats": "Estadísticas",
+	"menu.stats.reportes": "Reportes",
+	
+	"menu.stats": "Estadísticas",
+	"menu.stats.reportes": "Reportes",
+	
+	"menu.balances.dia":"Balance del día",
+	"menu.balances.mes":"Balance mensual",
+	"menu.balances.anio":"Balance anual",
+	
+	"menu.seguridad":"Seguridad",
+	"menu.mp3":"MP3",
+	
+	
+	"menu.usuarios":"Usuarios",
+	"menu.usuarios.agregar":"Nuevo Usuario",
+	"menu.usuarios.modificar":"Modificar Usuario",
+	"menu.usuarios.asignarRoles":"Asignar roles",
+	"menu.usuarios.consultarRoles":"Consultar roles",
+	"menu.usuarios.eliminar":"Eliminar Usuario",
+	
+	"menu.permisos":"Permisos",
+	"menu.permisos.agregar":"Nuevo Permiso",
+	"menu.permisos.modificar":"Modificar Permiso",
+	"menu.permisos.eliminar":"Eliminar Permiso",
+	
+	"menu.roles":"Roles",
+	"menu.roles.agregar":"Nuevo Rol",
+	"menu.roles.modificar":"Modificar Rol",
+	"menu.roles.eliminar":"Eliminar Rol",
+	"menu.roles.asignarPermisos":"Asignar permisos",
+	"menu.roles.consultarPermisos":"Consultar permisos",
+	
+	
+	"menu.estados":"Estados",
+	"menu.estados.listar":"Listado de Estados",
+	"menu.estados.agregar":"Agregar Estado",
+	"menu.estados.modificar":"Modificar Estados",
+	"menu.estado.eliminar":"Eliminar el Estado",
+	
+	"menu.conceptoGastos":"Conceptos de Gastos",
+	"menu.conceptoGastos.listar":"Listado de Conceptos de Gastos",
+	"menu.conceptoGastos.agregar":"Agregar Concepto de Gasto",
+	"menu.conceptoGastos.modificar":"Modificar Conceptos de Gastos",
+	"menu.conceptoGasto.eliminar":"Eliminar el Concepto de Gasto",
+	
+	"menu.conceptoMovimientos":"Conceptos de Movimientos",
+	"menu.conceptoMovimientos.listar":"Listado de Conceptos de Movimientos",
+	"menu.conceptoMovimientos.agregar":"Agregar Concepto de Movimiento",
+	"menu.conceptoMovimientos.modificar":"Modificar Conceptos de Movimientos",
+	"menu.conceptoMovimiento.eliminar":"Eliminar el Concepto de Movimiento",
+	
+	"menu.tipos_productos":"Tipos de producto",
+	"menu.tiposProductos.listar":"Listado de Tipos de producto",
+	"menu.tiposProductos.agregar":"Agregar Tipo de producto",
+	"menu.tiposProducto.modificar":"Modificar Tipos de producto",
+	"menu.tipoProducto.eliminar":"Eliminar el Tipo",
+	
+	"menu.marcas_productos":"Marcas de producto",
+	"menu.marcasProductos.listar":"Listado de Marcas de producto",
+	"menu.marcasProductos.agregar":"Agregar Marca de producto",
+	"menu.marcasProducto.modificar":"Modificar Marcas de producto",
+	"menu.marcaProducto.eliminar":"Eliminar la Marca",
+	
+	"menu.ivas":"Ivas",
+	"menu.ivas.listar":"Listado de Ivas",
+	"menu.ivas.agregar":"Agregar Marca de producto",
+	"menu.ivas.modificar":"Modificar Ivas",
+	"menu.iva.eliminar":"Eliminar el Iva",
+	
+	"menu.clientes":"Clientes",
+	"menu.clientes.listar":"Listado de Clientes",
+	"menu.clientes.agregar":"Agregar Cliente",
+	"menu.clientes.modificar":"Modificar datos del Cliente",
+	"menu.cliente.eliminar":"Eliminar el Cliente",
+	"menu.clientes.cuentaCorriente":"Ver cuenta corriente",
+	"menu.clientes.cuentaCorriente.agregar":"Agregar cuenta corriente",
+
+	"menu.cobrarCuentaCorriente":"Cobrar Deudores",
+	"menu.actualizarCuentaCorriente":"Actualizar Deuda",
+	
+	
+	
+	"menu.servicios_tecnicos":"Servicios Tecnicos",
+	"menu.servicios_tecnicos.listar":"Listado de Servicios Tecnicos",
+	"menu.serviciosTecnico.modificar":"Modificar Servicio Tecnico",
+	"menu.servicios_tecnicos.agregar":"Agregar Servicio Tecnico",
+	"menu.serviciosTecnico.anular":"Anular Servicio Técnico",
+	"menu.serviciosTecnico.cobrar":"Cobrar Servicio Técnico",
+	"menu.serviciosTecnico.pdf":"Imprimir Orden",
+
+	"menu.serviciosTecnico.estados":"Historial",
+
+	"menu.informes":"Informes",
+	"menu.informesSemanales.listar":"Informes Semanales",
+	"menu.informesSemanales.agregar":"Agregar Informe Semanal",
+	"menu.informesSemanales.modificar":"Modificar Informe Semanal",
+	"menu.informesSemanales.reportes":"Reportes",
+	
+	
+	
+	"menu.stock":"Stock",
+	
+	"menu.productos":"Productos",
+	"menu.productos.agregar":"Nuevo producto",
+	"menu.productos.modificar":"Modificar información del producto",
+	"menu.productos.packs":"Packs",
+	
+	"menu.proveedors":"Proveedores",
+	"menu.proveedors.listar":"Listado de Proveedores",
+	"menu.proveedors.agregar":"Agregar nuevo Proveedor",
+	"menu.proveedors.modificar":"Modificar datos del Proveedor",
+	"menu.proveedor.eliminar":"Eliminar el Proveedor",
+	
+	
+
+	"menu.gastos":"Gastos",
+	"menu.gastos.listar":"Listado de Gastos",
+	"menu.gastos.anular":"Anular Gasto",
+	"menu.gastos.agregar":"Agregar Gasto",
+	"menu.gastos.pagar":"Pagar Gasto",
+	
+	"menu.productos":"Productos",
+	"menu.productos.listar":"Listado de Productos",
+	"menu.productos.modificar":"Modificar Producto",
+	"menu.productos.agregar":"Agregar Producto",
+	"menu.producto.eliminar":"Eliminar el Producto",
+	
+	"menu.packs":"Packs",
+	"menu.packs.listar":"Listado de Packs",
+	"menu.packs.modificar":"Modificar Pack",
+	"menu.packs.agregar":"Agregar Pack",
+	"menu.pack.eliminar":"Eliminar el Pack",
+	
+	
+	
+
+	"menu.cuentas":"Cuentas",
+	"menu.ventasST":"Ventas ST",
+	"menu.ventasProductos":"Ventas Productos",
+	"menu.ventas.pdf":"Comprobante",
+	
+	"menu.caja":"Efectivo",
+	"menu.cajaTarjeta":"Tarjetas",
+	"menu.cajaCtaCte":"Ctas. Ctes.",
+	
+	
+	"menu.movimientos_caja":"Movimientos Caja",
+	"menu.movimientos_caja_chica":"Movimientos Caja Chica",
+	"menu.bancos":"V. Prod.",
+	
+
+	"menu.cuentasCorrientes":"Gastos",
+	
+	"menu.transferir":"Transferir",
+	
+	"menu.socios":"Cuenta Socios",
+	"menu.movimientos_cuentaSocio":"Movimientos Socios",
+
+	"menu.ventas":"Ventas",
+	"menu.ventas.agregar":"Vender",
+	"menu.ventas.anular":"Anular Venta",
+	"menu.ventas.cobrar":"Cobrar venta",
+	"menu.ventas.listar":"Listado de ventas",
+	"menu.ventas.devolver":"Devolución",
+	"menu.ventas.agregar.productos":"Agregar productos",
+	
+	"menu.presupuestos":"Presupuestos",
+	"menu.presupuestos.agregar":"Nuevo presupuesto",
+	"menu.presupuestos.anular":"Anular presupuesto",
+	"menu.presupuestos.listar":"Listado de presupuestos",
+	"menu.presupuestos.aprobar":"Aprobar presupuesto",	
+	
+	"menu.presupuestos.pdf":"Comprobante",
+	
+	"menu.pedidos":"Pedidos",
+	"menu.pedidos.agregar":"Nuevo pedido",
+	"menu.pedidos.anular":"Anular pedido",
+	"menu.pedidos.listar":"Listado de pedidos",
+	"menu.pedidos.recibir":"Recibir pedido",
+	"menu.pedidos.pagar":"Pagar pedido",
+	"menu.pedidos.anularRecibir":"Anular recepción del pedido",
+	
+	"menu.parametros":"Parámetros",
+	"menu.parametros.listar":"Listado de Parámetros",
+	
+	"menu.parametros.modificar":"Modificar Parámetros",
+	
+
+	"menu.logout":"Salir del sistema",
+	
+	"usuarios.title": "Listado de Usuarios",
+	
+	"usuarios.listar": "Listado de Usuarios",
+	"usuario.agregar": "Agregar un nuevo Usuario",
+	"usuario.agregar.title": "Agregar un nuevo Usuario",
+	"usuario.agregar.legend": "Ingrese los datos del Usuario",
+	
+	"user.add.username.repetead": "Ya existe un usuario para el nombre ingresado",
+	
+	"usuario.modificar": "Modificar datos del Usuario",
+	"usuario.modificar.title": "Modificar Usuario",
+	"usuario.modificar.legend": "Modifique los datos del Usuario",
+	
+	"usuario.eliminar": "Eliminar el Usuario",
+	"usuario.eliminar.title": "Eliminar Usuario",
+	"usuario.eliminar.legend": "Confirma eliminar el Usuario?",
+	
+	"usuario.eliminar.usuario.logueado.exception": "No puede eliminarse Ud mismo",
+	"usuario.eliminar.cliente.exception": "No puede eliminar a un cliente",
+	
+	"usuario.buscar": "Buscar Usuarios",
+	"usuario.buscar.again": "Afinar búsqueda...",
+
+	"usuario.username":"Nombre de usuario",
+	"usuario.username.unicity":"Ya existe un Usuario para el Nombre de usuario indicado",
+	"usuario.username.required":"Ingrese un nombre de usuario",
+	
+	"usuario.name":"Nombre",
+	"usuario.name.required":"Ingrese un nombre",
+	
+	"usuario.lastname":"Apellido",
+	"usuario.lastname.required":"Ingrese un apellido",
+	
+	"usuario.email":"E-mail",
+	"usuario.email.unicity":"Ya existe un Usuario para el E-mail indicado",
+	"usuario.email.required":"Ingrese un e-mail",
+	
+   	"usuario.password":"Clave",
+	"usuario.password.required":"Ingrese una clave",
+	
+	"usuario.password.repeat":"Repetir Clave",
+	"usuario.password.repeat.required":"Ingrese nuevamente la clave",
+	
+	"usuario.password.repeat.invalid":"Las claves ingresadas son distintas",
+	
+	"usuario.password.old":"Clave actual",
+	"usuario.password.old.required":"Ingrese la clave actual",
+
+	"usuario.newPassword":"Nueva clave",
+	"usuario.newPassword.required":"Ingrese la nueva clave",
+
+	"usuario.newPassword.repeat":"Repetir nueva clave",
+	"usuario.newPassword.repeat.required":"Ingrese nuevamente la clave",
+	
+	"user.password.invalid": "La clave ingresada no es la correcta",
+	
+	"usuario.cambiarClave.newPasswordRepetir.invalid": "Las nuevas claves ingresadas son distintas",
+	
+	
+	"solicitarNuevaClave.title": "Recupero de clave",
+	"solicitarNuevaClave.legend": "Recupero de clave",
+	"solicitarNuevaClave.submit": "Recuperar",
+	"solicitarNuevaClave.login": "Ingresar",
+	"solicitarNuevaClave.registrarse": "Registrarse",
+	
+	"solicitarNuevaClave.usuario.invalid": "Usuario no registrado",
+	"solicitarNuevaClaveSuccess.title": "Recupero de clave",
+	
+	"nuevaClave.confirmar.title": "Obtener nueva clave",
+	"nuevaClave.confirmar.legend": "Genera tu nueva clave",
+	
+	"nuevaClave.newPassword": "Nueva clave",
+	"nuevaClave.newPassword.repetir": "Repite la clave",
+	"nuevaClave.securitycode": "Código de verificación",
+	"nuevaClave.captcha": "Ingresa el código de verificación",
+	
+	"nuevaClave.captcha.invalido": "El código de verificación no es correcto", 
+	
+	"nuevaClave.newPassword.repetir.invalid": "Las claves ingresadas no coinciden", 
+	
+	"nuevaClave.newPassword.requerida": "Ingresa la nueva clave",
+	"nuevaClave.newPassword.repetir.requerida": "Ingresa nuevamente la clave",
+	"nuevaClave.captcha.requerido": "Ingresa el código de verificación",
+	
+	"nuevaClaveConfirmar.success.title": "Recupero de clave",
+	 
+	
+	"usuario.oid":"Código interno",
+	"usuario.lastLogin":"Último login",
+  	"usuario.loginFrom":"IP",
+  	
+  	"usuario.asignarRoles.title": "Asignando roles",
+	"usuario.asignarRoles.legend": "Asignar roles al usuario $1",
+
+  	"registracion.usuario.legend": "Crea tu usuario",
+ 	"registracion.email": "E-mail",
+ 	"registracion.emailRepetir": "Confirmar e-mail",
+ 	"registracion.clave": "Contraseña",
+ 	"registracion.clave.formato": "8 o más caracteres e incluye al menos una mayúscula y un número",
+ 	"usuario.clave.formato": "8 o más caracteres e incluye al menos una mayúscula y un número",
+ 	"registracion.claveRepetir": "Confirmar contraseña",
+	"registracion.claveRepetir.invalid": "Las contraseñas ingresadas no coinciden",
+	
+	"registracion.email.repetido": "Ya existe un cliente con el email ingresado",
+ 	"registracion.confirmar.codigoExpirado": "El código de validación no es válido",
+ 	
+ 	
+	"email.formato.invalido":"formato de e-mail incorrecto",
+
+ 	"registracion.email.requerido": "Ingresa tu e-mail",
+ 	"registracion.emailRepetir.requerido": "Confirma tu e-mail",
+ 	"registracion.clave.requerida": "Ingreso una Contraseña",
+ 	"registracion.claveRepetir.requerida": "Confirmar la contraseña",
+
+	"permisos.title": "Listado de Permisos",
+	
+	"permisos.listar": "Listado de Permisos",
+	"permiso.agregar": "Agregar un nuevo Permiso",
+	"permiso.agregar.title": "Agregar un nuevo Permiso",
+	"permiso.agregar.legend": "Ingrese los datos del Permiso",
+	
+	"permiso.modificar": "Modificar datos del Permiso",
+	"permiso.modificar.title": "Modificar Permiso",
+	"permiso.modificar.legend": "Modifique los datos del Permiso",
+	
+	"permiso.buscar": "Buscar Permisos",
+	"permiso.buscar.again": "Afinar búsqueda...",
+
+	"permiso.oid":"Código",
+	"permiso.name":"Nombre",
+	"permiso.name.required":"Ingrese un nombre",
+	"permiso.name.unicity":"Ya existe un Permiso con el Nombre indicado",
+	"permiso.description":"Descripción",
+	"permiso.padre":"Padre",
+	
+
+	"roles.title": "Listado de Roles",
+	
+	"roles.listar": "Listado de Roles",
+	"rol.agregar": "Agregar un nuevo Rol",
+	"rol.agregar.title": "Agregar un nuevo Rol",
+	"rol.agregar.legend": "Ingrese los datos del Rol",
+	
+	"usergroup.add.name.repetead": "Ya existe un rol para el nombre ingresado",
+	
+	"rol.modificar": "Modificar datos del Rol",
+	"rol.modificar.title": "Modificar Rol",
+	"rol.modificar.legend": "Modifique los datos del Rol",
+	
+	"rol.buscar": "Buscar Roles",
+	"rol.buscar.again": "Afinar búsqueda...",
+
+	"rol.asignarPermisos.title": "Asignando permisos",
+	"rol.asignarPermisos.legend": "Asignar permisos al rol $1",
+
+	"rol.consultarPermisos.title": "Consultar permisos de un rol",
+	"rol.consultarPermisos.legend": "Permisos del rol $1",
+
+	"usuario.consultarRoles.legend" :"Consultando roles de $1",
+	"usuario.consultarRoles.title" :"Roles de usuario}",
+
+	"rol.oid":"Código",
+	"rol.name":"Nombre",
+	"rol.name.required":"Ingrese un nombre",
+	"rol.name.unicity":"Ya existe un Rol con el Nombre indicado",
+	"rol.description":"Descripción",
+	
+	"combo.empty": "- seleccionar -",
+
+	"user.required.exception.msg": "Debe iniciar sesión para operar el sistema", 
+	"user.permission.exception.msg": "No cuenta con los privilegios para realizar la operación",  
+	"invalid.password.exception.msg": "La clave ingresada no es válida",
+	
+	"cliente.ayuda.autocomplete": "Ingresa el nombre del cliente así te puedo<br />sugerir alguno de los registrados.<br />Recuerda siempre comenzar escribiendo el apellido.",
+	"cliente.ayuda.popup": "Si te resulta más práctico, puedes<br />utilizar la lupa para hacer una búsqueda avanzada.",
+	"cliente.ayuda.add":"Si no encuentras al cliente, utiliza<br />el '+' para ingresar sus datos y registrarlo en el sistema",
+	
+	"login.title":"Mientras Tanto",
+	"login.titulo":"Mientras Tanto",
+	"login.subtitulo":"Sistema de gestión",
+	
+	"login.iniciar_sesion":"Iniciar sesión",
+	"login.username":"Usuario",
+	"login.password":"Clave",
+	"login.ingrese_username":"Ingrese un usuario",
+	"login.ingrese_password":"Ingrese una clave",
+	"login.ingresar":"Comenzar!",
+	"login.invalid_password": "La clave ingresada no es válida",
+	"login.user_not_found": "El usuario ingresado no es válido",
+
+	"admin_home.title": "Mientras Tanto",
+	"admin_home.subtitle": "Administración",
+
+	"admin_home.informes": "Informes",
+	"admin_home.informesSemanales": "Semanales",
+	"admin_home.informesDiariosDebitoCredito": "Débitos/Créditos",
+	"admin_home.informesDiariosComision": "Comisiones",
+	"admin_home.informesStats": "Reportes",
+	
+	
+	"tipoProducto.title": "Listado de Tipos de Producto",
+	"tipoProducto.agregar": "Agregar un tipo de producto",
+	"tipoProducto.agregar.title": "Agregar un tipo de producto",
+	"tipoProducto.agregar.legend": "Ingrese un tipo de producto",
+	
+	"tipoProducto.modificar": "Modificar tipo de producto",
+	"tipoProducto.modificar.title": "Modificar tipo de producto",
+	"tipoProducto.modificar.legend": "Modifique el tipo de producto",
+	
+	
+	"tipoProducto.eliminar.confirm.title": "Eliminar Tipo de Producto",
+	"tipoProducto.eliminar.confirm.msg": "Confirma eliminar el tipo seleccionado?",
+	
+	"tipoProducto.buscar": "Buscar tipos de producto",
+	"tipoProducto.buscar.again": "Afinar búsqueda...",
+	
+	"tipoProducto.oid":"Id",
+	"tipoProducto.nombre":"Nombre",
+	"tipoProducto.servicioTecnico":"Servicio Técnico",
+	
+	"estado.title": "Listado de Estados",
+	"estado.agregar": "Agregar un estado",
+	"estado.agregar.title": "Agregar un estado",
+	"estado.agregar.legend": "Ingrese un estado",
+	
+	"estado.modificar": "Modificar estado",
+	"estado.modificar.title": "Modificar estado",
+	"estado.modificar.legend": "Modifique el estado",
+	
+	
+	"estado.eliminar.confirm.title": "Eliminar Estado",
+	"estado.eliminar.confirm.msg": "Confirma eliminar el estado seleccionado?",
+	
+	"estado.buscar": "Buscar estados",
+	"estado.buscar.again": "Afinar búsqueda...",
+	
+	"estado.oid":"Id",
+	"estado.nombre":"Nombre",
+	
+	"parametro.title": "Listado de Estados",
+	
+	
+	"parametro.modificar": "Modificar parámetro",
+	"parametro.modificar.title": "Modificar parámetro",
+	"parametro.modificar.legend": "Modifique el parámetro",
+	
+	
+	
+	
+	"parametro.buscar": "Buscar parámetros",
+	"parametro.buscar.again": "Afinar búsqueda...",
+	
+	"parametro.oid":"Id",
+	"parametro.nombre":"Descripción",
+	"parametro.valor":"Valor",
+	
+	"conceptoGasto.title": "Listado de Conceptos de Gastos",
+	"conceptoGasto.agregar": "Agregar un concepto de gasto",
+	"conceptoGasto.agregar.title": "Agregar un concepto de gasto",
+	"conceptoGasto.agregar.legend": "Ingrese un concepto de gasto",
+	
+	"conceptoGasto.modificar": "Modificar concepto de gasto",
+	"conceptoGasto.modificar.title": "Modificar concepto de gasto",
+	"conceptoGasto.modificar.legend": "Modifique el concepto de gasto",
+	
+	
+	"conceptoGasto.eliminar.confirm.title": "Eliminar Concepto de Gasto",
+	"conceptoGasto.eliminar.confirm.msg": "Confirma eliminar el concepto de gasto seleccionado?",
+	
+	"conceptoGasto.buscar": "Buscar conceptos de gastos",
+	"conceptoGasto.buscar.again": "Afinar búsqueda...",
+	
+	"conceptoGasto.oid":"Id",
+	"conceptoGasto.nombre":"Nombre",
+	
+	"conceptoMovimiento.title": "Listado de Conceptos de Movimientos",
+	"conceptoMovimiento.agregar": "Agregar un concepto de movimiento",
+	"conceptoMovimiento.agregar.title": "Agregar un concepto de movimiento",
+	"conceptoMovimiento.agregar.legend": "Ingrese un concepto de movimiento",
+	
+	"conceptoMovimiento.modificar": "Modificar concepto de movimiento",
+	"conceptoMovimiento.modificar.title": "Modificar concepto de movimiento",
+	"conceptoMovimiento.modificar.legend": "Modifique el concepto de movimiento",
+	
+	
+	"conceptoMovimiento.eliminar.confirm.title": "Eliminar Concepto de Movimiento",
+	"conceptoMovimiento.eliminar.confirm.msg": "Confirma eliminar el concepto de movimiento seleccionado?",
+	
+	"conceptoMovimiento.buscar": "Buscar conceptos de movimientos",
+	"conceptoMovimiento.buscar.again": "Afinar búsqueda...",
+	
+	"conceptoMovimiento.oid":"Id",
+	"conceptoMovimiento.nombre":"Nombre",
+	
+	"marcaProducto.title": "Listado de Marcas de Producto",
+	"marcaProducto.agregar": "Agregar una marca de producto",
+	"marcaProducto.agregar.title": "Agregar una marca de producto",
+	"marcaProducto.agregar.legend": "Ingrese una marca de producto",
+	
+	"marcaProducto.modificar": "Modificar marca de producto",
+	"marcaProducto.modificar.title": "Modificar marca de producto",
+	"marcaProducto.modificar.legend": "Modifique la marca de producto",
+	
+	
+	"marcaProducto.eliminar.confirm.title": "Eliminar Marca de Producto",
+	"marcaProducto.eliminar.confirm.msg": "Confirma eliminar la marca seleccionado?",
+	
+	"marcaProducto.buscar": "Buscar marcas de producto",
+	"marcaProducto.buscar.again": "Afinar búsqueda...",
+	
+	"marcaProducto.oid":"Id",
+	"marcaProducto.nombre":"Nombre",
+	
+	"iva.title": "Listado de Ivas",
+	"iva.agregar": "Agregar un iva",
+	"iva.agregar.title": "Agregar un iva",
+	"iva.agregar.legend": "Ingrese un iva",
+	
+	"iva.modificar": "Modificar iva",
+	"iva.modificar.title": "Modificar iva",
+	"iva.modificar.legend": "Modifique el iva",
+	
+	
+	"iva.eliminar.confirm.title": "Eliminar iva",
+	"iva.eliminar.confirm.msg": "Confirma eliminar el iva?",
+	
+	"iva.buscar": "Buscar ivas",
+	"iva.buscar.again": "Afinar búsqueda...",
+	
+	"iva.oid":"Id",
+	"iva.nombre":"Nombre",
+	
+	"clientes.title": "Listado de Clientes",
+	"cliente.agregar": "Agregar un nuevo cliente",
+	"cliente.agregar.title": "Agregar un nuevo cliente",
+	"cliente.agregar.legend": "Ingrese los datos del cliente",
+	
+	"cliente.modificar": "Modificar datos del cliente",
+	"cliente.modificar.title": "Modificar cliente",
+	"cliente.modificar.legend": "Modifique los datos del cliente",
+	
+	"cliente.buscar": "Buscar clientes",
+	"cliente.buscar.again": "Afinar búsqueda...",
+
+	"cliente.eliminar.confirm.title": "Eliminar Cliente",
+	"cliente.eliminar.confirm.msg": "Confirma eliminar el cliente seleccionado?",
+	
+	"cliente.cuentaCorriente": "Ver cuenta corriente",
+	"cliente.cuentaCorriente.title": "Cuenta Corriente de Cliente",
+	"cliente.cuentaCorriente.legend": "Cuenta Corriente de $1",
+	
+	"cliente.cuentaCorriente.agregar": "Crear cuenta corriente",
+	"cliente.cuentaCorriente.agregar.confirm.msg": "Confirma crear una cuenta corriente para el cliente?",
+	"cliente.cuentaCorriente.agregar.confirm.title": "Confirmar cuenta corriente",
+			
+	"cliente.nombre":"Nombre y apellido",
+	"cliente.nombre.unicity":"Ya existe un cliente para el nombre indicado",
+	"cliente.nombre.required":"Ingrese un nombre",
+	
+	"cliente.fechaAlta":"Fecha de alta",
+	"cliente.edad":"Edad",
+	
+	
+	"cliente.nacimiento":"Fecha de nacimiento",
+	"cliente.mail":"E-mail",
+   	"cliente.oid":"Código",
+   	"cliente.documento":"Documento",
+   	"cliente.documento.unicity":"Ya existe un cliente con el documento indicado",
+   	
+   	"cliente.telefono":"Teléfono",
+   	"cliente.celular":"Celular",
+   	"cliente.laboral":"Tel. Laboral",
+   	"cliente.telefonos":"Teléfonos",
+   	"cliente.direccion":"Domicilio",
+   	"cliente.sexo":"Sexo",
+   	"cliente.documento":"Nro Documento",
+   	"cliente.tipoDocumento":"Tipo Documento",
+   	"cliente.observaciones":"Notas",
+   	"cliente.cuit":"Cuit",
+   	
+   	"cliente.saldo":"Saldo Cta Cte",
+   	
+   	"serviciosTecnico.title": "Listado de Servicios Técnicos",
+	"servicioTecnico.agregar": "Agregar un nuevo Servicio Técnico",
+	"servicioTecnico.agregar.title": "Agregar un nuevo Servicio Técnico",
+	"servicioTecnico.agregar.legend": "Ingrese los datos del Servicio Técnico",
+	
+	"servicioTecnico.modificar": "Modificar datos del Servicio Técnico",
+	"servicioTecnico.modificar.title": "Modificar Servicio Técnico",
+	"servicioTecnico.modificar.legend": "Modifique los datos del Servicio Técnico",
+	
+	"servicioTecnico.buscar": "Buscar Servicios Técnicos",
+	"servicioTecnico.buscar.again": "Afinar búsqueda...",
+   
+   	"servicioTecnico.cliente":"Cliente",
+   	"servicioTecnico.servicioTecnico":"Producto - Cliente - Identificador",
+   	"servicioTecnico.estado":"Estado del cobro",
+   	"servicioTecnico.oid":"Código",
+   	"servicioTecnico.fecha":"Fecha/Hora",
+   	"servicioTecnico.prioridad":"Prioridad",
+   	"servicioTecnico.tipoProducto":"Tipo de Producto",
+   	"servicioTecnico.marcaProducto":"Marca",
+   	"servicioTecnico.detalleFalla":"Detalle de la falla",
+   	"servicioTecnico.observaciones":"Notas",
+   	"servicioTecnico.fuente":"Fuente",
+   	"servicioTecnico.modelo":"Modelo",
+   	"servicioTecnico.bateria":"Batería",
+	"servicioTecnico.clave":"Clave",   
+	"servicioTecnico.reparaHasta":"Repara hasta $",
+	"servicioTecnico.diasDemora":"Días de Demora",
+	"servicioTecnico.diagnostico":"Diagnóstico",
+	"servicioTecnico.solucion":"Solución",
+	"servicioTecnico.monto":"Precio",
+	"servicioTecnico.estadoServicio":"Estado del servicio",
+	"servicioTecnico.montoPagado":"Pagado",
+	"servicioTecnico.montoDebe":"Debe",
+	
+	"servicioTecnico.filter.hoy": "Servicios Técnicos del día",
+	"servicioTecnico.filter.semanaActual": "Servicios Técnicos de la semana",
+	"servicioTecnico.filter.mesActual": "Servicios Técnicos de este mes",
+	"servicioTecnico.filter.anioActual": "Servicios Técnicos de este año",
+	"servicioTecnico.filter.impagas": "Servicios Técnicos impagos",
+	"servicioTecnico.filter.anuladas": "Servicios Técnicos anulados",
+	
+	"servicioTecnico.anular": "Anular servicio técnico",
+	"servicioTecnico.anular.title": "Anular servicio técnico",
+	"anularServicioTecnico.servicioTecnico.legend": "Confirme la anulación del servicio técnico",
+	"anularServicioTecnico.confirm": "Confirmar",
+	"anularServicioTecnico.cancel": "Cancelar",
+	
+	"servicioTecnico.cobrar.title": "Cobrar servicio técnico",
+	"cobrarServicioTecnico.servicioTecnico.title": "Cobrar servicio técnico",
+	"cobrarServicioTecnico.servicioTecnico.legend": "Datos del servicio técnico a cobrar",
+	"cobrarServicioTecnico.forma_pago.legend": "Elija la forma de pago",
+		
+   	"documento.tipo":"Tipo",
+   	"documento.nro":"Nro",
+
+   	"condicionIva.ri.label":"Responsable Inscripto",
+   	"condicionIva.rni.label":"Responsable NO Inscripto",
+   	"condicionIva.monotributo.label":"Responsable Monotributo",
+   	"condicionIva.exento.label":"Exento",
+   	
+   	"localidad.agregar.legend": "Ingrese los datos de la localidad",
+   	"localidad.oid":"Id",
+   	"localidad.nombre":"Nombre",
+	"localidad.nombre.required":"Ingrese un nombre",
+   	
+	
+ 
+ 	"dia.domingo.label": "Domingo",
+	"dia.lunes.label": "Lunes",
+	"dia.martes.label": "Martes",
+	"dia.miercoles.label": "Miércoles",
+	"dia.jueves.label": "Jueves",
+	"dia.viernes.label": "Viernes",
+	"dia.sabado.label": "Sábado",
+    								   
+   	"tipo.documento.dni.label":"DNI", 
+	"tipo.documento.le.label":"LE",
+	"tipo.documento.lc.label":"LC",
+	"tipo.documento.ci.label":"CI",
+	"tipo.documento.pasaporte.label":"Pasaporte",
+	
+	"prioridad.baja.label":"Baja", 
+	"prioridad.media.label":"Media", 
+	"prioridad.alta.label":"Alta", 
+	
+	"sexo.m.label": "Masculino",
+	"sexo.f.label": "Femenino",
+	
+	"iva.ri.label":"Responsable Inscripto",
+	"iva.m.label": "Responsable Monotributo",
+	"iva.rni.label":"Responsable No Inscripto",
+	"iva.e.label":"Excento",
+	"iva.cf.label":"Consumido Final",
+
+	"cuenta.saldo":"Saldo",
+	"cuenta.banco":"Banco",
+	"cuenta.cuentaSocio":"Socio",
+
+	
+
+	"movimientoCaja.cuenta": "Cuenta",
+	"movimientoCaja.oid": "Código",
+	"movimientoCaja.fecha": "Fecha y hora",
+	"movimientoCaja.concepto": "Concepto",
+	"movimientoCaja.observaciones": "Observaciones",
+	"movimientoCaja.haber": "Haber",
+	"movimientoCaja.debe": "Debe",
+	"movimientoCaja.saldo": "Saldo",
+
+	"productos.title": "Listado de Productos",
+	
+	"productos.debajoStockMinimo.vacio" : "No hay productos por debajo del stock mínimo",
+	
+	"producto.listar": "Listado de Productos",
+	"producto.agregar": "Agregar un nuevo producto",
+	"producto.agregar.title": "Agregar un nuevo producto",
+	"producto.agregar.legend": "Ingrese los datos del producto",
+	
+	"producto.modificar": "Modificar datos del producto",
+	"producto.modificar.title": "Modificar producto",
+	"producto.modificar.legend": "Modifique los datos del producto",
+	
+	"producto.eliminar.confirm.title": "Eliminar Producto",
+	"producto.eliminar.confirm.msg": "Confirma eliminar el producto seleccionado?",
+	
+	"producto.buscar": "Buscar productos",
+	"producto.buscar.again": "Afinar búsqueda...",
+
+	"producto.nombre":"Nombre",
+	"producto.nombre.unicity":"Ya existe un producto para el nombre indicado",
+	"producto.nombre.required":"Ingrese un nombre",
+	
+	"producto.codigo":"Código",
+	"producto.codigo.required":"Ingrese un código",
+	"producto.codigo.unicity":"Ya existe un producto para el código indicado",
+	"producto.codigo.required":"Ingrese un código",
+
+	"producto.tipoProducto":"Tipo",
+	"producto.marcaProducto":"Marca",
+	"producto.nombre.required":"Ingrese un nombre",
+   	"producto.oid":"Código interno",
+   	"producto.vencimiento":"Vencimiento",
+   	"producto.costo":"Costo",
+	"producto.costo.required":"Ingrese un costo",
+   	"producto.precioLista":"Precio de lista",
+	"producto.precioLista.required":"Ingrese un precio de lista",
+   	"producto.stock":"Stock",
+   	"producto.stockMinimo":"Stock Mínimo",
+   	"producto.iva":"I.V.A.",
+	"producto.iva.required":"Ingrese el iva del producto",
+   	"producto.precioEfectivo":"Precio en efectivo",
+   	"producto.descripcion":"Descripción",
+   	"producto.porcentajeGanancia":"% de ganancia",
+   	"producto.porcentajeGanancia.required":"Ingrese un porcentaje de ganancia",
+   	  	
+   	"producto.disponible.label":"Disponible",
+  	"producto.agotado.label":"Agotado",
+  	"producto.no_disponible.label":"NO Disponible",
+  	
+  	"producto.stock.modificar" : "Recibir productos",
+  	
+  	
+  	"producto.filter.porVencer": "Productos vencidos o por vencer",
+  	"producto.filter.debajoStockMinimo": "Productos por debajo del stock mínimo",
+  	
+  	
+   	
+  	"stock.modificar.title" : "Recibir productos",
+  	"stock.modificar.productos_legend" : "Productos a recibir",
+  	"stock.modificar.accesos_rapidos.legend" : "Accesos rápidos a productos",
+  	
+  	"stock.producto" : "Producto",
+  	"stock.cantidadRecibir" : "Cantidad a recibir",
+  	
+	"ventas.title": "Listado de Ventas",
+	"venta.buscar": "Buscar ventas",
+	
+	"venta.filter.hoy": "Ventas del día",
+	"venta.filter.semanaActual": "Ventas de la semana",
+	"venta.filter.mesActual": "Ventas de este mes",
+	"venta.filter.anioActual": "Ventas de este año",
+	"venta.filter.impagas": "Ventas impagas",
+	"venta.filter.anuladas": "Ventas anuladas",
+	
+	"venta.agregar": "Agregar venta",
+	"venta.agregar.title": "Agregar una nueva venta",
+	"venta.agregar.legend": "Ingrese los datos de la venta",
+	"venta.agregar.detalles_legend": "Productos a vender",
+	"venta.agregar.accesos_rapidos.legend": "Accesos rápidos a productos",
+	
+	"venta.confirmar": "Confirmar venta",
+	"venta.cancelar": "Cancelar y volver",
+	
+	"venta.cobrar": "Cobrar venta",
+	"venta.cobrar.title": "Cobrar venta",
+	
+	"venta.cobrar.montoDebe.required": "La venta ya está PAGA, no puede volver a pagarla",
+	"venta.cobrar.cajaAbierta.required": "La caja con la cual desea pagar está cerrada",
+	
+	"venta.anular": "Anular venta",
+	"venta.anular.title": "Anular venta",
+	
+	"anularVenta.venta.legend": "Confirme la anulación de la venta",
+	"anularVenta.confirm": "Confirmar",
+	"anularVenta.cancel": "Cancelar",
+	
+	"venta.oid": "Identificador",
+	"venta.fecha": "Fecha y hora",
+	"venta.sucursal": "Sucursal",
+	"venta.vendedor": "Vendedor",
+	"venta.cliente": "Cliente",
+	"venta.cliente.required": "Debe ingresar un cliente",
+	"venta.observaciones": "Observaciones",
+	"venta.observaciones.placeholder": "Aquí puede escribir notas que considera necesarias",
+	"venta.monto": "Monto",
+	"venta.montoPagado": "Pagado",
+	"venta.montoActualizado": "Monto Actualizado",
+	"venta.montoDebe": "Adeudado",
+	"venta.estado": "Estado",
+	
+	"venta.detalles": "Detalle de venta",
+	"venta.detalles.required": "Debe ingresar al menos un producto a vender",
+	"venta.detalles.totales": "Totales",
+	"venta.detalles.total": "Total",
+	
+	"venta.impaga.label": "Impaga",
+	"venta.pagada.label": "Pagada",
+	"venta.pagada_parcialmente.label": "Pagada parcialmente",
+	"venta.anulada.label": "Anulada",
+	
+	"venta.detalle.producto": "Producto",
+	"venta.detalle.cantidad": "Cantidad",
+	"venta.detalle.precio": "Precio",
+	"venta.detalle.subtotal": "Subtotal",
+	"venta.detalle.precioLista": "Precio Lista",
+	"venta.detalle.precioEfectivo": "Precio Efectivo",
+	
+	"venta.devolver.title": "Devolución de venta",
+	"venta.devoluciones.required": "Debe ingresar al menos un producto a devolver",
+	"venta.devoluciones.totales": "Totales",
+	"venta.devoluciones.total": "Total",
+	
+	
+	"venta.devolucion.producto": "Producto",
+	"venta.devolucion.cantidad": "Cantidad",
+	"venta.devolucion.precio": "Precio",
+	"venta.devolucion.subtotal": "Subtotal",
+	"venta.devolucion.precioLista": "Precio Lista",
+	"venta.devolucion.precioEfectivo": "Precio Efectivo",
+	
+	"venta.agregar.producto.title": "Agregra productos",
+	
+	
+	"devolverVenta.confirm": "Confirmar devolución",
+	"devolverVenta.cancel": "Cancelar y volver",
+	
+	"agregarProducto.confirm": "Confirmar",
+	"agregarProducto.cancel": "Cancelar y volver",
+	
+	"presupuestos.title": "Listado de Presupuestos",
+	"presupuesto.buscar": "Buscar presupuestos",
+	
+	"presupuesto.filter.hoy": "Presupuestos del día",
+	"presupuesto.filter.semanaActual": "Presupuestos de la semana",
+	"presupuesto.filter.mesActual": "Presupuestos de este mes",
+	"presupuesto.filter.anioActual": "Presupuestos de este año",
+	"presupuesto.filter.pendientes": "Presupuestos pendientes",
+	"presupuesto.filter.anulados": "Presupuestos anulados",
+	
+	"presupuesto.agregar": "Agregar presupuesto",
+	"presupuesto.agregar.title": "Agregar un nuevo presupuesto",
+	"presupuesto.agregar.legend": "Ingrese los datos del presupuesto",
+	"presupuesto.agregar.detalles_legend": "Productos a presupuestar",
+	
+	
+	"presupuesto.confirmar": "Confirmar presupuesto",
+	"presupuesto.cancelar": "Cancelar y volver",
+	
+	"presupuesto.cobrar": "Cobrar presupuesto",
+	"presupuesto.cobrar.title": "Cobrar presupuesto",
+	
+	"presupuesto.anular": "Anular presupuesto",
+	"presupuesto.anular.title": "Anular presupuesto",
+	
+	"anularPresupuesto.presupuesto.legend": "Confirme la anulación de la presupuesto",
+	"anularPresupuesto.confirm": "Confirmar",
+	"anularPresupuesto.cancel": "Cancelar",
+	
+	"presupuesto.aprobar": "Aprobar presupuesto",
+	"presupuesto.aprobar.title": "Aprobar presupuesto",
+	
+	"presupuesto.aprobar.confirm.title": "Aprobar Presupuesto",
+	"presupuesto.aprobar.confirm.msg": "Confirma aprobar el presupuesto seleccionado?",
+	
+	"aprobarPresupuesto.presupuesto.legend": "Confirme la aprobación de la presupuesto",
+	"aprobarPresupuesto.confirm": "Confirmar",
+	"aprobarPresupuesto.cancel": "Cancelar",
+	
+	
+	"presupuesto.oid": "Identificador",
+	"presupuesto.fecha": "Fecha y hora",
+	
+	
+	"presupuesto.cliente": "Cliente",
+	"presupuesto.cliente.required": "Debe ingresar un cliente",
+	"presupuesto.observaciones": "Observaciones",
+	"presupuesto.observaciones.placeholder": "Aquí puede escribir notas que considera necesarias",
+	"presupuesto.monto": "Monto",
+	"presupuesto.estado": "Estado",
+	
+	"presupuesto.detalles": "Detalle de presupuesto",
+	"presupuesto.detalles.required": "Debe ingresar al menos un producto a presupuestar",
+	"presupuesto.detalles.totales": "Totales",
+	"presupuesto.detalles.total": "Total",
+	
+	"presupuesto.pendiente.label": "Pendiente",
+	"presupuesto.aprobado.label": "Aprobado",
+	
+	"presupuesto.anulado.label": "Anulado",
+	
+	"presupuesto.detalle.producto": "Producto",
+	"presupuesto.detalle.cantidad": "Cantidad",
+	"presupuesto.detalle.precio": "Precio",
+	"presupuesto.detalle.subtotal": "Subtotal",
+	"presupuesto.detalle.precioLista": "Precio Lista",
+	"presupuesto.detalle.precioEfectivo": "Precio Efectivo",
+	
+	
+	
+	"cobrarVenta.venta.title": "Cobrar venta",
+	"cobrarVenta.venta.legend": "Datos de la venta a cobrar",
+	"cobrarVenta.forma_pago.legend": "Elija la forma de pago",
+
+	"venta.stats.mes.monto" : "Total del mes",
+	"venta.stats.dia.monto" : "Total del día",
+	"venta.stats.dia.cantidad" : "Ventas del día",
+	
+	"forma.pago.efectivo": "Efectivo",
+	"forma.pago.tarjeta": "Tarjeta",
+	"forma.pago.ctacte": "Cuenta Corriente",
+	"forma.pago.cajaChica": "Caja chica",
+	"forma.pago.bapro": "BAPRO",
+	"forma.pago.pendiente": "Pendiente",
+	
+	"devolverVenta.venta.title": "Devoluciones",
+	"devolverVenta.venta.legend": "Datos de la venta a devolver",
+	"venta.agregar.devoluciones_legend": "Productos a devolver",
+	
+	"agregarProducto.venta.title": "Agregar Producto",
+	"agregarProducto.venta.legend": "Datos de la venta a agregar producto",
+	"venta.agregar.productos_legend": "Productos a agregar",
+	
+	
+	"gastos.title": "Listado de Gastos",
+	"gasto.agregar": "Agregar gasto",
+	"gasto.agregar.title": "Agregar un nuevo gasto",
+	"gasto.agregar.legend": "Ingrese los datos del gasto",
+	
+	"gastos.por_vencer.vacio" : "No hay gastos vencidos o por vencer",
+	
+	"gasto.confirmar": "Confirmar gasto",
+	"gasto.cancelar": "Cancelar y volver",
+	
+	"gasto.buscar": "Buscar gastos",
+	
+	"gasto.filter.hoy": "Gastos del día",
+	"gasto.filter.semanaActual": "Gastos de la semana",
+	"gasto.filter.mesActual": "Gastos de este mes",
+	"gasto.filter.anioActual": "Gastos de este año",
+	"gasto.filter.impagos": "Gastos impagos",
+	"gasto.filter.porVencer": "Gastos vencidos o por vencer",
+	
+	
+	"gasto.pagar": "Pagar gasto",
+	"gasto.pagar.title": "Pagar gasto",
+	
+	"gasto.pagar.imapago.required": "El gasto ya fue PAGADO, no puede volver a pagarlo",
+	
+	"gasto.anular": "Anular gasto",
+	"gasto.anular.title": "Anular gasto",
+	
+	"anularGasto.gasto.legend": "Confirme la anulación del gasto",
+	"anularGasto.confirm": "Confirmar",
+	"anularGasto.cancel": "Cancelar",
+	
+	"gasto.oid": "Código",
+	"gasto.fecha": "Fecha",
+	"gasto.monto.required":"Ingrese una fecha",
+	"gasto.fechaVencimiento": "F.Vencimiento",
+	
+	"gasto.concepto": "Concepto",
+	"gasto.observaciones": "Observaciones",
+	"gasto.observaciones.placeholder": "Aquí puede escribir notas que considera necesarias",
+	"gasto.monto": "Monto",
+	"gasto.monto.required":"Ingrese un monto",
+	"gasto.estado": "Estado",
+	
+	"gasto.impago.label": "Impago",
+	"gasto.pagado.label": "Pagado",
+	"gasto.anulado.label": "Anulado",
+	
+	
+	"pagar.gasto.title": "Cobrar gasto",
+	"pagar.gasto.legend": "Datos del gasto a pagar",
+	"pagar.forma_pago.legend": "Elija la forma de pago",
+	
+	
+	"pagoPremios.title": "Listado de Pagos de premios",
+	"pagoPremio.agregar": "Agregar premio",
+	"pagoPremio.agregar.title": "Agregar premio",
+	"pagoPremio.agregar.legend": "Ingrese los datos del premio",
+	
+	"pagoPremio.confirmar": "Confirmar premio",
+	"pagoPremio.cancelar": "Cancelar y volver",
+	
+	"pagoPremio.buscar": "Buscar premios",
+	
+	"pagoPremio.pagar": "Pagar premio",
+	"pagoPremio.pagar.title": "Pagar premio",
+	
+	"pagoPremio.pagar.pendiente.required": "El premio ya fue PAGADO y/o ANULADO, no puede pagarlo",
+	
+	"pagoPremio.anular": "Anular premio",
+	"pagoPremio.anular.title": "Anular premio",
+
+	"pagoPremio.pendiente": "Pendiente de pago",
+	
+	"anularPagoPremio.pagoPremio.legend": "Confirme la anulación del premio",
+	"anularPagoPremio.confirm": "Confirmar",
+	"anularPagoPremio.cancel": "Cancelar",
+	
+	"pagoPremio.oid": "Código",
+	"pagoPremio.fechaHora": "Fecha y hora",
+	"pagoPremio.fechaJugada": "Fecha jugada",
+	"pagoPremio.codigoJugada": "Código jugada",
+	"pagoPremio.sucursal": "Sucursal",
+	"pagoPremio.cliente": "Cliente",
+	"pagoPremio.producto": "Producto",
+	"pagoPremio.observaciones": "Observaciones",
+	"pagoPremio.observaciones.placeholder": "Aquí puede escribir notas que considera necesarias",
+	"pagoPremio.importe": "Importe",
+	"pagoPremio.estado": "Estado",
+	
+	"pago.pendiente.label": "Pendiente",
+	"pago.realizado.label": "Pagado",
+	"pago.anulado.label": "Anulado",
+	
+	
+	"pagar.pagoPremio.title": "Pagar premio",
+	"pagar.pagoPremio.legend": "Datos del premio a pagar",
+	"pagar.forma_pago.legend": "Elija la forma de pago",
+	
+
+	"pago.ctacte.agregar": "Cobrar Cta Cte",
+	
+	
+	"caja.movimientos.title": "Movimientos de caja en efectivo",
+  	"caja.movimientos.buscar": "Movimientos de caja en efectivo",
+  	
+  	"cajaTarjeta.movimientos.title": "Movimientos de caja con tarjetas",
+  	"cajaTarjeta.movimientos.buscar": "Movimientos de caja con tarjetas",
+  	
+  	"venta.movimientos.title": "Movimientos de ventas",
+  	"venta.movimientos.buscar": "Movimientos de ventas",
+  	
+  	"gasto.movimientos.title": "Movimientos de gastos",
+  	"gasto.movimientos.buscar": "Movimientos de gastos",
+  	
+  	"pedido.movimientos.title": "Movimientos de pedidos",
+  	"pedido.movimientos.buscar": "Movimientos de pedidos",
+  	
+  	"servicioTecnico.movimientos.title": "Movimientos de servicios técnicos",
+  	"servicioTecnico.movimientos.buscar": "Movimientos de servicios técnicos",
+  	
+  	"cajaCtaCte.movimientos.title": "Movimientos de caja en cuenta corriente",
+  	"cajaCtaCte.movimientos.buscar": "Movimientos de caja en cuenta corriente",
+  	
+  	"banco.saldo": "Saldo",
+  	"banco.saldoInicial": "Saldo inicial",
+  	"banco.numero": "Nro de cuenta",
+  	"banco.cuit": "Cuit",
+  	"banco.titular": "Titular",
+  	"banco.nombre": "Banco",
+  	"banco.cbu": "CBU",
+  	
+  	"cuentaCorriente.saldo": "Saldo",
+	"cuentaCorriente.numero": "Número",
+	"cuentaCorriente.cliente": "Titular",
+	
+	"cuentaCorriente.cobrar.legend": "Cobrar deuda de Cuenta Corriente",
+	"cuentaCorriente.actualizar.legend": "Actualizar deuda de Cuenta Corriente",
+	
+	"cobrarCtaCte.title": "Cobrar Cuenta Corriente",
+	"cobrarCtaCte.ctacte_legend": "Cuenta Corriente a cobrar",
+	"cobrarCtaCte.cliente": "Cliente",
+	"cobrarCtaCte.monto": "Monto",
+	"cobrarCtaCte.monto.required": "Ingrese un Monto",
+	"cobrarCtaCte.destino": "Cobrar en",
+	"cobrarCtaCte.observaciones": "Observaciones",
+	"cobrarCtaCte.observaciones.placeholder": "Puede indicar algunas observaciones",
+	
+	"actualizarCtaCte.title": "Actualizar Deuda",
+	"actualizarCtaCte.ctacte_legend": "Cuenta Corriente a actualizar",
+	
+	
+	
+	"cuentaCorriente.movimientos.buscar": "Cuenta Corriente de $1",
+	"cuentaCorriente.movimientos.title": "Movimientos de Cta. Cte.",
+
+	"cuenta.saldo": "Saldo",
+  	
+  	"cobrarTarjeta.title": "Cobrar venta con tarjeta",
+  	"ventaCobrarTarjeta.agregar.legend": "Cobrar venta con tarjeta",
+  	"servicioTecnicoCobrarTarjeta.agregar.legend": "Cobrar servicio técnico con tarjeta",
+  	
+  	"tarjeta.tarjetas": "Tarjetas del cliente",
+  	"tarjeta.titular": "Titular",
+  	"tarjeta.titular.required": "Ingrese un Titular",
+  	"tarjeta.marca": "Marca",
+  	"tarjeta.marca.required": "Ingrese una Marca",
+  	"tarjeta.nro": "Número",
+  	"tarjeta.nro.required": "Ingrese un Número",
+  	"tarjeta.monto": "Monto a cobrar",
+  	"tarjeta.montoActualizado": "Monto actualizado",
+  	"tarjeta.monto.required": "Ingrese un monto",
+  	
+  	
+	
+	"historicoEstados.title": "Historial",
+	
+	
+	
+	
+	"historicoEstados.buscar": "Buscar historial",
+	"historicoEstados.buscar.again": "Afinar búsqueda...",
+	
+	"historicoEstado.oid":"Id",
+	"historicoEstado.servicioTecnico":"Servicio Técnico",
+	"historicoEstado.fechaDesde":"Desde",
+	"historicoEstado.fechaHasta":"Hasta",
+	"historicoEstado.estado":"Estado",
+	"historicoEstado.prioridad":"Prioridad",
+	"historicoEstado.diagnostico":"Diagnostico",
+	"historicoEstado.solucion":"Solución",
+	"historicoEstado.observaciones":"Observaciones",
+	"historicoEstado.monto":"Precio",
+  	
+ 
+ 	"pedidos.title": "Listado de Pedidos",
+	
+	"pedido.buscar": "Buscar pedidos",
+	
+	"pedido.filter.hoy": "Pedidos del día",
+	"pedido.filter.semanaActual": "Pedidos de la semana",
+	"pedido.filter.mesActual": "Pedidos de este mes",
+	"pedido.filter.anioActual": "Pedidos de este año",
+	"pedido.filter.impagos": "Pedidos impagos",
+	"pedido.filter.anulados": "Pedidos anulados",
+	"pedido.filter.sinRecibir": "Pedidos pendientes",
+	
+	"pedido.criteria_recibido": "Recibido",
+	"pedido.criteria_recibido.todos": "- sin especificar -",
+	"pedido.criteria_recibido.sinrecibir": "No",
+	"pedido.criteria_recibido.recibidos": "Si",
+	
+	"pedido.agregar": "Agregar pedido",
+	"pedido.agregar.title": "Agregar un nuevo pedido",
+	"pedido.agregar.legend": "Ingrese los datos del pedido",
+	"pedido.agregar.detalles_legend": "Productos a pedir",
+	"pedido.agregar.accesos_rapidos.legend": "Accesos rápidos a productos",
+	
+	"pedido.confirmar": "Confirmar pedido",
+	"pedido.cancelar": "Cancelar y volver",
+	
+	"pedido.pagar": "Pagar pedido",
+	"pedido.pagar.title": "Pagar pedido",
+	
+	"pedido.pagar.montoDebe.required": "El pedido ya fue PAGADO, no puede volver a pagarlo",
+	"pedido.pagar.cajaAbierta.required": "La caja con la cual desea pagar está cerrada",
+	
+	"pedido.anular": "Anular pedido",
+	"pedido.anular.title": "Anular pedido",
+	
+	"anularPedido.pedido.legend": "Confirme la anulación del pedido",
+	"anularPedido.confirm": "Confirmar",
+	"anularPedido.cancel": "Cancelar",
+	
+	"pedido.recibir": "Recibir pedido",
+	"pedido.recibir.title": "Recibir pedido",
+
+	"recibirPedido.pedido.legend": "Confirme la recepción del pedido",
+	"recibirPedido.confirm": "Confirmar",
+	"recibirPedido.cancel": "Cancelar",
+	
+	"pedido.anularRecibir": "Anular Recepción de pedido",
+	"pedido.anularRecibir.title": "Anular Recepción de pedido",
+	
+	"anularRecibirPedido.pedido.legend": "Confirme la anulación de la recepción del pedido",
+	"anularRecibirPedido.informacion_msg": "La anulación de la recepción del pedido reestablecerá el stock de los productos sin anular el pedido",
+	"anularRecibirPedido.confirm": "Confirmar",
+	"anularRecibirPedido.cancel": "Cancelar",
+
+	"pedido.oid": "Id",
+	"pedido.fechaHora": "Fecha y hora",
+	"pedido.fechaHoraRecibido": "Recibido",
+	"pedido.sucursal": "Sucursal",
+	"pedido.proveedor": "Proveedor",
+	"pedido.observaciones": "Observaciones",
+	"pedido.observaciones.placeholder": "Aquí puede escribir notas que considera necesarias",
+	"pedido.monto": "Monto",
+	"pedido.userRecibido": "Recibió",
+	"pedido.user": "Ordenó",
+	"pedido.estado": "Estado",
+	"pedido.recibido": "Recibido",
+	
+	"pedido.impago.label": "Impago",
+	"pedido.pagado.label": "Pagado",
+	"pedido.anulado.label": "Anulado",
+	
+	
+	"pedido.detalles": "Detalle de pedido",
+	"pedido.detalles.required": "Debe ingresar al menos un producto a pedir",
+	"pedido.detalles.totales": "Totales",
+	
+	"pedido.detalle.producto": "Producto",
+	"pedido.detalle.cantidad": "Cantidad",
+	"pedido.detalle.precio": "Precio Compra",
+	"pedido.detalle.subtotal": "Subtotal",
+	
+	"pagar.pedido.title": "Pagar pedido",
+	"pagar.pedido.legend": "Datos del pedido a pagar",
+
+	"proveedors.title": "Listado de Proveedores",
+	"proveedor.agregar": "Agregar un nuevo proveedor",
+	"proveedor.agregar.title": "Agregar un nuevo proveedor",
+	"proveedor.agregar.legend": "Ingrese los datos del proveedor",
+	
+	"proveedor.modificar": "Modificar datos del proveedor",
+	"proveedor.modificar.title": "Modificar proveedor",
+	"proveedor.modificar.legend": "Modifique los datos del proveedor",
+	
+	"proveedor.buscar": "Buscar proveedores",
+	"proveedor.buscar.again": "Afinar búsqueda...",
+
+	"proveedor.nombre":"Nombre",
+	"proveedor.nombre.unicity":"Ya existe un proveedor para el nombre indicado",
+	"proveedor.nombre.required":"Ingrese un nombre",
+	
+	"proveedor.fechaAlta":"Fecha de alta",
+	"proveedor.edad":"Edad",
+	
+	"proveedor.apellido":"Apellido",
+	"proveedor.fechaNacimiento":"Fecha de nacimiento",
+	"proveedor.email":"E-mail",
+   	"proveedor.oid":"Código",
+   	"proveedor.documento":"Documento",
+   	"proveedor.documento.unicity":"Ya existe un proveedor con el documento indicado",
+   	
+   	"proveedor.telefono":"Teléfono",
+   	"proveedor.celular":"Celular",
+   	"proveedor.laboral":"Laboral",
+   	"proveedor.telefonos":"Teléfonos",
+   	"proveedor.domicilio":"Domicilio",
+   	"proveedor.mail":"E-mail",
+   	"proveedor.nroDocumento":"Nro Documento",
+   	"proveedor.direccion":"Dirección",
+   	"proveedor.observaciones":"Notas",
+   	"proveedor.cuit":"Cuit",
+   	"proveedor.razonSocial":"Razón Social",
+   	"proveedor.razonSocial.required":"Ingrese una Razón Social",
+   	"proveedor.condicionIva":"Condición Iva",
+   	"proveedor.saldo":"Saldo",
+
+	"proveedor.eliminar.confirm.title": "Eliminar Proveedor",
+	"proveedor.eliminar.confirm.msg": "Confirma eliminar el proveedor seleccionado?",
+	
+	
+	"balanceDia.legend": "Balance del día",
+	"balanceDia.detalle_ventas.legend": "Detalle de ventas x Categoría", 
+ 	"balanceDia.title":"Balance del día",
+ 	"balanceDia.pagos":"Pagos cta. cte.",
+ 	"balanceDia.ventas":"Ventas",
+ 	"balanceDia.gastos":"Gastos",
+ 	"balanceDia.fecha":"Fecha",
+ 	"balanceDia.ganancias":"Ganancias",
+
+	
+	"balanceMes.legend": "Balance del mes",
+ 	"balanceMes.title":"Balance del mes",
+ 	"balanceMes.pagos":"Pagos",
+ 	"balanceMes.ventas":"Ventas",
+ 	"balanceMes.gastos":"Gastos",
+ 	"balanceMes.comisiones":"Comisiones",
+ 	"balanceMes.ganancia":"Ganancia",
+ 	"balanceMes.mes":"Mes",
+
+	"balanceAnio.legend": "Balance del Año",
+ 	"balanceAnio.title":"Balance del Año",
+ 	"balanceAnio.pagos":"Pagos",
+ 	"balanceAnio.ventas":"Ventas",
+ 	"balanceAnio.gastos":"Gastos",
+ 	"balanceAnio.comisiones":"Comisiones",
+ 	"balanceAnio.ganancia":"Ganancia",
+ 	"balanceAnio.mes":"Mes",
+ 	"balanceAnio.anio":"Año",
+
+	"balanceAnio.detalle_mes.legend":"Detalle mensual",
+	
+	
+
+  	"grid.operaciones": "Operaciones",
+   	"grid.resultados": "Resultados de la búsqueda",
+   	
+   	"entitygrid.pagination.of": "de",
+   	"entitygrid.pagination.next": "siguiente",
+   	"entitygrid.pagination.previous": "anterior",
+    "entitygrid.pagination.first": "primero",
+    "entitygrid.pagination.last": "último",
+
+	
+    "form.aceptar": "Confirmar",
+    "form.cancelar": "Cancelar",
+    "form.volver": "Volver",
+    
+    "filter.buscar": "Buscar",
+    "filter.buscar.again": "Afinar búsqueda...",
+    "filter.resultados": "Resultados de la búsqueda",
+    "filter.opciones": "Opciones",
+    "filter.close.label": "Cerrar",
+ 
+ 	"addpopup.legend":"Agregar",
+    
+    "autocomplete.empty.result": "No se encontraron resultados",
+    "autocomplete.entity.add": "Agregar",
+ 
+    "uploadImage.legend": "Selecciona una imagen para el producto",
+    "uploadImage.file": "Imagen",
+ 	"uploadImage.thumbnail_msg": "Recorta la imagen para generar el thumbnail",
+    "uploadImage.thumbnail": "Thumbnail",
+ 
+ 	"criteria.fechaDesde": "Desde",
+    "criteria.fechaHasta": "Hasta",
+    "criteria.mes": "Mes",
+ 	
+ 	"mes.enero":"Enero",
+ 	"mes.febrero":"Febrero",
+ 	"mes.marzo":"Marzo",
+ 	"mes.abril":"Abril",
+ 	"mes.mayo":"Mayo",
+ 	"mes.junio":"Junio",
+ 	"mes.julio":"Julio",
+ 	"mes.agosto":"Agosto",
+ 	"mes.septiembre":"Septiembre",
+ 	"mes.octubre":"Octubre",
+ 	"mes.noviembre":"Noviembre",
+ 	"mes.diciembre":"Diciembre",
+ 	
+ 	"informeSemanal.oid":"Id",
+ 	"informeSemanal.fechaDesde":"Desde",
+ 	"informeSemanal.fechaHasta":"Hasta",
+ 	"informeSemanal.ventas":"Ventas",
+ 	"informeSemanal.cancelaciones":"Cancelaciones",
+ 	"informeSemanal.pagos":"Pagos",
+ 	"informeSemanal.pagoPorLoteria":"Pago por Lotería",
+ 	"informeSemanal.comision":"Comisión",
+ 	"informeSemanal.ajustes":"Ajustes",
+ 	"informeSemanal.deuda":"Deuda",
+ 	"informeSemanal.user":"Usuario",
+ 	"informeSemanal.sucursal":"Sucursal",
+ 	
+ 	"informesSemanales.title":"Informes semanales",
+ 	"informeSemanal.buscar": "Buscar informes",
+ 	"informeSemanal.buscar.again": "Buscar informes",
+ 	"informeSemanal.agregar.legend":"Informe semanal",
+ 	"informeSemanal.agregar.title":"Agregar informe semanal",
+ 	"informeSemanal.modificar.legend":"Informe semanal",
+ 	"informeSemanal.modificar.title":"Modificar informe semanal",
+ 	
+ 	"informeDiarioDebitoCredito.oid":"Id",
+ 	"informeDiarioDebitoCredito.fecha":"Recibido",
+ 	"informeDiarioDebitoCredito.fecha.required":"Ingrese la fecha de Recibido",
+ 	"informeDiarioDebitoCredito.fechaVencimiento":"Vencimiento",
+ 	"informeDiarioDebitoCredito.fechaVencimiento.required":"Ingrese la fecha de Vencimiento",
+ 	"informeDiarioDebitoCredito.estado":"Estado",
+ 	"informeDiarioDebitoCredito.estado.required":"Indique el Estado",
+ 	"informeDiarioDebitoCredito.debito":"Débito",
+ 	"informeDiarioDebitoCredito.debito.required":"Ingrese el monto a débitar",
+ 	"informeDiarioDebitoCredito.credito":"Crédito",
+ 	"informeDiarioDebitoCredito.credito.required":"Ingrese el monto a acreditar",
+ 	"informeDiarioDebitoCredito.user":"Usuario",
+ 	"informeDiarioDebitoCredito.sucursal":"Sucursal",
+ 	"informeDiarioDebitoCredito.banco":"Banco",
+ 	
+ 	"informesDiariosDebitoCredito.title":"Informes diarios Débito/Crédito",
+ 	"informeDiarioDebitoCredito.buscar": "Buscar informes",
+ 	"informeDiarioDebitoCredito.buscar.again": "Buscar informes",
+ 	"informeDiarioDebitoCredito.agregar.legend":"Informe diario débito/crédito",
+ 	"informeDiarioDebitoCredito.agregar.title":"Agregar diario débito/crédito",
+ 	"informeDiarioDebitoCredito.modificar.legend":"Informe diario débito/crédito",
+ 	"informeDiarioDebitoCredito.modificar.title":"Modificar diario débito/crédito",
+ 	
+ 	"informeDiarioDebitoCredito.pendiente.label": "Pendiente",
+ 	"informeDiarioDebitoCredito.depositado.label": "Depositado",
+ 	"informeDiarioDebitoCredito.debitado.label": "Debitado",
+ 	"informeDiarioDebitoCredito.acreditado.label": "Acreditado",
+ 	
+ 
+ 	"informeDiarioComision.oid":"Id",
+ 	"informeDiarioComision.fecha":"Fecha",
+ 	"informeDiarioComision.fecha.required":"Ingrese la fecha del informe",
+ 	"informeDiarioComision.fecha.repetida":"Ya existe un informe para la fecha indicada",
+ 	"informeDiarioComision.comision":"Comisión",
+ 	"informeDiarioComision.comision.required":"Ingrese el monto de la comisión",
+ 	"informeDiarioComision.user":"Usuario",
+ 	"informeDiarioComision.sucursal":"Sucursal",
+ 	
+ 	"informesDiariosComision.title":"Informes diarios Comisiones",
+ 	"informeDiarioComision.buscar": "Buscar informes",
+ 	"informeDiarioComision.buscar.again": "Buscar informes",
+ 	"informeDiarioComision.agregar.legend":"Informe diario comisión",
+ 	"informeDiarioComision.agregar.title":"Agregar diario comisión",
+ 	"informeDiarioComision.modificar.legend":"Informe diario comisión",
+ 	"informeDiarioComision.modificar.title":"Modificar diario débito/crédito",
+ 	
+ 	"stats.informeSemanal.title":"Reportes / Informes Semanales",
+ 	"stats.informeSemanal.reportes.legend":"Reportes sobre Informes Semanales",
+ 	"stats.informeSemanal.porMes.legend":"Totales por mes",
+ 	
+ 	"stats.informeSemanal.porMes.legend": "Importes totales por mes",
+ 	"stats.informes.informeSemanalPorMes.anio": "Año",
+ 	"stats.informes.informeSemanalPorMes.totalVentas": "Importe Total por Ventas",
+ 	"stats.informes.informeSemanalPorMes.totalPagos": "Importe Total por Pagos",
+ 	"stats.informes.informeSemanalPorMes.totalComisiones": "Importe Total por Comisiones",
+ 
+ 	"stats.informeSemanal.porSemana.legend": "Importes totales por semana",
+ 	
+ 	"stats.informeDiarioComision.porMes.legend": "Comisión mensual",
+ 	"stats.informes.informeDiarioComisionPorMes.anio": "Año",
+ 	"stats.informes.informeDiarioComisionPorMes.totalComisiones": "Total por Comisiones",
+ 
+ 	"sorteos.title": "Listado de Sorteos",
+	"sorteo.agregar": "Agregar nuevo sorteo",
+	"sorteo.agregar.title": "Agregar nuevo sorteo",
+	"sorteo.agregar.legend": "Ingrese los datos del sorteo",
+	
+	"sorteo.modificar": "Modificar datos del sorteo",
+	"sorteo.modificar.title": "Modificar sorteo",
+	"sorteo.modificar.legend": "Modifique los datos del sorteo",
+
+	"sorteo.buscar": "Buscar sorteos",
+	"sorteo.buscar.again": "Afinar búsqueda...",
+
+	"sorteo.oid":"#",
+	"sorteo.fecha":"Fecha",
+	"sorteo.fecha.required":"Ingrese una fecha",
+	"sorteo.hora":"Hora",
+	"sorteo.hora.required":"Ingrese una hora",
+	"sorteo.tipoSorteo":"Tipo de Sorteo",
+	"sorteo.tipoSorteo.required":"Indique el Tipo de Sorteo",
+	"sorteo.loteria":"Lotería",
+	"sorteo.loteria.required":"Indique la Lotería",
+	"sorteo.cabeza":"Cabeza",
+	"sorteo.cabeza.required":"Ingresa la cabeza",
+
+	"sorteo.repetido":"El sorteo ya fue ingresado",
+
+
+	"reportes.title": "Reportes",
+ 	"reportes.legend": "Reportes",
+ 	
+ 	"reportes.gastos.gastosAnio.legend": "Gastos x Año x Concepto",
+ 	
+ 	"gastosAnio.anio": "Año",
+ 	"gastosAnio.gastos": "Gastos totales",
+ 	"gastosAnio.detalle_mes.legend": "Detalles x mes",
+ 	
+ 	"gastosAnio.concepto": "Concepto",
+ 	"gastosAnio.totalAnio": "Total",
+ 	
+ 	"nuestrasFijas.title": "Nuestras fijas",
+	"nuestraFija.agregar": "Agregar nuestra fija",
+	"nuestraFija.agregar.title": "Agregar nuestra fija",
+	"nuestraFija.agregar.legend": "Ingrese los datos de la fija",
+	
+	"nuestraFija.modificar": "Modificar nuestra fija",
+	"nuestraFija.modificar.title": "Modificar nuestra fija",
+	"nuestraFija.modificar.legend": "Modifique los datos de la fija",
+	
+	"nuestraFija.buscar": "Buscar nuestras fijas",
+	"nuestraFija.buscar.again": "Afinar búsqueda...",
+ 
+ 	"nuestraFija.oid": "Id",
+ 
+ 	"nuestraFija.fecha": "Fecha",
+ 	"nuestraFija.fecha.unicity":"Ya existe una fija para la fecha indicada",
+	"nuestraFija.fecha.required":"Ingrese una fecha",
+	
+	"nuestraFija.numero1": "Nro. 1",
+	"nuestraFija.salio1": "Salió Nro. 1?",
+ 	"nuestraFija.numero2": "Nro. 2",
+	"nuestraFija.salio2": "Salió Nro. 2?",
+ 	"nuestraFija.numero3": "Nro. 3",
+	"nuestraFija.salio3": "Salió Nro. 3?",
+ 	
+ 	"criteria.sin_especificar": "- sin especificar -",
+	"criteria.no": "No",
+	"criteria.si": "Si",
+	"criteria.predefinidos": "Filtros predefinidos",
+	"criteria.estado": "Estado",
+	"criteria.anio": "Año",
+	"criteria.fecha": "Fecha",
+	      
+    "xxx": "yyy",
+    
+    "menu.combos":"Combos",
+	"menu.combos.listar":"Listado de Combos",
+	"menu.combos.modificar":"Modificar Combo",
+	"menu.combos.agregar":"Agregar Combo",
+	"menu.combo.eliminar":"Eliminar el Combo",
+	
+	"combos.title": "Listado de Combos",
+	
+	"combo.listar": "Listado de Combos",
+	"combo.agregar": "Agregar un nuevo combo",
+	"combo.agregar.title": "Agregar un nuevo combo",
+	"combo.agregar.legend": "Ingrese los datos del combo",
+	
+	"combo.modificar": "Modificar datos del combo",
+	"combo.modificar.title": "Modificar combo",
+	"combo.modificar.legend": "Modifique los datos del combo",
+	
+	"combo.eliminar.confirm.title": "Eliminar Combo",
+	"combo.eliminar.confirm.msg": "Confirma eliminar el combo seleccionado?",
+	
+	"combo.buscar": "Buscar combos",
+	"combo.buscar.again": "Afinar búsqueda...",
+
+	"combo.nombre":"Nombre",
+	"combo.nombre.unicity":"Ya existe un combo para el nombre indicado",
+	"combo.nombre.required":"Ingrese un nombre",
+	
+	
+	
+	"combo.nombre.required":"Ingrese un nombre",
+   	"combo.oid":"Código",
+   	
+   	
+   	
+   	"combo.precio":"Precio",
+   	
+   	"combo.oid": "Identificador",
+	"combo.fecha": "Fecha y hora",
+	
+	"combo.nombre": "Nombre",
+	"combo.nombre.required": "Debe ingresar un nombre",
+	"combo.nombre.placeholder": "Nombre",
+	
+	"combo.monto": "Monto",
+	
+	
+	"combo.productos": "Producto de combo",
+	"combo.productos.required": "Debe ingresar al menos un producto",
+	"combo.productos.totales": "Totales",
+	"combo.productos.total": "Total",
+	
+	"combo.producto.producto": "Producto",
+	"combo.producto.cantidad": "Cantidad",
+	"combo.producto.precio": "Precio",
+	"combo.producto.subtotal": "Subtotal",
+	
+	"combo.agregar.productos_legend": "Productos",
+	
+	"combo.confirmar": "Confirmar combo",
+	"combo.cancelar": "Cancelar y volver",
+	
+	"venta.detalle.combo": "Combo",
+	
+	"menu.clientesCtaCte.listar":"Cuentas Corrientes",
+	
+	"clientesCtaCte.title": "Cuentas Corrientes",
+	
+	"clienteCtaCte.buscar": "Buscar cuentas corrientes"
+   
+   
+}

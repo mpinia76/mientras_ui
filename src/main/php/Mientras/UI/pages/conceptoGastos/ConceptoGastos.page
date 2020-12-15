@@ -1,0 +1,13 @@
+<rasty specificationClass="Mientras\UI\pages\conceptoGastos\ConceptoGastos" templateLocation="pages/conceptoGastos/ConceptoGastos.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+
+	<component id="conceptoGastosFilter" type="ConceptoGastoFilter">
+		<param name="gridModelClazz" value="modelClazz" />
+		<param name="uicriteriaClazz" value="uicriteriaClazz" />
+		<param name="legend" value="msg:conceptoGasto.buscar" />
+		<param name="legendAgain" value="msg:conceptoGasto.buscar.again" />
+		<param name="resultDiv" value="str:searchdiv" />
+	</component>
+	
+</rasty>

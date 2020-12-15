@@ -1,0 +1,69 @@
+<!-- BEGIN: main-->
+
+<style>
+.totales{
+
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.pedido div.desc{
+	font-size: 16px;
+	display:block;
+}
+.pedido div.desc label{
+	font-size: 100%;
+	font-style: italic;
+	font-weight: bold;
+	float:left;
+	width: 40%;
+}
+
+.importe{
+	font-size: 18px !important;
+	color: blue;
+	font-weight: bold !important;
+}
+
+.pedido div.desc span{
+	text-align:right;
+	float:right;
+	width: 50%;
+}
+
+</style>
+
+<div id="editar">
+
+	<div align="justify">
+		<p class="titulo">{title}</p>
+	</div>
+
+	<form class="cuentas_form" id="pedido_form" onsubmit="return validate('pedido_form');" action="{linkAnularPedido}" method="POST">
+		<input type="hidden" value="{pedidoOid}" name="pedidoOid" />
+	
+		<fieldset class="pedido">
+			<legend>{pedido_legend}</legend>
+			
+			<rasty id="pedido" />
+			
+		</fieldset>
+	</form>
+	<!-- BEGIN: msg_error -->
+	<fieldset class="ui-state-error">
+			{msg}	
+	</fieldset>
+	<!-- END: msg_error -->
+	<form  class="cuentas_form" id="buttons{inputId}">
+		<fieldset class="tblFooters">
+		
+			<button  class="shortcut" type="button"  id="input_submit" onclick="javascript: submitFormulario('pedido_form'); "><i class="icon-checkmark on-left"></i>{lbl_submit}</button>
+	
+			<button  class="shortcut" type="button"  id="input_button_2" onclick="javascript: history.back(); "><i class="icon-cancel-2 on-left"></i>{lbl_cancel}</button>
+		
+		</fieldset>
+	</form>	
+	
+	
+</div>
+<!-- END: main-->

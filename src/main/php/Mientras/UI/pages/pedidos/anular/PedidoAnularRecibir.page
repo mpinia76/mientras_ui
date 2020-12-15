@@ -1,0 +1,13 @@
+<rasty specificationClass="Mientras\UI\pages\pedidos\anular\PedidoAnularRecibir" templateLocation="pages/pedidos/anular/PedidoAnularRecibir.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+
+	<param name="pedidoOid" value="get:pedidoOid" />
+	
+	<param name="error" value="get:error" />
+	
+	<component id="pedido" type="PedidoBox">
+		<param name="pedido" value="pedido" />
+	</component>
+	
+</rasty>

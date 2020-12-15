@@ -1,0 +1,39 @@
+.input-error {
+
+	/*border: 1px solid red;*/
+}
+
+.form-error-messages-wrapper{
+
+	padding:20px;
+}
+
+.input-error-message-wrapper{
+
+	padding:20px;
+}
+
+.form-error-messages{
+	padding: 20px;
+	border-radius: 5px;
+	border:1px solid red;
+	box-shadow:0 5px 60px #888888;
+}
+
+.input-error-message{
+	padding: 5px;
+	border-left:1px solid red;
+	display:block;
+}
+
+.form-error-messages .form-error-message{
+	display:block;
+}
+
+.form-error-messages .detalle{
+	display:none;
+}
+
+.form-error-messages #detalleError{
+	cursor: pointer;
+}

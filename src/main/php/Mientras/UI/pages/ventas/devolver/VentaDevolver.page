@@ -1,0 +1,70 @@
+<rasty specificationClass="Mientras\UI\pages\ventas\devolver\VentaDevolver" templateLocation="pages/ventas/devolver/VentaDevolver.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+
+	<param name="ventaOid" value="get:ventaOid" />
+	
+	<param name="error" value="get:error" />
+	
+	<component id="devolucionPrecioLista" type="InputCurrency">
+		<param name="inputId" value="str:devolucionPrecioLista" />
+		<param name="name" value="str:devolucionPrecioLista" />
+		<param name="value" value="devolucion.precioLista" />
+		<param name="size" value="str:10px" />
+		<param name="placeholder" value="msg:venta.devolucion.precioLista" />
+		<param name="autocomplete" value="str:off" />
+	</component>
+	
+	<component id="devolucionPrecioEfectivo" type="InputCurrency">
+		<param name="inputId" value="str:devolucionPrecioEfectivo" />
+		<param name="name" value="str:devolucionPrecioEfectivo" />
+		<param name="value" value="devolucion.precioEfectivo" />
+		<param name="placeholder" value="msg:venta.devolucion.precioEfectivo" />
+		<param name="autocomplete" value="str:off" />
+		<param name="size" value="str:10px" />
+	</component>
+	
+	<component id="devolucionPrecio" type="InputCurrency">
+		<param name="inputId" value="str:devolucionPrecio" />
+		<param name="name" value="str:devolucionPrecio" />
+		<param name="value" value="devolucion.precio" />
+		<param name="requiredMessage" value="msg:venta.devolucion.precio.required" />
+		<param name="placeholder" value="msg:venta.devolucion.precio" />
+		<param name="autocomplete" value="str:off" />
+		<param name="size" value="str:10px" />
+	</component>
+	
+	<component id="devolucionCosto" type="InputHidden">
+		<param name="inputId" value="str:devolucionCosto" />
+		<param name="name" value="str:devolucionCosto" />
+		<param name="value" value="devolucion.costo" />
+		
+	</component>
+	
+	<component id="devolucionCantidad" type="InputNumber">
+		<param name="inputId" value="str:devolucionCantidad" />
+		<param name="name" value="str:devolucionCantidad" />
+		<param name="value" value="devolucion.cantidad" />
+		<param name="requiredMessage" value="msg:venta.devolucion.cantidad.required" />
+		<param name="placeholder" value="msg:venta.devolucion.cantidad" />
+		<param name="autocomplete" value="str:off" />
+		<param name="size" value="str:10px" />
+	</component>
+	
+	<component id="devolucionProducto" type="InputFindEntity">
+		<param name="inputId" value="str:devolucionProducto" />
+		<param name="name" value="str:devolucionProducto" />
+		<param name="value" value="devolucion.producto" />
+		<param name="placeholder" value="msg:venta.devolucion.producto" />
+		<param name="finder" value="productoFinderClazz" />
+		<param name="hasPopup" value="boolean:true" />
+		<param name="popupFilterType" value="str:ProductoFilter" />
+		<param name="onSelectCallback" value="str:productochange" />
+		<param name="autocompleteHelpMsg" value="msg:obraSocial.ayuda.autocomplete" />
+	</component>
+	
+	
+	<component id="venta" type="VentaSinDevolucionesBox">
+		<param name="venta" value="venta" />
+	</component>
+</rasty>

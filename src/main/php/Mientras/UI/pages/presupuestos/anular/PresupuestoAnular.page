@@ -1,0 +1,13 @@
+<rasty specificationClass="Mientras\UI\pages\presupuestos\anular\PresupuestoAnular" templateLocation="pages/presupuestos/anular/PresupuestoAnular.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+
+	<param name="presupuestoOid" value="get:presupuestoOid" />
+	
+	<param name="error" value="get:error" />
+
+	<component id="presupuesto" type="PresupuestoBox">
+		<param name="presupuesto" value="presupuesto" />
+	</component>
+	
+</rasty>

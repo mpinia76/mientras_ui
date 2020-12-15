@@ -1,0 +1,12 @@
+<rasty specificationClass="Mientras\UI\pages\ventas\cobrar\VentaCobrar" templateLocation="pages/ventas/cobrar/VentaCobrar.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+
+	<param name="ventaOid" value="get:ventaOid" />
+	
+	<param name="error" value="get:error" />
+	
+	<component id="venta" type="VentaBox">
+		<param name="venta" value="venta" />
+	</component>
+</rasty>

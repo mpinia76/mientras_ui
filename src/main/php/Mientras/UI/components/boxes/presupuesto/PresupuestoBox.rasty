@@ -1,0 +1,15 @@
+<rasty specificationClass="Mientras\UI\components\boxes\presupuesto\PresupuestoBox" templateLocation="PresupuestoBox.htm">
+
+	<param name="presupuestoOid" value="get:presupuestoOid" />
+
+	
+
+	<component id="monto" type="InputCurrency">
+		<param name="inputId" value="str:monto" />
+		<param name="name" value="str:monto" />
+		<param name="requiredMessage" value="msg:presupuesto.detalle.precio.required" />
+		<param name="placeholder" value="msg:presupuesto.monto" />
+		<param name="autocomplete" value="str:off" />
+	</component>
+	
+</rasty>

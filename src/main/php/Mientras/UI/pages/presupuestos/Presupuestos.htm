@@ -1,0 +1,31 @@
+<!-- BEGIN: main-->
+<script>
+$(document).ready(function() {
+	//alert($("#presupuestoOid").val());
+	if($("#presupuestoOid").val()){
+		if(confirm("Desea imprimir el presupesto")){
+			gotoLink('{linkPresupuestoPDF}','_blank');
+			return false;
+		}
+	}
+})
+</script>
+<div class="grid" >
+	<input type="hidden" value="{presupuestoOid}" name="presupuestoOid" id="presupuestoOid" />
+    <div id="pedidos_filtros" class="grid_filters">
+        
+        <rasty id="presupuestosFilter" />
+        
+    </div>
+
+	<br class="clear">
+
+	<fieldset>
+        
+       	<legend>{legend_resultados}</legend>
+    		
+    	<div id="searchdiv" class="grid_searchdiv">
+		</div>
+    </fieldset>
+</div>
+<!-- END: main-->

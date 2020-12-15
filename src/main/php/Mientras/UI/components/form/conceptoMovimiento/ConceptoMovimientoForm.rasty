@@ -1,0 +1,30 @@
+<rasty specificationClass="Mientras\UI\components\form\conceptoMovimiento\ConceptoMovimientoForm" templateLocation="ConceptoMovimientoForm.htm">
+
+	<param name="error" value="get:error" />
+
+	<component id="backSuccess" type="InputHidden">
+		<param name="inputId" value="str:backToOnSuccess" />
+		<param name="name" value="str:backToOnSuccess" />
+		<param name="value" value="backToOnSuccess" />
+	</component>
+
+	<component id="oid" type="InputHidden">
+		<param name="inputId" value="str:oid" />
+		<param name="name" value="str:oid" />
+		<param name="value" value="conceptoMovimiento.oid" />
+	</component>
+
+
+	<component id="nombre" type="InputText">
+		<param name="inputId" value="str:nombre" />
+		<param name="name" value="str:nombre" />
+		<param name="value" value="conceptoMovimiento.nombre" />
+		<param name="requiredMessage" value="msg:conceptoMovimiento.nombre.required" />
+		<param name="placeholder" value="msg:conceptoMovimiento.nombre" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	
+	
+</rasty>

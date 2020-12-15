@@ -1,0 +1,30 @@
+<rasty specificationClass="Mientras\UI\components\form\tipoProducto\TipoProductoForm" templateLocation="TipoProductoForm.htm">
+
+	<param name="error" value="get:error" />
+
+	<component id="backSuccess" type="InputHidden">
+		<param name="inputId" value="str:backToOnSuccess" />
+		<param name="name" value="str:backToOnSuccess" />
+		<param name="value" value="backToOnSuccess" />
+	</component>
+
+	<component id="oid" type="InputHidden">
+		<param name="inputId" value="str:oid" />
+		<param name="name" value="str:oid" />
+		<param name="value" value="tipoProducto.oid" />
+	</component>
+
+
+	<component id="nombre" type="InputText">
+		<param name="inputId" value="str:nombre" />
+		<param name="name" value="str:nombre" />
+		<param name="value" value="tipoProducto.nombre" />
+		<param name="requiredMessage" value="msg:tipoProducto.nombre.required" />
+		<param name="placeholder" value="msg:tipoProducto.nombre" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	
+	
+</rasty>

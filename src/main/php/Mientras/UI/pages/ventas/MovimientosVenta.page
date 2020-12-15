@@ -1,0 +1,13 @@
+<rasty specificationClass="Mientras\UI\pages\ventas\MovimientosVenta" templateLocation="pages/ventas/MovimientosVenta.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+
+	<component id="movimientosFilter" type="MovimientoVentaFilter">
+		<param name="gridModelClazz" value="modelClazz" />
+		<param name="uicriteriaClazz" value="uicriteriaClazz" />
+		<param name="legend" value="msg:venta.movimientos.buscar" />
+		<param name="legendAgain" value="msg:venta.movimientos.buscar.again" />
+		<param name="resultDiv" value="str:searchdiv" />
+	</component>
+	
+</rasty>

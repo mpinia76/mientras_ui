@@ -1,0 +1,130 @@
+<!-- BEGIN: main-->
+<style>
+.totales-data-subtitle{
+	color: inherit;
+    display: block;
+    font-size: 12pt;
+}
+.totales-data-title{
+	color: inherit;
+    display: block;
+    font-size: 14pt;
+    text-align: right;
+    padding: 5px;
+}
+</style>
+<div class="tile-area tile-area-mj" style="width: 1390px;">
+        
+        <h2 class="tile-area-title fg-white">
+        	{app_title} <span class="fg-white">{app_subtitle}</span>
+        </h2>
+        
+        
+        <div class="user-id">
+            
+            <div class="user-id-image">
+                <a href="#" class="icon-user no-display1 dropdown-toggle">
+                </a>
+                <ul data-role="dropdown" class="dropdown-menu place-right" style="display: none;">
+                
+                <!-- BEGIN: menuOptionProfile -->
+		        	<li><a href="#" onclick="{onclick}" ><!-- BEGIN: image --><img style="border:0;margin-right:10px;width:24px;height: 24px;" src="{src}"/><!-- END: image --> {label}</a></li>
+		        <!-- END: menuOptionProfile -->
+                
+                <!-- BEGIN: menuOptionExit -->
+		        	<li><a class="element" href="#" onclick="{onclick}" ><!-- BEGIN: image --><img style="border:0;margin-right:10px;width:24px;height: 24px;" src="{src}"/><!-- END: image -->{label}</a></li>
+		        <!-- END: menuOptionExit -->
+                
+            </ul>
+            </div>
+            <div class="user-id-name">
+                <!-- span class="first-name">{user}</span-->
+                <span class="last-name" >{user}</span>
+            </div>
+            
+        </div>
+
+		
+		<div class="tile-group double">
+           <img border="0" alt="logo" name="imLogo" id="imLogo" src="{WEB_PATH}/css/images/logo.jpg">
+            
+       </div> 
+		
+		
+        <div class="tile-group double">
+           <div class="tile-group-title">{menu_cuentas}</div>
+	      
+           <a class="tile bg-cyan" href="{linkMovimientosCaja}">
+                <div class="tile-content">
+                	<div class="padding10">
+					<h1 class="fg-white ntm">{menu_caja}</h1>
+					</div>
+                </div>
+                <div class="brand bg-green fg-white" style="text-align: right;">
+					<span class="text" style="font-size:16pt;">
+						{saldo_caja}
+					</span>
+				</div>
+           </a>
+           <a class="tile bg-cyan" href="{linkMovimientosCajaTarjeta}">
+                <div class="tile-content">
+                	<div class="padding10">
+					<h1 class="fg-white ntm">{menu_cajaTarjeta}</h1>
+					</div>
+                </div>
+                <div class="brand bg-green fg-white" style="text-align: right;">
+					<span class="text" style="font-size:16pt;">
+						{saldo_cajaTarjeta}
+					</span>
+				</div>
+           </a>
+           <a class="tile bg-cyan" href="{linkMovimientosCajaCtaCte}">
+                <div class="tile-content">
+                	<div class="padding10">
+					<h1 class="fg-white ntm">{menu_cajaCtaCte}</h1>
+					</div>
+                </div>
+                <div class="brand bg-green fg-white" style="text-align: right;">
+					<span class="text" style="font-size:16pt;">
+						{saldo_cajaCtaCte}
+					</span>
+				</div>
+           </a>
+           
+           
+            <a class="tile bg-cyan" href="{linkMovimientosGastos}">
+                <div class="tile-content">
+                	<div class="padding10">
+					<h1 class="fg-white ntm">{menu_gastos}</h1>
+					</div>
+                </div>
+                <div class="brand bg-green fg-white" style="text-align: right;">
+					<span class="text" style="font-size:16pt;">
+						{saldo_gastos}
+					</span>
+				</div>
+           </a>
+           
+          
+          <a class="tile double bg-cyan" href="{linkMovimientosVentas}">
+                <div class="tile-content">
+                	<div class="padding10">
+					<h1 class="fg-white ntm">{menu_ventasProductos}</h1>
+					</div>
+                </div>
+                <div class="brand bg-green fg-white" style="text-align: right;">
+					<span class="text" style="font-size:14pt;">
+						
+						B:{saldo_ventas} N:{saldo_ganancias}
+					</span>
+				</div>
+           </a>
+            
+       </div>    
+        
+       
+       
+       
+    
+    </div>
+<!-- END: main-->

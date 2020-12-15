@@ -1,0 +1,1565 @@
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 468px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.row .col-1,.row .col-2,.row .col-3,.row .col-4,.row .col-5,.row .col-6,.row .col-7,.row .col-8,.row .col-9,.row .col-10,.row .col-11,.row .col-12{float:left;min-height:1px;padding:0px;position:relative;margin-bottom:0px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box; margin-left: 0px; }
+.row .col-1{width:8.33%}.row .col-2{width:16.66%}.row .col-3{width:25%}.row .col-4{width:33.33%}.row .col-5{width:41.66%}.row .col-6{width:50%}.row .col-7{width:58.33%}.row .col-8{width:66.66%}.row .col-9{width:75%}.row .col-10{width:83.33%}.row .col-11{width:91.66%}.row .col-12{width:100%}
+
+
+/* Max 767px
+================================================== */
+@media screen and (min-width: 100px) and (max-width: 800px) {
+	.row .col-1,
+	.row .col-2,
+	.row .col-3,
+	.row .col-4,
+	.row .col-5,
+	.row .col-6,
+	.row .col-7,
+	.row .col-8,
+	.row .col-9,
+	.row .col-10,
+	.row .col-11,
+	.row .col-12{width:100%!important;padding-top:0!important;margin-bottom:20px!important}
+	
+}
+
+.venta_left{
+	float:left;
+	width: 45%;
+}
+
+.venta_right{
+	float:right;
+	width: 55%;
+}
+
+
+@media (max-width: 767px) {
+  	.venta_left{
+		width: 100% ;
+		float:left;
+	}
+	.venta_right{
+		width: 100%;
+		float:right;
+	}
+}
+
+@media (max-width: 480px) {
+  	.venta_left{
+		width: 100%;
+		float:left;
+	}
+	.venta_right{
+		width: 100%;
+		float:right;
+	}
+
+}
+
+
+
+
+.criteria_left{
+	width: 50%;
+	float:left;
+}
+.criteria_left label, .criteria_right label{
+	text-align: left !important;
+}
+.criteria_right{
+	width: 50%;
+	float:right;
+}
+.tachado{
+
+	text-decoration: line-through;
+}
+
+.metro .navigation-bar-content [class*="icon-"] {
+    font-size: 21px !important;
+}
+
+.metro .icon-volver:before {
+    content: "";
+}
+
+.metro .icon-ver:before {
+    content: "";
+}
+
+.metro .icon-borrar:before {
+    content: "";
+}
+
+.metro .icon-tareas:before {
+    content: "";
+}
+
+.metro .icon-stats:before {
+    content: "";
+}
+.metro .icon-checkear:before {
+    content: "";
+    color: green;
+}
+
+.metro .icon-cancelar:before {
+    content: "";
+    color: red;
+}
+
+.metro .icon-anular:before {
+    content: "";
+    color: red;
+}
+
+.metro .icon-agregar:before {
+    content: "";
+    color: green;
+}
+
+.metro .icon-editar:before {
+    content: "";
+    color: blue;
+}
+
+.metro .icon-pagar:before {
+    content: "";
+}
+.metro .icon-home:before {
+    content: "";
+}
+
+.metro .icon-admin_home:before {
+	content: "";
+}
+
+.metro .icon-caja:before {
+    content: "";
+    /* content: url("../../css/images/cash_32.png"); */
+}
+
+.metro .icon-movimientos:before {
+    content: "";
+    /* content: url("../../css/images/cash_32.png"); */
+}
+
+.metro .icon-sorteos:before {
+    content: "";
+}
+
+.metro .icon-cerrar-caja:before {
+    content: "";
+}
+.metro .icon-seleccionar-caja:before {
+    content: "";
+}
+.metro .icon-abrir-caja:before {
+    content: "";
+}
+
+.metro .icon-retirar-efectivo:before {
+    content: "";
+}
+
+.metro .icon-informes-debito-credito:before {
+    content: "";
+}
+
+.metro .icon-informes-comision:before {
+    content: "";
+}
+
+.metro .icon-informes-semanales:before {
+    content: "";
+}
+
+.metro .icon-ingresar-efectivo:before {
+    content: "";
+}
+
+.metro .icon-depositar-efectivo:before {
+    content: "";
+}
+
+.metro .icon-sucursales:before {
+    /* content: ""; */
+    content: "";
+}
+
+.metro .icon-cobrar-cuentacorriente:before {
+    content: "";
+}
+
+
+.metro .icon-pedidos:before {
+    content: "";
+}
+
+.metro .icon-nuevo-pedido:before {
+    content: "";
+    
+}
+
+.metro .icon-nuestrafija:before {
+    content: "";
+}
+
+.metro .icon-recibir-pedido:before {
+    content: "";
+}
+
+.metro .icon-anularRecibir-pedido:before {
+    content: "";
+    color: red;
+}
+
+.metro .icon-bancos:before {
+    content: "";
+}
+
+.metro .icon-clientes:before {
+    content: "";
+}
+.metro .icon-empleados:before {
+    content: "";
+}
+
+.metro .icon-proveedores:before {
+    content: "";
+}
+
+.metro .icon-productos:before {
+    content: "";
+}
+
+.metro .icon-nuevo-gasto:before {
+    content: "";
+}
+.metro .icon-gastos:before {
+    /* content: ""; */
+    content: "";
+}
+
+.metro .icon-ventas:before {
+    content: "";
+}
+
+.metro .icon-nueva-venta:before {
+    content: "";
+}
+
+.metro .icon-cobrar-venta:before {
+    content: "";
+}
+
+
+.metro .icon-pagoPremios:before {
+    content: "";
+}
+
+.metro .icon-nuevo-pagoPremio:before {
+    /* content: ""; */
+    content: "";
+}
+
+
+.metro .icon-balance-caja:before {
+    content: "";
+}
+
+.metro .icon-balance-dia:before {
+    content: "";
+}
+
+.metro .icon-balance-mes:before {
+    content: "";
+}
+
+.metro .icon-balance-anio:before {
+    content: "";
+}
+
+.box_details table, .box_details table tr,.box_details table td{
+	border: 1px solid #DDD !important;
+}
+	
+.box_details thead th{
+	font-weight: bold;
+}
+.box_details tfoot td{
+	font-weight: bold;
+}
+
+.box_left{
+	width: 45%;
+	float:left;
+}
+
+.box_right{
+	width: 55%;
+	float:right;
+}
+
+.box {
+    /*color: #2B2B2B;*/
+    color:#000;
+    
+    /*float: right;*/
+    font-size: 100%;
+    /*height: 550px;*/
+    line-height: 28px;
+    overflow: hidden;
+    padding: 10px 0 0;
+    position: relative;
+    font-size: 13px;
+    font-weight: 300;
+    text-align: left;
+}
+.box .item {
+    -moz-box-sizing: border-box;
+    background: none repeat scroll 0 0 #F6FAFF;
+    border-bottom: 1px solid #D8D8D8;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.9) inset;
+    float: left;
+    padding: 0px;
+    width: 100%;
+}
+.box .item h2 {
+    /*color: #2B2B2B;*/
+    color:#000;
+    float: left;
+    font-size: 120%;
+    line-height: 18px;
+    margin: 5px 2% 0 30px;
+    font-weight: 400;
+}
+
+.box .item h2.saldo {
+    /*color: #2B2B2B;*/
+    font-size: 120%;
+
+}
+
+.box .item p {
+    float: right;
+    font-size: 100%;
+    line-height: 28px;
+    margin: 0;
+    margin-right:30px;
+    font-weight: bold;
+    /*width: 50%;*/
+    border-radius: 5px;
+    padding:4px;
+}
+
+.box .item p.saldo {
+    font-size: 120%;
+}
+
+
+.cuenta .desc, .gasto .desc, .venta .desc, .pagoPremio .desc{
+	-moz-box-sizing: border-box;
+    background: none repeat scroll 0 0 #F6FAFF;
+    border-bottom: 1px solid #D8D8D8;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.9) inset;
+    float: left;
+    padding: 5px;
+    width: 100%;
+}
+
+.cuenta div.desc span {
+    float: right;
+    text-align: right;
+    width: 50%;
+}
+
+.icon-checkmark{
+
+	color:green;
+}
+.icon-cancel-2{
+
+	color:red;
+}
+
+.accesos_rapidos button{
+
+	margin: 10px;
+}
+.align-r, .importe{
+
+	text-align: right;
+}
+
+.debe {
+    color: red;
+}
+
+.movimiento{
+    border-bottom: 1px solid #D8D8D8;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.9) inset;
+    float: left;
+    padding: 0px;
+    width: 100%;
+}
+
+.movimiento_odd{
+	background: none repeat scroll 0 0 #FFFFF4;
+}
+
+.movimiento_even{
+	background: none repeat scroll 0 0 #F6FAFF;
+}
+
+.movimiento_first {
+    border-radius: 15px 15px 0px  0px;
+}
+
+
+.movimiento_last {
+    border-radius: 0px  0px 15px 15px;
+}
+
+.movimiento h2 {
+    /*color: #2B2B2B;*/
+    color:#000;
+    float: left;
+    text-align: left;
+    font-size: 12px;
+    line-height: 0px;
+    margin: 5px 2% 0 10px;
+    /*width: 45%;*/
+    font-weight: 400;
+}
+
+.movimiento h2 span.fecha {
+    /*color: #2B2B2B;*/
+    font-size: 14px;
+
+}
+
+.movimiento h2 span.concepto{
+    /*color: #2B2B2B;*/
+
+}
+
+.movimiento p span.monto {
+    /*color: #2B2B2B;*/
+    font-size: 14px;
+}
+.movimiento p span.saldo {
+    /*color: #2B2B2B;*/
+    width: 90px;
+    
+}
+.movimiento p {
+    text-align: right;
+    float: right;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+    margin-right:30px;
+    font-weight: bold;
+    /*width: 50%;*/
+    border-radius: 5px;
+    padding:4px;
+}
+
+.movimiento p span.importe {
+}
+.movimiento span{
+	display: inline-block;
+	padding: 0 8px; 	
+}
+
+#agenda_diaria_totales {
+
+}
+
+#agenda_diaria_totales span{
+
+	padding: 0 10px;
+	font-size: 120%;
+}
+
+#agenda_diaria_totales span.turno_ensala{
+
+	font-weight: bold;
+	
+}
+
+#agenda_diaria_totales span.turno_totales{
+
+	background-color: #CCC;
+	font-weight: bold;
+}
+
+.ui-datepicker-week-end a{
+
+	color:red !important;
+	font-weight: bold !important; 
+}
+
+.uppercase{
+	text-transform: uppercase;
+}
+
+.currentTime{
+	font-style: bold;
+	font-size: 120%;
+}
+
+.btn-icon-finalizar-turno{
+	background: url("images/turno_finalizar.png") no-repeat scroll 0 0;
+}
+
+.btn-icon-editar{
+	/*background: url("images/sprite_black2.png") no-repeat scroll -3px -1px transparent;*/
+		
+	background: url("images/edit2.png") -3px -1px no-repeat transparent;	
+}
+
+.btn-icon-agregar{
+	background: url("images/add_16.png") no-repeat scroll 0px 1px
+		transparent;
+}
+
+.btn-icon-eliminar{
+	background: url("images/sprite_black2.png") no-repeat scroll  -65px -43px
+		transparent;
+}
+/* historia de navegación de la ayuda */
+
+.ui-ayuda-turnos-panel{
+	background: none repeat scroll 0 0 #ffffff;
+	border-radius: 5px;
+	border: 1px solid #AAAAAA;
+	z-index:5000;
+	padding: 10px 30px;
+	overflow: auto;
+}
+
+
+/* turnos */
+
+.turno{
+	display: block;
+	border-bottom: 4px solid #D8D8D8;
+	border-left: 8px solid #D8D8D8;
+	padding:7px;
+	
+	/*color: #444;*/
+    color:#000;
+    
+	position:relative;
+}
+.turno:hover{
+
+	/*background: -moz-linear-gradient(center top , #FDFDFD, #EEEEEE) repeat scroll 0 0 #EEEEEE;*/
+	background-color: #D8D8D8;
+}
+
+
+
+.turno_actions{
+	position:absolute;
+	bottom:5px;
+	right: 0;
+}
+
+
+.turno_right{
+	float:right;
+	width: 70%;
+	text-align: left;
+}
+
+.turno_left{
+	float: left;
+	width: 30%;
+}
+.turno_left span{
+	display:block;
+	text-align:left;
+	padding:5px;
+	
+}
+
+.turno_right span{
+	display:block;
+	text-align:left;
+	padding:5px;
+	margin-left:15px;
+	
+}
+.turno_fecha{
+	font-size: 120%;
+	font-weight: bold;
+}
+
+.turno_hora{
+	font-weight: bold;
+}
+
+.turno_empleado{
+}
+
+.turno_estado{
+}
+
+.turno_obraSocial{
+	font-style: italic;
+}
+
+.dato_personal{
+	display: block;
+	border-bottom: 4px solid #D8D8D8;
+	border-left: 8px solid #D8D8D8;
+	padding:7px;
+	color:#444;
+	position:relative;
+}
+.dato_personal:hover{
+
+	/*background: -moz-linear-gradient(center top , #FDFDFD, #EEEEEE) repeat scroll 0 0 #EEEEEE;*/
+	background-color: #D8D8D8;
+}
+
+.dato_personal_right{
+	float:right;
+	width: 70%;
+	text-align: left;
+}
+
+.dato_personal_left{
+	float: left;
+	width: 30%;
+}
+.dato_personal_left span{
+	display:block;
+	text-align:left;
+	padding:5px;
+	font-weight: bold;
+	
+}
+
+
+.practica, .resumen{
+	display: block;
+	border-bottom: 4px solid #D8D8D8;
+	border-left: 8px solid #D8D8D8;
+	padding:7px;
+	/*color: #444;*/
+    color:#000;
+    
+	position:relative;
+}
+.practica:hover, .resumen:hover{
+
+	/*background: -moz-linear-gradient(center top , #FDFDFD, #EEEEEE) repeat scroll 0 0 #EEEEEE;*/
+	background-color: #CCC;
+}
+
+.practica_actions, .resumen_actions{
+	position:absolute;
+	bottom:5px;
+	right: 0;
+}
+
+.practica div.actions, .resumen div.actions{
+	top: 0px;
+	right:0;
+	position:absolute;
+	display:none;
+}
+
+
+
+.practica_right, .resumen_right{
+	float:right;
+	width: 70%;
+	text-align: left;
+	font-size: 130%;
+}
+
+.practica_left, .resumen_left{
+	float: left;
+	width: 30%;
+}
+.practica_left span, .resumen_left span{
+	display:block;
+	text-align:left;
+	padding:5px;
+	
+}
+
+.fecha_hoy{
+	font-weight: bold !important;
+}
+.escribir_observaciones{
+	font-weight: bold !important;
+	color:red !important;
+}
+.practica_fecha, .resumen_fecha{
+	font-size: 120%;
+	font-weight: bold;
+}
+
+.practica_nomenclador{
+	font-weight: bold;
+}
+
+.practica_profesional, .resumen_profesional{
+}
+
+.practica_obraSocial{
+	font-style: italic;
+}
+
+/*agenda*/
+
+.referencias{
+    
+    position: relative;
+    width: 50%;
+	
+}
+
+.referencia{
+    /*color: #2B2B2B;*/
+    color:#000;
+    
+    /*float: right;*/
+    font-size: 14px;
+    /*height: 550px;*/
+    line-height: 28px;
+    overflow: hidden;
+    padding: 10px 0 0;
+    position: relative;
+    font-size: 13px;
+    font-weight: 300;
+    text-align: left;
+	
+}
+.referencia span{
+	/*color: #2B2B2B;*/
+    color:#000;
+    
+    float: left;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 5px 2% 0 0;
+    /*width: 80%;*/
+    font-weight: 400;
+	
+}
+.referencia p{
+	background: none repeat scroll 0 0 #F6FAFF;
+    border-bottom: 1px solid #D8D8D8;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.9) inset;
+    float: left;
+    padding: 4px 30px;
+    width: 70%;
+}
+
+.agenda_actions{
+	text-align: center;
+	font-size: 50%;
+	white-space: nowrap;
+}
+
+.turnoNoDisponible{
+	color:white;
+	background: #FF1E4F;
+	border:0px;
+	text-align: center;
+	font-weight: bold;
+	text-shadow: none;
+}
+
+.turno_libre{
+	background-color: white;
+	
+}
+.turno_cancelado{
+	background-color: red;
+	color:white;
+}
+.turno_asignado{
+	background-color: #FFBF00 ;
+	color:#333001;
+}
+.turno_atendido{
+	background-color: #00CCCC;
+	color:white;
+}
+
+.turno_ensala{
+	background-color: #F7FE2E;
+}
+.turno_encurso{
+	background-color: #58C76C;
+	color:#333001;
+}
+.turno_nodisponible{
+	background-color: #FE2E2E;
+	color:white;
+	font-weight: bold;
+}
+
+.prioridad_normal{
+	
+}
+.prioridad_media{
+	border-left: 4px solid blue;
+}
+.prioridad_alta{
+	border-left: 4px solid red;
+}
+
+#agenda_no_atiende{
+	width: 80%;
+	text-align: center;
+	font-size: 150%;
+	color:red;
+	margin:10%;
+}
+
+#agenda{
+	overflow: auto;
+	max-height: 400px;
+}
+
+.agenda_turnos{
+	font-size: 100%;
+}
+
+.agenda_turnos tr:hover{
+	background-color: #D8D8D8;
+}
+
+#fecha_title{
+	font-size: 100%;
+	font-weight: bold;
+	margin-right: 50px;
+}
+
+
+.franja_horaria{
+	background-color: #BCC6C9;
+    border: 1px solid;
+    vertical-align: middle;
+    font-weight: bold;
+    color:black;
+}
+
+#turnos_left .totales{
+	font-size:100%;
+}
+
+/* empleado stats */
+#empleado_stats{
+	margin: 30px auto 0;
+    width: 100%;
+	text-align: center;
+	
+}
+#empleado_stats_left{
+	float: left;
+	width: 25%;
+	position:relative;
+}
+
+#empleado_stats_right{
+	float: right;
+	width: 75%;
+}
+
+.reporte_item{
+	display: block;
+	border-bottom: 4px solid #D8D8D8;
+	border-left: 8px solid #D8D8D8;
+	padding:7px;
+	color:#444;
+	position:relative;
+}
+.reporte_item:hover{
+
+	/*background: -moz-linear-gradient(center top , #FDFDFD, #EEEEEE) repeat scroll 0 0 #EEEEEE;*/
+	background-color: #D8D8D8;
+}
+
+/* historia clínica quick */
+#historiaClinica_quick{
+	margin: 30px auto 0;
+    width: 100%;
+	text-align: center;
+	
+}
+.historiaClinica_quick_left{
+	float: left;
+	width: 40%;
+	position:relative;
+}
+
+.historiaClinica_quick_right{
+	float: right;
+	width: 60%;
+}
+
+/*home empleado*/
+#empleado_home{
+	margin: 30px auto 0;
+    width: 100%;
+	text-align: center;
+	
+}
+#empleado_home_left{
+	float: left;
+	width: 50%;
+	position:relative;
+}
+
+#empleado_home_right{
+	float: right;
+	width: 50%;
+}
+
+#empleado_home .title{
+	font-weight: bold;
+	font-size: 130%;
+	color:white;
+	width: 100%;
+	margin-bottom: 10px;
+	float:left;
+	display: none;    
+}
+
+
+#totalesReporte {
+    /*color: #2B2B2B;*/
+    color:#000;
+    
+    /*float: right;*/
+    font-size: 14px;
+    /*height: 550px;*/
+    line-height: 28px;
+    overflow: hidden;
+    padding: 10px 0 0;
+    position: relative;
+    font-size: 13px;
+    font-weight: 300;
+    text-align: left;
+}
+#totalesReporte .total {
+    -moz-box-sizing: border-box;
+    background: none repeat scroll 0 0 #F6FAFF;
+    border-bottom: 1px solid #D8D8D8;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.9) inset;
+    float: left;
+    padding: 0px;
+    width: 100%;
+}
+#totalesReporte .total h2 {
+    /*color: #2B2B2B;*/
+    color:#000;
+    float: left;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 5px 2% 0 30px;
+    width: 80%;
+    font-weight: 400;
+}
+
+#totalesReporte .total p {
+    float: right;
+    font-size: 14px;
+    line-height: 28px;
+    margin: 0;
+    margin-right:30px;
+    font-weight: bold;
+    /*width: 50%;*/
+    border-radius: 5px;
+    padding:4px;
+}
+
+
+
+fieldset .agenda {
+
+	text-shadow: none;
+}
+
+.agenda {
+    /*color: #2B2B2B;*/
+    color:#000;
+    
+    /*float: right;*/
+    font-size: 14px;
+    /*height: 550px;*/
+    /*line-height: 28px;*/
+    overflow: hidden;
+    padding: 10px 0 0;
+    position: relative;
+    font-size: 13px;
+    font-weight: 300;
+    text-align: left;
+    width: 100%;
+}
+
+#empleado_home .totalPacientes{
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+
+.agenda_turno.odd {
+    background: none repeat scroll 0 0 #FFFFF4;
+}
+
+.agenda_turno.first {
+    border-radius: 15px 15px 0px  0px;
+}
+
+
+.agenda_turno.last {
+    border-radius: 0px  0px 15px 15px;
+}
+.agenda_turno {
+    -moz-box-sizing: border-box;
+    background: none repeat scroll 0 0 #F6FAFF;
+    border-bottom: 1px solid #D8D8D8;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.9) inset;
+    float: left;
+    padding: 0px;
+   	width: 100%;
+    
+}
+
+.agenda_turno:hover{
+
+	/*background: -moz-linear-gradient(center top , #FDFDFD, #EEEEEE) repeat scroll 0 0 #EEEEEE;*/
+	background-color: #D8D8D8;
+}
+ 
+.agenda_turno h2 {
+    /*color: #2B2B2B;*/
+    color:#000;
+    
+    float: left;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 5px 2% 0 0;
+    padding: 5px 0 5px 30px;
+    width: 70%;
+    font-weight: 400;
+}
+
+.agenda_turno.nodisponible {
+    background: none repeat scroll 0 0 red;
+}
+
+.agenda_turno.nodisponible h2{
+    color:white;
+    text-shadow: none;
+    font-weight: bold;
+}
+.agenda_turno.nodisponible p{
+    color:white;
+    text-shadow: none;
+}
+.agenda_turno h2 span {
+    /*color: #333001;*/
+    color:#000;
+    
+    font-size: 11px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.agenda_turno h2 span.observaciones {
+    color:#A90000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+    border-radius: 5px;
+    padding:2px;
+    background-color: #FFD0D0;
+    
+}
+
+.agenda_turno h2 span.importe {
+    font-weight: bold;
+    
+}
+
+.agenda_turno p span.texto{
+	padding:4px;
+	
+}
+
+.agenda_turno p {
+    float: right;
+    font-size: 14px;
+    /*line-height: 28px;*/
+    /*margin-top:4px;*/
+    font-weight: 400;
+    /*width: 50%;*/
+    border-radius: 5px;
+    padding:4px;
+    margin-right: 30px;
+}
+
+.agenda_turno p.action {
+    float: right;
+    font-size: 14px;
+    /*line-height: 28px;*/
+    margin: 0;
+    font-weight: 400;
+    /*width: 50%;*/
+    border-radius: 5px;
+    padding:4px;
+}
+
+/* agenda semanal */
+
+#agenda_semanal{
+	overflow: auto;
+	/*max-height: 400px;*/
+}
+
+.agenda_semanal_turno_fechaSeleccionada_header{
+
+	background-color: #45407B !important;
+	color:#FFF !important;
+	font-weight: bold !important;
+	
+	border-right: 5px solid #45407B !important;
+	border-left: 5px solid #45407B !important; 
+	border-top: 5px solid #45407B !important;
+}
+
+.agenda_semanal_turno_fechaSeleccionada{
+
+	border-right: 5px solid #45407B !important;
+	border-left: 5px solid #45407B !important; 
+}
+
+.agenda_semanal_turno_fechaSeleccionada_last{
+
+	border-right: 5px solid #45407B !important;
+	border-left: 5px solid #45407B !important;
+	border-bottom: 5px solid #45407B !important; 
+}
+
+.table_agenda_semanal td h2{
+	/*
+	border: 1px solid #D8D8D8;
+    border-radius:15px;
+    */
+    font-size:30%;
+}
+.table_agenda_semanal td img{
+	
+    position:absolute;
+    top:-15px;;
+    right: 0;
+}
+.table_agenda_semanal td{
+	font-size:70%;
+	padding:1px;
+}
+
+.table_agenda_semanal td div.turno_ocupado{
+	position:relative;
+}
+
+.table_agenda_semanal td div.actions{
+	top: 0px;
+	right:0;
+	position:absolute;
+	display:none;
+}
+
+.table_agenda_semanal td.turno_vacio_disponible{
+	background: none repeat scroll 0 0 #FFF;
+	color:#FFF;
+	text-shadow: none;
+}
+
+
+.table_agenda_semanal td.turno_vacio_disponible:HOVER{
+	background-color: #D8D8D8;
+	color:#000;
+	border: 1px dashed;
+}
+
+.table_agenda_semanal td.turno_ausencia{
+	background: none repeat scroll 0 0 #F00;
+	color:#F00;;
+	text-shadow: none;
+}
+
+/*
+.table_agenda_semanal td.turno_ausencia:HOVER{
+	background-color: #D8D8D8;
+	color:#000;
+	border: 1px dashed;
+}*/
+
+.table_agenda_semanal td.turno_sobreturno{
+	background: none repeat scroll 0 0 #EEE;
+	color:#EEE;
+	text-shadow: none;
+	border: 1px dashed;
+}
+
+.table_agenda_semanal td.turno_vacio_sobreturno{
+	background-color: #EEE;
+	color:#EEE;
+	text-shadow: none;
+	border: 1px solid #EEE;
+}
+
+
+.table_agenda_semanal td.turno_vacio_sobreturno:HOVER{
+	background-color: #D8D8D8;
+	color:#000;
+	border: 1px dashed #F00;
+}
+
+/*home turnos*/
+#turnos_home{
+	margin: 30px auto 0;
+    text-align: center;
+    width: 100%;
+}
+#turnos_left{
+	float: left;
+	width: 24%;
+}
+
+#turnos_right{
+	float: right;
+	width: 75%;
+	position:relative;
+}
+
+#ver_agenda{
+	/*height: 450px;*/
+}
+
+
+#caja_title{
+	font-size: 100%;
+	font-weight: bold;
+	color: blue;
+	margin-left: 50px;
+}
+
+/* horarios */
+#horarios_home{
+	margin: 30px auto 0;
+    text-align: center;
+    width: 100%;
+}
+#horarios_left{
+	float: left;
+	width: 50%;
+}
+
+#horarios_right{
+	float: right;
+	width: 50%;
+	position:relative;
+}
+
+.horario_dia{
+	font-size: 120%;
+	font-weight: bold;
+}
+
+
+/* historia clinica */
+#historia_clinica{
+	margin: 30px auto 0;
+    text-align: center;
+    width: 100%;
+}
+#historia_clinica_left,.historia_clinica_left{
+	float: left;
+	width: 53%;
+	position:relative;
+}
+
+#historia_clinica_left span.actions,.historia_clinica_left span.actions{
+	top: 8px;
+	right:0;
+	position:absolute;
+}
+
+#historia_clinica_right,.historia_clinica_right{
+	float: right;
+	width: 45%;
+}
+
+
+
+
+
+/* ausencias */
+
+.vigencias{
+	font-style: italic;
+	color:#000;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.ausencia_vigente{
+	display: block;
+	margin-top: 10px;
+	font-weight: bold;
+	font-size: 100%;
+}
+
+#ausencias_vigentes ul {
+    color: #2B2B2B;
+    /*float: right;*/
+    font-size: 14px;
+    /*height: 550px;*/
+    line-height: 28px;
+    overflow: hidden;
+    padding: 10px 0 0;
+    position: relative;
+    font-size: 13px;
+    font-weight: 300;
+    text-align: left;
+}
+
+#ausencias_vigentes ul li .odd {
+    background: none repeat scroll 0 0 #FFFFF4;
+}
+
+#ausencias_vigentes ul li {
+    -moz-box-sizing: border-box;
+    background: none repeat scroll 0 0 #F6FAFF;
+    border-bottom: 1px solid #D8D8D8;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.9) inset;
+    float: left;
+    padding: 10px 30px;
+    width: 100%;
+    font-weight: 400;
+    position: relative;
+}
+
+#ausencias_vigentes ul li a{
+    right: 0;
+    position: absolute;
+}
+
+.ausencia_form_left{
+ 	float:left; 
+ 	width:40%;
+}
+
+.rasty fieldset.ausencia_form_left label {
+    display: none;
+}
+
+.ausencia_form_right{
+ 	float:right; 
+ 	width:50%;
+}
+
+.rasty fieldset.ausencia_form_right label {
+    text-align:left;
+}
+
+/*
+#ausencias_vigentes ul {
+
+	margin-left: 20px;
+}
+
+#ausencias_vigentes ul li{
+
+	padding: 10px;	
+	list-style-type: disc;
+	font-weight: bold;
+}
+*/
+
+
+/* mobile */
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+	#fechaPicker{
+		
+	}
+	
+	#turnos_left{
+		font-size: 80%;
+		width: 25%;
+	}
+	
+	#turnos_left #form_agenda fieldset{
+		/*padding:1;*/
+	}
+	#turnos_left .totales{
+		font-size:100%;
+	}
+	#turnos_right{
+		font-size: 70%;
+		width: 75%;
+	}
+	#turnos_right fieldset{
+		/*padding:0;*/
+	}
+
+	.practica{
+		font-size:85%;
+	}
+	.practica_right{
+		width: 55%;
+	}
+
+	.practica_left{
+		width: 45%;
+	}
+	
+	
+	.ausencia_form_left{
+	 	float:left; 
+	 	width:40%;
+	}
+	
+	.ausencia_form_right{
+	 	float:right; 
+	 	width:40%;
+	}
+	
+	
+	/* historia clínica quick */
+	.historiaClinica_quick_left, .historiaClinica_quick_right{
+		float: none;
+    	width: 100%;
+    	clear: both;
+	}
+}
+
+@media screen and (min-width: 100px) and (max-width: 800px) {
+
+		
+	/* empleado home */
+	#empleado_home_left{
+		float: none;
+		clear: both;
+		width: 100%;
+	}
+	#empleado_home_right{
+		float: none;
+		clear: both;
+		width: 100%;
+	}	
+	/* agenda turnos */
+	#turnos_left{
+		float: none;
+		clear: both;
+		width: 100%;
+	}
+	#turnos_right{
+		float: none;
+		clear: both;
+		width: 100%;
+	}
+	
+	
+	#ver_agenda {
+    	height: 100%;;
+	}
+	
+	
+	#agenda {
+    	height: 100%;
+    	overflow: none;
+	}
+	
+	.agenda_actions{
+		font-size:50%;
+	}
+	
+	
+	/* formularios */
+	
+	/* historia clínica */
+	
+	#historia_clinica_left,.historia_clinica_left {
+    	float: none;
+    	width: 100%;
+    	clear: both;
+		
+	}
+	#historia_clinica_right,.historia_clinica_right {
+    	float: none;
+    	width: 100%;
+    	clear: both;
+	}
+
+	.practica{
+		font-size:85%;
+	}
+	
+	.practica_right{
+		width: 55%;
+	}
+
+	.practica_left{
+		width: 45%;
+	}
+	
+	.ausencia_form_left{
+	 	float:none;
+	 	clear: both; 
+	 	width:90%;
+	}
+	
+	.ausencia_form_right{
+	 	float:none; 
+	 	clear: both;
+	 	width:90%;
+	}
+
+	/* historia clínica quick */
+	.historiaClinica_quick_left, .historiaClinica_quick_right{
+		float: none;
+    	width: 100%;
+    	clear: both;
+	}
+	
+}
+

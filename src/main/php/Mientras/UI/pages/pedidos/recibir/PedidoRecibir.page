@@ -1,0 +1,13 @@
+<rasty specificationClass="Mientras\UI\pages\pedidos\recibir\PedidoRecibir" templateLocation="pages/pedidos/recibir/PedidoRecibir.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+
+	<param name="pedidoOid" value="get:pedidoOid" />
+	
+	<param name="error" value="get:error" />
+	
+	<component id="pedido" type="PedidoBox">
+		<param name="pedido" value="pedido" />
+	</component>
+	
+</rasty>

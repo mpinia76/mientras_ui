@@ -1,0 +1,13 @@
+<rasty specificationClass="Mientras\UI\pages\ventas\agregar\VentaAgregar" templateLocation="pages/ventas/agregar/VentaAgregar.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+
+	<component id="ventaForm" type="VentaForm">
+		<param name="legend" value="msg:venta.agregar.legend" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="action" value="linkActionAgregarVenta" />
+		<param name="method" value="str:post" />
+		<param name="venta" value="venta" />
+	</component>
+	
+</rasty>

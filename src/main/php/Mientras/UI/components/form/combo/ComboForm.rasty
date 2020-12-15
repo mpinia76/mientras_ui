@@ -1,0 +1,76 @@
+<rasty specificationClass="Mientras\UI\components\form\combo\ComboForm" templateLocation="ComboForm.htm">
+
+	<param name="error" value="get:error" />
+
+	<component id="backSuccess" type="InputHidden">
+		<param name="inputId" value="str:backToOnSuccess" />
+		<param name="name" value="str:backToOnSuccess" />
+		<param name="value" value="backToOnSuccess" />
+	</component>
+
+	<component id="oid" type="InputHidden">
+		<param name="inputId" value="str:oid" />
+		<param name="name" value="str:oid" />
+		<param name="value" value="combo.oid" />
+	</component>
+
+	
+
+	<component id="fecha" type="InputDate">
+		<param name="inputId" value="str:fecha" />
+		<param name="name" value="str:fecha" />
+		<param name="value" value="combo.fecha" />
+		<param name="placeholder" value="msg:combo.fecha" />
+		<param name="format" value="str:d/m/Y" />
+		<param name="requiredMessage" value="msg:combo.fecha.required" />
+	</component>
+
+	
+	
+	<component id="nombre" type="InputText">
+		<param name="inputId" value="str:nombre" />
+		<param name="name" value="str:nombre" />
+		<param name="value" value="combo.nombre" />
+		<param name="placeholder" value="msg:combo.nombre.placeholder" />
+		<param name="requiredMessage" value="msg:combo.nombre.required" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	
+	
+	
+	<component id="productoPrecio" type="InputCurrency">
+		<param name="inputId" value="str:productoPrecio" />
+		<param name="name" value="str:productoPrecio" />
+		<param name="value" value="producto.precio" />
+		<param name="requiredMessage" value="msg:combo.producto.precio.required" />
+		<param name="placeholder" value="msg:combo.producto.precio" />
+		<param name="autocomplete" value="str:off" />
+	</component>
+	
+	
+	
+	<component id="productoCantidad" type="InputNumber">
+		<param name="inputId" value="str:productoCantidad" />
+		<param name="name" value="str:productoCantidad" />
+		<param name="value" value="producto.cantidad" />
+		<param name="requiredMessage" value="msg:combo.producto.cantidad.required" />
+		<param name="placeholder" value="msg:combo.producto.cantidad" />
+		<param name="autocomplete" value="str:off" />
+	</component>
+	
+	<component id="productoProducto" type="InputFindEntity">
+		<param name="inputId" value="str:productoProducto" />
+		<param name="name" value="str:productoProducto" />
+		<param name="value" value="producto.producto" />
+		<param name="placeholder" value="msg:combo.producto.producto" />
+		<param name="finder" value="productoFinderClazz" />
+		<param name="hasPopup" value="boolean:true" />
+		<param name="popupFilterType" value="str:ProductoFilter" />
+		<param name="onSelectCallback" value="str:productochange" />
+		<param name="autocompleteHelpMsg" value="msg:obraSocial.ayuda.autocomplete" />
+	</component>
+
+	
+</rasty>

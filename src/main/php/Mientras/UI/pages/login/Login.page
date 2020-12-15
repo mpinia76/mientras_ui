@@ -1,0 +1,7 @@
+<rasty specificationClass="Mientras\UI\pages\login\Login" templateLocation="pages/login/Login.htm"> 
+
+	<param name="layoutType" value="str:MientrasLoginMetroLayout" />
+	<param name="error" value="get:error" />
+
+		
+</rasty>

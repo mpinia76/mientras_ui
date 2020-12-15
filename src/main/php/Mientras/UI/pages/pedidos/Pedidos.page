@@ -1,0 +1,13 @@
+<rasty specificationClass="Mientras\UI\pages\pedidos\Pedidos" templateLocation="pages/pedidos/Pedidos.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+
+	<component id="pedidosFilter" type="PedidoFilter">
+		<param name="gridModelClazz" value="modelClazz" />
+		<param name="uicriteriaClazz" value="uicriteriaClazz" />
+		<param name="legend" value="msg:pedido.buscar" />
+		<param name="legendAgain" value="msg:pedido.buscar.again" />
+		<param name="resultDiv" value="str:searchdiv" />
+	</component>
+	
+</rasty>

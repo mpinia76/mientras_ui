@@ -1,0 +1,23 @@
+<rasty specificationClass="Mientras\UI\components\boxes\venta\VentaBox" templateLocation="VentaBox.htm">
+
+	<param name="ventaOid" value="get:ventaOid" />
+
+	
+
+	<component id="monto" type="InputCurrency">
+		<param name="inputId" value="str:monto" />
+		<param name="name" value="str:monto" />
+		<param name="requiredMessage" value="msg:venta.detalle.precio.required" />
+		<param name="placeholder" value="msg:venta.monto" />
+		<param name="autocomplete" value="str:off" />
+	</component>
+	
+	<component id="montoActualizado" type="InputCurrency">
+		<param name="inputId" value="str:montoActualizado" />
+		<param name="name" value="str:montoActualizado" />
+		<param name="value" value="venta.montoActualizado" />
+		<param name="placeholder" value="msg:venta.montoActualizado" />
+		<param name="autocomplete" value="str:off" />
+	</component>
+	
+</rasty>

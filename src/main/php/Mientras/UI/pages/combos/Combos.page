@@ -1,0 +1,13 @@
+<rasty specificationClass="Mientras\UI\pages\combos\Combos" templateLocation="pages/combos/Combos.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+
+	<component id="combosFilter" type="ComboFilter">
+		<param name="gridModelClazz" value="modelClazz" />
+		<param name="uicriteriaClazz" value="uicriteriaClazz" />
+		<param name="legend" value="msg:combo.buscar" />
+		<param name="legendAgain" value="msg:combo.buscar.again" />
+		<param name="resultDiv" value="str:searchdiv" />
+	</component>
+	
+</rasty>

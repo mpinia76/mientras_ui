@@ -1,0 +1,16 @@
+<rasty specificationClass="Mientras\UI\components\filter\proveedor\ProveedorFilter" templateLocation="ProveedorFilter.htm">
+
+	<component id="nombre" type="InputText">
+		<param name="name" value="str:nombre" />
+		<param name="value" value="criteria.nombre" />
+		<param name="placeholder" value="msg:proveedor.nombre" />
+		
+	</component>
+
+	<component id="razonSocial" type="InputText">
+		<param name="name" value="str:razonSocial" />
+		<param name="value" value="criteria.razonSocial" />
+		<param name="placeholder" value="msg:proveedor.razonSocial" />
+		
+	</component>
+</rasty>

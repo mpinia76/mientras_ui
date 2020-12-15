@@ -1,0 +1,45 @@
+<rasty specificationClass="Mientras\UI\components\filter\gasto\GastoFilter" templateLocation="GastoFilter.htm">
+
+	<component id="fechaDesde" type="InputDate">
+		<param name="inputId" value="str:fechaDesde" />
+		<param name="name" value="str:fechaDesde" />
+		<param name="value" value="criteria.fechaDesde" />
+		<param name="placeholder" value="msg:criteria.fechaDesde" />
+		<param name="format" value="str:d/m/Y" />
+	</component>
+
+	<component id="fechaHasta" type="InputDate">
+		<param name="inputId" value="str:fechaHasta" />
+		<param name="name" value="str:fechaHasta" />
+		<param name="value" value="criteria.fechaHasta" />
+		<param name="placeholder" value="msg:criteria.fechaDesde" />
+		<param name="format" value="str:d/m/Y" />
+	</component>
+
+
+	<component id="filtroPredefinido" type="InputCombo">
+		<param name="inputId" value="str:filtroPredefinido" />
+		<param name="name" value="str:filtroPredefinido" />
+		<param name="value" value="criteria.filtroPredefinido" />
+		<param name="options" value="filtrosPredefinidos" />
+		<param name="emptyOptionLabel" value="msg:criteria.sin_especificar" />
+	</component>
+
+	<component id="concepto" type="InputCombo">
+		<param name="inputId" value="str:concepto" />
+		<param name="name" value="str:concepto" />
+		<param name="value" value="criteria.concepto" />
+		<param name="options" value="conceptos" />
+		<param name="finder" value="conceptoGastoFinderClazz" />
+		<param name="emptyOptionLabel" value="msg:criteria.sin_especificar" />
+	</component>
+	
+	<component id="observaciones" type="InputText">
+		<param name="inputId" value="str:observaciones" />
+		<param name="name" value="str:observaciones" />
+		<param name="value" value="criteria.observaciones" />
+		<param name="placeholder" value="msg:gasto.observaciones" />
+		<param name="autocomplete" value="str:off" />		
+	</component>
+	
+</rasty>

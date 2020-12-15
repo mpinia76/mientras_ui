@@ -1,0 +1,17 @@
+<rasty specificationClass="Mientras\UI\pages\gastos\pagar\GastoPagar" templateLocation="pages/gastos/pagar/GastoPagar.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+
+	<param name="gastoOid" value="get:gastoOid" />
+	
+	<param name="error" value="get:error" />
+	
+	
+	<param name="backTo" value="get:backTo" />
+
+	<component id="gasto" type="GastoBox">
+		<param name="gasto" value="gasto" />
+	</component>
+		
+	
+</rasty>

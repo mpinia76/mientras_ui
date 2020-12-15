@@ -1,0 +1,105 @@
+<!-- BEGIN: main-->
+<script>
+function pagar(tipo){
+	switch(tipo) {
+    case 'efectivo':
+    	window.location.href='{linkCobrarEfectivo}&monto='+$( "#monto" ).val()+'&montoActualizado='+$( "#montoActualizado" ).val();
+        break;
+    case 'ctacte':
+    	window.location.href='{linkCobrarCtaCte}&monto='+$( "#monto" ).val()+'&montoActualizado='+$( "#montoActualizado" ).val();
+        break;
+    case 'tarjeta':
+    	window.location.href='{linkCobrarTarjeta}&monto='+$( "#monto" ).val()+'&montoActualizado='+$( "#montoActualizado" ).val();
+        break;
+	} 
+}
+
+</script>
+<style>
+
+.venta_left{
+	width: 60%;
+	float:left;
+}
+
+.venta_right{
+	width: 40%;
+	float:right;
+}
+
+.venta_left fieldset{
+	padding: 25px 40px;;
+}
+
+
+.importe{
+	font-size: 18px !important;
+	color: blue;
+	font-weight: bold !important;
+}
+
+
+.formas_pago button{
+
+	margin: 10px;
+}
+
+</style>
+
+<div id="editar">
+
+	<div align="justify">
+		<p class="titulo">{title}</p>
+	</div>
+
+	<div class="venta_left">
+	<fieldset class="venta">
+		<legend>{venta_legend}</legend>
+		
+		<rasty id="venta" />
+		
+	</fieldset>
+	</div>
+	<div class="venta_right">
+	<fieldset class="formas_pago">
+		<legend>{forma_pago_legend}</legend>
+		
+		<!-- BEGIN:forma_pago_caja -->
+		<button class="shortcut" onclick="javascript: pagar('efectivo')">
+				<img src="{WEB_PATH}/css/images/caja_48.png" />
+				{lbl_efectivo}
+		</button>
+		<!-- END:forma_pago_caja -->
+		
+		<!-- BEGIN:forma_pago_tarjeta -->
+		<button class="shortcut" onclick="javascript: pagar('tarjeta');">
+				<img src="{WEB_PATH}/css/images/tarjeta_48.png" />
+				{lbl_tarjeta}
+		</button>
+		<!-- END:forma_pago_tarjeta -->
+		
+		<!-- BEGIN: forma_pago_ctacte -->
+		<button class="shortcut" onclick="javascript: pagar('ctacte')">
+				<img src="{WEB_PATH}/css/images/ctacte_48.png" />
+				{lbl_ctacte}
+		</button>
+		<!-- END: forma_pago_ctacte -->
+		
+		<button class="shortcut" onclick="javascript: window.location.href='{linkAnular}'">
+				<img src="{WEB_PATH}/css/images/anular_32.png" />
+				{lbl_anular}
+		</button>
+		<button class="shortcut" onclick="javascript: window.location.href='{linkPendiente}'">
+				<img src="{WEB_PATH}/css/images/pagoPendiente_32.png" />
+				{lbl_pendiente}
+		</button>
+	</fieldset>
+	</div>
+	<div style="clear:both;"></div>
+	<!-- BEGIN: msg_error -->
+	<fieldset class="ui-state-error">
+			{msg}	
+	</fieldset>
+	<!-- END: msg_error -->
+</div>
+<!-- END: main-->

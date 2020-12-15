@@ -1,0 +1,73 @@
+<!-- BEGIN: main -->
+<script>
+$(document).ready(function(){
+	setInterval("updateClock('#spanClock')", 1000);
+});
+</script>
+
+<div id='cssmenu'>
+<ul>
+
+   <!-- BEGIN:menu_home -->
+   <li><a href='#' href="#" onclick="javascript: gotoLink('{linkHome}')" ><span class="icon-home"></span></a>
+   <!-- END:menu_home -->
+
+   <!-- BEGIN:menu_main -->
+   <li class='has-sub'><a href='#'>{menu_main}</a>
+       <ul>
+	     <!-- BEGIN: menuGroup -->	
+	     <li class="{menuGroupCss}"><a href="#" onclick="{onclick}" ><!-- BEGIN: icon --><span class="{iconClass}"></span><!-- END: icon --><!-- BEGIN: image --><img style="border:0;margin-right:10px;width:24px;height: 24px;" src="{src}"/><!-- END: image --> {groupLabel}</a>
+	     	<!-- BEGIN: options-->	
+            <ul>
+		       <!-- BEGIN: menuOption-->	
+               <li>
+               	<a href="#" onclick="{onclick}" ><!-- BEGIN: icon --><span class="{iconClass}"></span><!-- END: icon --><!-- BEGIN: image --><img style="border:0;margin-right:10px;width:24px;height: 24px;" src="{src}"/><!-- END: image --> {label}</a>
+               </li>
+		       <!-- END: menuOption-->	
+            </ul>
+	     	<!-- END: options-->
+         </li>
+	 	 <!-- END: menuGroup -->
+       </ul>
+   </li>
+   
+   <!-- END:menu_main -->
+   <!-- BEGIN:menu_page -->
+   <li class='has-sub'><a href='#'>{menu_page}</a>
+     <!-- BEGIN: menuGroup -->	
+	     	<!-- BEGIN: options-->	
+            <ul>
+		       <!-- BEGIN: menuOption-->	
+               <li>
+               	<a href="#" onclick="{onclick}" ><!-- BEGIN: icon --><span class="{iconClass}"></span><!-- END: icon --><!-- BEGIN: image --><img style="border:0;margin-right:10px;width:24px;height: 24px;" src="{src}"/><!-- END: image --> {label}</a>
+               </li>
+		       <!-- END: menuOption-->	
+            </ul>
+	     	<!-- END: options-->
+	 	 <!-- END: menuGroup -->
+   </li>
+   <!-- END:menu_page -->
+   
+   <li class='has-sub'><a href='#'> {user}</a>
+       <ul>
+	     <!-- BEGIN: menuGroup -->	
+	     <li class="{menuGroupCss}"><a href="#" onclick="{onclick}" ><!-- BEGIN: icon --><span class="{iconClass}"></span><!-- END: icon --><!-- BEGIN: image --><img style="border:0;margin-right:10px;width:24px;height: 24px;" src="{src}"/><!-- END: image --> {label}</a>
+	     	<!-- BEGIN: options-->	
+            <ul>
+		       <!-- BEGIN: menuOption-->	
+               <li><a href='#' onclick="{onclick}">{label}</a></li>
+		       <!-- END: menuOption-->	
+            </ul>
+	     	<!-- END: options-->
+         </li>
+	 	 <!-- END: menuGroup -->
+       </ul>
+   </li>
+   
+   <li ><a title="{reloadLabel}" href="#" onclick="javascript: location.reload();" class="no-phone no-tablet element brand"><span class="icon-spin"></span></a></li>
+   <li ><a href='#'>{sucursal} <span class="currentTime" id="spanClock"></span></a></li>
+   
+</ul>
+</div>
+
+<!-- END: main -->

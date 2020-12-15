@@ -1,0 +1,14 @@
+<rasty specificationClass="Mientras\UI\pages\combos\modificar\ComboModificar" templateLocation="pages/combos/modificar/ComboModificar.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+	<param name="comboOid" value="get:oid" />
+	
+	<component id="comboForm" type="ComboForm">
+		<param name="legend" value="msg:combo.modificar.legend" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="action" value="linkActionModificarCombo" />
+		<param name="method" value="str:post" />
+		<param name="combo" value="combo" />
+	</component>
+	
+</rasty>

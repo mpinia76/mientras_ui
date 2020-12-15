@@ -1,0 +1,10 @@
+<rasty specificationClass="Mientras\UI\components\filter\conceptoGasto\ConceptoGastoFilter" templateLocation="ConceptoGastoFilter.htm">
+
+	<component id="nombre" type="InputText">
+		<param name="name" value="str:nombre" />
+		<param name="value" value="criteria.nombre" />
+		<param name="placeholder" value="msg:conceptoGasto.nombre" />
+		
+	</component>
+
+</rasty>

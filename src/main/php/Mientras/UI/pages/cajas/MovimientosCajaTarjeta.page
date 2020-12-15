@@ -1,0 +1,13 @@
+<rasty specificationClass="Mientras\UI\pages\cajas\MovimientosCajaTarjeta" templateLocation="pages/cajas/MovimientosCajaTarjeta.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+
+	<component id="movimientosFilter" type="MovimientoCajaTarjetaFilter">
+		<param name="gridModelClazz" value="modelClazz" />
+		<param name="uicriteriaClazz" value="uicriteriaClazz" />
+		<param name="legend" value="msg:cajaTarjeta.movimientos.buscar" />
+		<param name="legendAgain" value="msg:cajaTarjeta.movimientos.buscar.again" />
+		<param name="resultDiv" value="str:searchdiv" />
+	</component>
+	
+</rasty>

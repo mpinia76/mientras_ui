@@ -1,0 +1,16 @@
+<rasty specificationClass="Mientras\UI\pages\conceptoMovimientos\modificar\ConceptoMovimientoModificar" templateLocation="pages/conceptoMovimientos/modificar/ConceptoMovimientoModificar.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+	<param name="conceptoMovimientoOid" value="get:oid" />
+
+
+	<component id="conceptoMovimientoForm" type="ConceptoMovimientoForm">
+		<param name="legend" value="msg:conceptoMovimiento.modificar.legend" />
+		<param name="action" value="linkActionModificarConceptoMovimiento" />
+		<param name="method" value="str:post" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="conceptoMovimiento" value="conceptoMovimiento" />
+	</component>
+	
+</rasty>

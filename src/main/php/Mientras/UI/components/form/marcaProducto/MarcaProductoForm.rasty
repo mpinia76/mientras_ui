@@ -1,0 +1,30 @@
+<rasty specificationClass="Mientras\UI\components\form\marcaProducto\MarcaProductoForm" templateLocation="MarcaProductoForm.htm">
+
+	<param name="error" value="get:error" />
+
+	<component id="backSuccess" type="InputHidden">
+		<param name="inputId" value="str:backToOnSuccess" />
+		<param name="name" value="str:backToOnSuccess" />
+		<param name="value" value="backToOnSuccess" />
+	</component>
+
+	<component id="oid" type="InputHidden">
+		<param name="inputId" value="str:oid" />
+		<param name="name" value="str:oid" />
+		<param name="value" value="marcaProducto.oid" />
+	</component>
+
+
+	<component id="nombre" type="InputText">
+		<param name="inputId" value="str:nombre" />
+		<param name="name" value="str:nombre" />
+		<param name="value" value="marcaProducto.nombre" />
+		<param name="requiredMessage" value="msg:marcaProducto.nombre.required" />
+		<param name="placeholder" value="msg:marcaProducto.nombre" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	
+	
+</rasty>

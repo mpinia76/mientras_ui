@@ -1,0 +1,92 @@
+<!-- BEGIN: main-->
+<script language="javascript"
+	src="{WEB_PATH}js/autocomplete/simpleAutoComplete.js"></script>
+<link rel="stylesheet"
+	href="{WEB_PATH}css/autocomplete/simpleAutoComplete.css"
+	type="text/css" />
+
+<script>
+function clientechange(){
+
+	data = new Array();
+	data["clienteOid"] =  $("#cliente").val();
+	var event = new $.fn.rasty.RastyEvent("clienteChange", data, "Cliente");
+	subject.notify(event);
+
+	//window.location.href = "?bancoOid=" + $("#banco").val();
+	
+}
+
+</script>
+<style>
+.div_left{
+	width: 40%;
+	float:left;
+}
+
+.div_right{
+	width: 60%;
+	float:right;
+}
+
+
+</style>
+
+	<div class="div_left">
+
+	<fieldset>
+		<legend>{ctacte_legend}</legend>
+		
+		<rasty id="ctacteBox" />
+		
+	</fieldset>
+	</div>
+	
+	<div class="div_rigth">
+	<form class="cuentas_form" id="actualizar_form" onsubmit="return validate('actualizar_form');" action="{action}" method="POST">
+		<fieldset>
+		<legend>{legend}</legend>
+	
+			<div class="item">
+			    <label for="cliente">{lbl_cliente} *:</label>
+			    <rasty id="cliente" />
+			</div>
+			
+			<div class="item">
+			    <label for="monto">{lbl_monto} *:</label>
+			    <rasty id="monto" />
+			</div>
+			
+			
+			
+			<div class="item">
+			    <label for="observaciones">{lbl_observaciones}:</label>
+			    <rasty id="observaciones" />
+			</div>
+			
+			
+		</fieldset>
+	</form>
+	
+	<!-- BEGIN: msg_error -->
+	<fieldset class="ui-state-error">
+			{msg}	
+	</fieldset>
+	<!-- END: msg_error -->
+	
+	<form  class="cuentas_form">
+	<fieldset class="tblFooters">
+	
+		
+		<button type="button" class="shortcut" id="input_submit" onclick="javascript: submitFormulario('actualizar_form'); ">
+			<i class="icon-checkmark on-left"></i>{lbl_submit}
+		</button>
+
+		<button type="button"  class="shortcut" id="input_button_2" onclick="javascript: window.location.href = '{cancel}'; "><i class="icon-cancel-2 on-left"></i>{lbl_cancel}</button>
+	
+	</fieldset>
+	</form>	
+	</div>
+	<div style="clear:both;"></div>
+	
+<!-- END: main-->

@@ -1,0 +1,16 @@
+<rasty specificationClass="Mientras\UI\pages\conceptoGastos\modificar\ConceptoGastoModificar" templateLocation="pages/conceptoGastos/modificar/ConceptoGastoModificar.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+	<param name="conceptoGastoOid" value="get:oid" />
+
+
+	<component id="conceptoGastoForm" type="ConceptoGastoForm">
+		<param name="legend" value="msg:conceptoGasto.modificar.legend" />
+		<param name="action" value="linkActionModificarConceptoGasto" />
+		<param name="method" value="str:post" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="conceptoGasto" value="conceptoGasto" />
+	</component>
+	
+</rasty>

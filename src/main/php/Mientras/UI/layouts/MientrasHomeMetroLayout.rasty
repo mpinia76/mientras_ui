@@ -1,0 +1,6 @@
+<rasty specificationClass="Mientras\UI\layouts\MientrasHomeMetroLayout" templateLocation="MientrasHomeMetroLayout.htm">
+
+	<param name="menuGroups" value="menuGroups" />
+	<component id="footer" type="FooterMientras">
+	</component>
+</rasty>

@@ -1,0 +1,16 @@
+<rasty specificationClass="Mientras\UI\pages\proveedors\modificar\ProveedorModificar" templateLocation="pages/proveedors/modificar/ProveedorModificar.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+	<param name="proveedorOid" value="get:oid" />
+
+
+	<component id="proveedorForm" type="ProveedorForm">
+		<param name="legend" value="msg:proveedor.modificar.legend" />
+		<param name="action" value="linkActionModificarProveedor" />
+		<param name="method" value="str:post" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="proveedor" value="proveedor" />
+	</component>
+	
+</rasty>

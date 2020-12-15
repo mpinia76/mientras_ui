@@ -1,0 +1,16 @@
+<rasty specificationClass="Mientras\UI\pages\productos\modificar\ProductoModificar" templateLocation="pages/productos/modificar/ProductoModificar.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+	<param name="productoOid" value="get:oid" />
+
+
+	<component id="productoForm" type="ProductoForm">
+		<param name="legend" value="msg:producto.modificar.legend" />
+		<param name="action" value="linkActionModificarProducto" />
+		<param name="method" value="str:post" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="producto" value="producto" />
+	</component>
+	
+</rasty>

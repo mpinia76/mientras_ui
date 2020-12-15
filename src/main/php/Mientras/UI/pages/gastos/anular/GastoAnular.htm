@@ -1,0 +1,41 @@
+<!-- BEGIN: main-->
+
+<style>
+
+
+</style>
+
+<div id="editar">
+
+	<div align="justify">
+		<p class="titulo">{title}</p>
+	</div>
+
+	<form class="cuentas_form" id="gasto_form" onsubmit="return validate('gasto_form');" action="{linkAnularGasto}" method="POST">
+		<input type="hidden" value="{gastoOid}" name="gastoOid" />
+	
+		<fieldset class="gasto">
+			<legend>{gasto_legend}</legend>
+			
+			<rasty id="gasto" />
+			
+		</fieldset>
+	</form>
+	<!-- BEGIN: msg_error -->
+	<fieldset class="ui-state-error">
+			{msg}	
+	</fieldset>
+	<!-- END: msg_error -->
+	<form  class="cuentas_form" id="buttons{inputId}">
+		<fieldset class="tblFooters">
+		
+			<button  class="shortcut" type="button"  id="input_submit" onclick="javascript: submitFormulario('gasto_form'); "><i class="icon-checkmark on-left"></i>{lbl_submit}</button>
+	
+			<button  class="shortcut" type="button"  id="input_button_2" onclick="javascript: history.back(); "><i class="icon-cancel-2 on-left"></i>{lbl_cancel}</button>
+		
+		</fieldset>
+	</form>	
+	
+	
+</div>
+<!-- END: main-->

@@ -1,0 +1,114 @@
+<rasty specificationClass="Mientras\UI\components\form\proveedor\ProveedorForm" templateLocation="ProveedorForm.htm">
+
+	<param name="error" value="get:error" />
+
+	
+	
+	<component id="backSuccess" type="InputHidden">
+		<param name="inputId" value="str:backToOnSuccess" />
+		<param name="name" value="str:backToOnSuccess" />
+		<param name="value" value="backToOnSuccess" />
+	</component>
+
+	<component id="oid" type="InputHidden">
+		<param name="inputId" value="str:oid" />
+		<param name="name" value="str:oid" />
+		<param name="value" value="proveedor.oid" />
+	</component>
+
+
+	<component id="nombre" type="InputText">
+		<param name="inputId" value="str:nombre" />
+		<param name="name" value="str:nombre" />
+		<param name="value" value="proveedor.nombre" />
+		<param name="requiredMessage" value="msg:proveedor.nombre.required" />
+		<param name="placeholder" value="msg:proveedor.nombre" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	
+
+	<component id="razonSocial" type="InputText">
+		<param name="inputId" value="str:razonSocial" />
+		<param name="name" value="str:razonSocial" />
+		<param name="value" value="proveedor.razonSocial" />
+		<param name="requiredMessage" value="msg:proveedor.razonSocial.required" />
+		<param name="placeholder" value="msg:proveedor.razonSocial" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+
+	<component id="documento" type="InputText">
+		<param name="inputId" value="str:documento" />
+		<param name="name" value="str:documento" />
+		<param name="value" value="proveedor.documento" />
+		<param name="placeholder" value="msg:proveedor.documento" />
+	</component>
+
+	<component id="cuit" type="InputText">
+		<param name="inputId" value="str:cuit" />
+		<param name="name" value="str:cuit" />
+		<param name="value" value="proveedor.cuit" />
+		<param name="placeholder" value="msg:proveedor.cuit" />
+	</component>
+
+	
+	
+	<component id="telefono" type="InputText">
+		<param name="inputId" value="str:telefono" />
+		<param name="name" value="str:telefono" />
+		<param name="value" value="proveedor.telefono" />
+		<param name="placeholder" value="msg:proveedor.telefono" />
+	</component>
+
+	<component id="celular" type="InputText">
+		<param name="inputId" value="str:celular" />
+		<param name="name" value="str:celular" />
+		<param name="value" value="proveedor.celular" />
+		<param name="placeholder" value="msg:proveedor.celular" />
+	</component>
+	
+	<component id="laboral" type="InputText">
+		<param name="inputId" value="str:laboral" />
+		<param name="name" value="str:laboral" />
+		<param name="value" value="proveedor.laboral" />
+		<param name="placeholder" value="msg:proveedor.laboral" />
+	</component>
+	
+	<component id="mail" type="InputText">
+		<param name="inputId" value="str:mail" />
+		<param name="name" value="str:mail" />
+		<param name="value" value="proveedor.mail" />
+		<param name="placeholder" value="msg:proveedor.mail" />
+	</component>
+	
+	<component id="direccion" type="InputText">
+		<param name="inputId" value="str:direccion" />
+		<param name="name" value="str:direccion" />
+		<param name="value" value="proveedor.direccion" />
+		<param name="placeholder" value="msg:proveedor.direccion" />
+	</component>
+	
+	<component id="observaciones" type="InputTextArea">
+		<param name="inputId" value="str:observaciones" />
+		<param name="name" value="str:observaciones" />
+		<param name="value" value="proveedor.observaciones" />
+		<param name="placeholder" value="msg:proveedor.observaciones" />	
+		<param name="rows" value="str:5" />	
+	</component>
+	
+	<component id="condicionIva" type="InputCombo">
+		<param name="inputId" value="str:condicionIva" />
+		<param name="name" value="str:condicionIva" />
+		<param name="value" value="proveedor.condicionIva" />
+		<param name="options" value="condicionesIva" />
+		<param name="placeholder" value="msg:proveedor.condicionIva" />
+	</component>
+	
+	
+	
+	
+	
+</rasty>

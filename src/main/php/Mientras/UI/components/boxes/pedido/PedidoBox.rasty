@@ -1,0 +1,5 @@
+<rasty specificationClass="Mientras\UI\components\boxes\pedido\PedidoBox" templateLocation="PedidoBox.htm">
+
+	<param name="pedidoOid" value="get:pedidoOid" />
+
+</rasty>

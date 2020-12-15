@@ -1,0 +1,16 @@
+<rasty specificationClass="Mientras\UI\pages\parametros\modificar\ParametroModificar" templateLocation="pages/parametros/modificar/ParametroModificar.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+	<param name="parametroOid" value="get:oid" />
+
+
+	<component id="parametroForm" type="ParametroForm">
+		<param name="legend" value="msg:parametro.modificar.legend" />
+		<param name="action" value="linkActionModificarParametro" />
+		<param name="method" value="str:post" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="parametro" value="parametro" />
+	</component>
+	
+</rasty>

@@ -1,0 +1,430 @@
+<!-- BEGIN:main -->
+<script language="javascript"
+	src="{WEB_PATH}js/autocomplete/simpleAutoComplete.js"></script>
+<link rel="stylesheet"
+	href="{WEB_PATH}css/autocomplete/simpleAutoComplete.css"
+	type="text/css" />
+
+
+<script>
+
+var productoSelected = "";
+var detalles = "";
+
+function addTrDetalle($detalle, $table, $index){
+
+	$row = $('<tr/>', {'class' : 'detalle'});
+
+    $row.append($('<td/>').append($detalle["producto_nombre"]));
+    $row.append($('<td/>', {'class' : 'importe'}).append("$" +$detalle["precioUnitario"]));
+    $row.append($('<td/>', {'class' : 'importe'}).append($detalle["cantidad"]));
+    $row.append($('<td/>', {'class' : 'importe'}).append("$" +$detalle["subtotal"]));
+
+	$button = $('<button/>', {'onclick' : 'quitarDetalle(' + $index + ')'}).append( $('<i/>', {'class' : 'icon-cancel-2'}) );
+	$row.append($('<td/>', {'class' : 'actions'}).append($button));
+	
+	
+    
+	$table.append($row);
+	
+}
+
+function addTrTotales($data, $table){
+
+	$importe = $data["importe"];
+	$cantidad = $data["cantidad"];
+
+	$detalles = $data["detalles"];
+	
+	$row = $('<tr/>');
+
+    $row.append($('<td/>', {'class' : 'totales'}).append("Totales"));
+    $row.append($('<td/>', {'class' : 'totales importe'}).append());
+    $row.append($('<td/>', {'class' : 'totales importe'}).append( $cantidad ));
+    $row.append($('<td/>', {'class' : 'totales importe'}).append( "$" + $importe));
+    $row.append($('<td/>').append());
+    
+	$table.append($row);
+	
+}
+
+
+
+function mostrarDetalles(data){
+
+	$detalles = data["detalles"];
+
+	$table = $('#detalles > tbody');
+	$table.html("");
+
+	
+	for( var $i=0; $i < $detalles.length ; $i++){
+
+		$detalle = $detalles[$i];
+		addTrDetalle($detalle, $table, $i);
+
+	}
+
+	addTrTotales( data, $table);
+
+	cleanInputs();
+}
+
+function cleanInputs(){
+
+	$("#detallePrecioLista").val("") ;
+	$("#detallePrecioEfectivo").val("") ;
+	$("#detallePrecio").val("") ;
+	$("#detalleCantidad").val("") ;
+	$("#detalleSubtotal").html("") ;
+
+	$("#findentity_detalleProducto_inputCode").val("") ;
+	$("#findentity_detalleProducto_inputCode").blur() ;
+	$("#findentity_detalleProducto_autocomplete").focus() ;
+	
+
+}
+
+function productochange(entity){
+
+	
+	
+	//mostramos las obras sociales con las que se ha atendido.
+	if(entity["error"] == undefined){
+
+		productoSelected = entity;
+		$precioEfectivo = entity["precioEfectivo"];
+		$precioLista = entity["precioLista"];
+		$cantidad = entity["cantidad"];
+		$("#detallePrecioEfectivo").val( $precioEfectivo ) ;
+		$("#detallePrecioLista").val( $precioLista ) ;
+		$("#detallePrecio").val( $precioLista ) ;
+		$("#detalleCantidad").val($cantidad) ;
+		$("#detalleSubtotal").html($precioLista) ;
+		
+
+		/*if($precioLista>0){
+
+			agregarDetalle();
+		}else{
+			$("#detallePrecio").val( "" ) ;
+			$("#detallePrecio").focus() ;	
+		}*/
+		$("#detallePrecio").focus() ;
+	}
+}
+
+function detalleChange(){
+
+	$precio = $("#detallePrecio").val() ;
+	$cantidad = $("#detalleCantidad").val() ;
+	$("#detalleSubtotal").html(parseFloat(parseFloat($precio.replace(',','.'))*$cantidad)) ;
+	
+	$("#detallePrecio").focus() ;
+	
+}
+
+function agregarDetalle(){
+
+	$precio = $("#detallePrecio").val() ;
+	$cantidad = $("#detalleCantidad").val() ;
+	$subtotal = $precio * $cantidad;
+	$producto = $("#detalleProducto").val() ;
+
+	if( $producto<=0)
+		return;
+	
+	$.ajax({
+	  	url: "{linkAgregarDetalle}",
+	  	type: "POST",
+	  	data: { precio: $precio, producto: $producto, cantidad: $cantidad },
+	  	dataType: "json",
+	  	cache: false,
+		complete:function(){
+			//$("#loading").hide();
+			//$("#current_action").html("");
+		},
+	  	success: function(data){
+		  	
+			if( data != null && data["error"]!=null){
+				msg = data["error"];
+				showErrorMessage(msg);
+			}
+			if( data != null && data["error"]==undefined){
+				//mostramos los detalles.
+				
+				mostrarDetalles( data );
+				
+				
+			}
+			
+	  	}
+	}); 
+	
+	
+}
+
+function consultarStockDetalle(){
+
+	$precio = $("#detallePrecio").val() ;
+	$cantidad = $("#detalleCantidad").val() ;
+	$subtotal = $precio * $cantidad;
+	$producto = $("#detalleProducto").val() ;
+
+	if( $producto<=0)
+		return;
+	
+	$.ajax({
+	  	url: "{linkConsultarStockDetalle}",
+	  	type: "POST",
+	  	data: { precio: $precio, producto: $producto, cantidad: $cantidad },
+	  	dataType: "json",
+	  	cache: false,
+		complete:function(){
+			//$("#loading").hide();
+			//$("#current_action").html("");
+		},
+	  	success: function(data){
+		  	
+			if( data != null && data["error"]!=null){
+				msg = data["error"];
+				showErrorMessage(msg);
+			}
+			if( data != null && data["error"]==undefined){
+				//mostramos los detalles.
+				
+				if(data["hayStock"]=="SI"){
+					agregarDetalle();
+				}
+				else{
+					jAlertConfirm( "Sin stock", "Sin stock. Continuar?", agregarDetalle );
+				}
+				
+			}
+			
+	  	}
+	}); 
+	
+	
+}
+
+function quitarDetalle( $index ){
+
+	$.ajax({
+	  	url: "{linkBorrarDetalle}",
+	  	type: "POST",
+	  	data: { index: $index },
+	  	dataType: "json",
+	  	cache: false,
+		complete:function(){
+			//$("#loading").hide();
+			//$("#current_action").html("");
+		},
+	  	success: function(data){
+		  	
+			if( data != null && data["error"]!=null){
+				msg = data["error"];
+				showErrorMessage(msg);
+			}
+			if( data != null && data["error"]==undefined){
+				//mostramos los detalles.
+				mostrarDetalles( data );
+			}
+			
+	  	}
+	}); 
+	
+	
+}
+
+function seleccionarProducto( oid ){
+
+	$("#findentity_detalleProducto_inputCode").val( oid ) ;
+	$("#findentity_detalleProducto_inputCode").blur() ;
+}
+
+$(function() {
+
+	$("#detalleCantidad").change( function(){
+		detalleChange();
+	});
+	$("#detallePrecio").change( function(){
+		detalleChange();
+	});
+	
+	$("#findentity_detalleProducto_autocomplete").focus() ;
+
+	
+	    
+	
+	$("#detallePrecio").keyup(function (e) {
+        if (e.keyCode == 13) {
+        	//$("#detalleCantidad").focus().select();
+        	consultarStockDetalle();
+        }
+    });
+
+	$("#detalleCantidad").keyup(function (e) {
+        if (e.keyCode == 13) {
+        	consultarStockDetalle();
+        }
+    });
+	
+	$("detallePrecio").focus(function(){
+        this.select();
+    }); 
+});    
+</script>
+
+<style>
+
+#findentity_detalleProducto_inputCode{
+	width: 50%;
+}
+#findentity_detalleProducto_autocomplete{
+	width: 40%;
+}
+
+.item{
+
+
+}
+.rasty form input[type="text"]{
+
+
+}
+
+.importe, .cantidad, #detalleCantidad, #detallePrecio{
+
+	text-align: right;
+}
+
+.totales{
+
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.presupuesto_left label{
+
+	text-align: left !important;
+}
+
+td.actions, .detalle button{
+	
+	text-align: center;
+}
+
+table#detalles td{
+	border-bottom: 2px solid #D8D8D8 !important;
+    border-right: 1px solid #CCCCCC !important;
+    border-top: 2px solid #FFFFFF !important;
+	
+}
+
+.no-mostrar{
+
+display:none;
+}
+
+</style>
+
+<div>
+
+
+
+	
+	<form class="cuentas_form" id="presupuesto_form" onsubmit="return validate('presupuesto_form');" action="{action}" method="{method}">
+
+	<fieldset>
+		<legend>{legend}</legend>
+
+		<rasty id="backSuccess" />
+	    <rasty id="oid" />
+		
+		
+		<div class="item no-mostrar">
+		    <label for="fecha">{lbl_fecha} *:</label>
+		    <rasty id="fecha" />
+		</div>
+		
+		<div class="item">
+		    <label for="cliente">{lbl_cliente} *:</label>
+		    <rasty id="cliente" />
+		</div>
+		<div class="item">
+		    <label for="observaciones">{lbl_observaciones}:</label>
+		    <rasty id="observaciones" />
+		</div>
+	</fieldset>
+	</form>
+
+
+	<fieldset>
+	
+		<legend>{detalles_legend}</legend>
+	
+		<table id="detalles">
+			<thead>
+				<tr>
+					<td colspan="5"><rasty id="detalleProducto"/></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td class="importe"><rasty id="detallePrecioLista"/></td>
+					<td class="importe"><rasty id="detallePrecioEfectivo"/></td>
+					<td class="importe"><rasty id="detallePrecio"/></td>
+					<td class="cantidad"><rasty id="detalleCantidad"/></td>
+					<td class="importe"><span id="detalleSubtotal"></span></td>
+					<td>
+						<button onclick="javascript: consultarStockDetalle();">
+							<i class="icon-plus"></i>
+						</button>
+					</td>
+				</tr>
+			</thead>
+			<thead>
+				<tr>
+					<th>{lbl_detalle_nombre}</th>
+					<th>{lbl_detalle_precio}</th>
+					<th>{lbl_detalle_cantidad}</th>
+					<th>{lbl_detalle_subtotal}</th>
+					<th></th>
+					<th></th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+			
+		</table>
+		
+	
+	</fieldset>
+	
+	<!-- BEGIN: msg_error -->
+	<fieldset class="ui-state-error">
+			{msg}	
+	</fieldset>
+	<!-- END: msg_error -->
+		
+	<form  class="cuentas_form" id="buttons{inputId}">
+		<fieldset class="tblFooters">
+		
+			<button  class="shortcut" type="button"  id="input_submit" onclick="javascript: submitFormulario('presupuesto_form'); ">
+				<i class="icon-checkmark on-left"></i>{lbl_submit}
+			</button>
+	
+			<button  class="shortcut" type="button"  id="input_button_2" onclick="javascript: window.location.href = '{cancel}'; ">
+				<i class="icon-cancel-2 on-left"></i>{lbl_cancel}
+			</button>
+		
+		</fieldset>
+</form>	
+</div>
+<div style="clear: both;"></div>	
+
+
+
+
+<!-- END:main -->

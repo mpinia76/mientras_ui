@@ -1,0 +1,14 @@
+<rasty specificationClass="Mientras\UI\pages\ventas\cobrar\VentaCobrarTarjeta" templateLocation="pages/ventas/cobrar/VentaCobrarTarjeta.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+
+	<component id="ventaCobrarTarjetaForm" type="VentaCobrarTarjetaForm">
+		<param name="legend" value="msg:ventaCobrarTarjeta.agregar.legend" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="action" value="linkActionCobrarVentaTarjeta" />
+		<param name="method" value="str:post" />
+		<param name="tarjeta" value="tarjeta" />
+	</component>
+	
+</rasty>

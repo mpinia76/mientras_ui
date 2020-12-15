@@ -1,0 +1,14 @@
+<rasty specificationClass="Mientras\UI\pages\proveedors\agregar\ProveedorAgregar" templateLocation="pages/proveedors/agregar/ProveedorAgregar.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+
+	<component id="proveedorForm" type="ProveedorForm">
+		<param name="legend" value="msg:proveedor.agregar.legend" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="action" value="linkActionAgregarProveedor" />
+		<param name="method" value="str:post" />
+		<param name="proveedor" value="proveedor" />
+	</component>
+	
+</rasty>

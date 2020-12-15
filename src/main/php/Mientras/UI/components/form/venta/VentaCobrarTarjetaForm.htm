@@ -1,0 +1,105 @@
+<!-- BEGIN:main -->
+
+
+<script>
+
+$(function() {
+
+	$('#tarjeta').change(function() {
+	    //alert($(this).val());
+	    $tarjeta = $(this).val() ;
+		$.ajax({
+		  	url: "{linkSeleccionarTarjeta}",
+		  	type: "POST",
+		  	data: { tarjeta: $tarjeta},
+		  	dataType: "json",
+		  	cache: false,
+			complete:function(){
+				//$("#loading").hide();
+				//$("#current_action").html("");
+			},
+		  	success: function(data){
+			  	
+				if( data != null && data["error"]!=null){
+					msg = data["error"];
+					showErrorMessage(msg);
+				}
+				if( data != null && data["error"]==undefined){
+					$( "#titular" ).val(data["titular"]); 
+					$( "#marca" ).val(data["marca"]); 
+					$( "#nro" ).val(data["nro"]); 
+				}
+				
+		  	}
+		}); 
+	});
+	
+});
+
+$(document).ready(function(){
+
+	$( "#tarjeta" ).change();
+	
+});
+
+</script>
+
+<div>
+<form class="cuentas_form" id="tarjeta_form" onsubmit="return validate('tarjeta_form');" action="{action}" method="{method}">
+
+		<fieldset>
+		<legend>{legend}</legend>
+
+		<rasty id="backSuccess" />
+	    
+	    <input type="hidden" value="{ventaOid}" name="ventaOid" id="ventaOid" />
+	    <input type="hidden" value="{clienteOid}" name="clienteOid" id="clienteOid" />
+		
+		<div class="item">
+				    <label for="tarjeta">{lbl_tarjeta}:</label>
+				    <rasty id="tarjeta" />
+				</div>
+		
+		<div class="item">
+		    <label for="titular">{lbl_titular} *:</label>
+		    <rasty id="titular" />
+		</div>
+		
+		<div class="item">
+		    <label for="marca">{lbl_marca} *:</label>
+		    <rasty id="marca" />
+		</div>
+		
+		<div class="item">
+		    <label for="nro">{lbl_nro} *:</label>
+		    <rasty id="nro" />
+		</div>
+		<div class="item">
+		    <label for="montoActualizado">{lbl_montoActualizado}:</label>
+		    <rasty id="montoActualizado" />
+		</div>
+		<div class="item">
+		    <label for="monto">{lbl_monto} *:</label>
+		    <rasty id="monto" />
+		</div>
+	</fieldset>
+	
+
+</form>
+<!-- BEGIN: msg_error -->
+<fieldset class="ui-state-error">
+	{msg}	
+</fieldset>
+<!-- END: msg_error -->
+
+<form  class="turnos_form" id="buttons{inputId}">
+	<fieldset class="tblFooters">
+	
+		<button type="button"  id="input_submit" onclick="javascript: submitFormulario('tarjeta_form'); "><i class="icon-checkmark on-left"></i>{lbl_submit}</button>
+
+		<button type="button"  id="input_button_2" onclick="javascript: window.location.href = '{cancel}'; "><i class="icon-cancel-2 on-left"></i>{lbl_cancel}</button>
+	
+	</fieldset>
+</form>	
+</div>
+<!-- END:main -->

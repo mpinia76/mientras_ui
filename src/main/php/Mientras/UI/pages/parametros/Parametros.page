@@ -1,0 +1,13 @@
+<rasty specificationClass="Mientras\UI\pages\parametros\Parametros" templateLocation="pages/parametros/Parametros.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+
+	<component id="parametrosFilter" type="ParametroFilter">
+		<param name="gridModelClazz" value="modelClazz" />
+		<param name="uicriteriaClazz" value="uicriteriaClazz" />
+		<param name="legend" value="msg:parametro.buscar" />
+		<param name="legendAgain" value="msg:parametro.buscar.again" />
+		<param name="resultDiv" value="str:searchdiv" />
+	</component>
+	
+</rasty>

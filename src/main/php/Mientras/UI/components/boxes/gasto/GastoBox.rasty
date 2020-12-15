@@ -1,0 +1,5 @@
+<rasty specificationClass="Mientras\UI\components\boxes\gasto\GastoBox" templateLocation="GastoBox.htm">
+
+	<param name="gastoOid" value="get:gastoOid" />
+
+</rasty>

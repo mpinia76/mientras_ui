@@ -1,0 +1,8 @@
+<rasty specificationClass="Mientras\UI\components\stats\balance\BalanceDia" templateLocation="BalanceDia.htm">
+
+	
+	
+	<param name="filterType" value="post:filter" />
+	
+
+</rasty>

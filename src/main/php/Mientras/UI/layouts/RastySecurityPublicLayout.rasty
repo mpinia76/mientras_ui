@@ -1,0 +1,5 @@
+<rasty specificationClass="Mientras\UI\layouts\MientrasLoginMetroLayout" templateLocation="MientrasLoginMetroLayout.htm">
+
+	<component id="footer" type="FooterLpnkf">
+	</component>
+</rasty>

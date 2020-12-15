@@ -1,0 +1,13 @@
+<rasty specificationClass="Mientras\UI\pages\balances\BalanceMes" templateLocation="pages/balances/BalanceMes.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+
+	<component id="balanceFilter" type="BalanceMesFilter">
+		
+		<param name="uicriteriaClazz" value="uicriteriaClazz" />
+		<param name="legend" value="msg:venta.buscar" />
+		<param name="legendAgain" value="msg:balance.buscar.again" />
+		<param name="resultDiv" value="str:searchdiv" />
+	</component>
+	
+</rasty>

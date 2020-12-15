@@ -1,0 +1,13 @@
+<rasty specificationClass="Mientras\UI\pages\ventas\Ventas" templateLocation="pages/ventas/Ventas.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+
+	<component id="ventasFilter" type="VentaFilter">
+		<param name="gridModelClazz" value="modelClazz" />
+		<param name="uicriteriaClazz" value="uicriteriaClazz" />
+		<param name="legend" value="msg:venta.buscar" />
+		<param name="legendAgain" value="msg:venta.buscar.again" />
+		<param name="resultDiv" value="str:searchdiv" />
+	</component>
+	
+</rasty>

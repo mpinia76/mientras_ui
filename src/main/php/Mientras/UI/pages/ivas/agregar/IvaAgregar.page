@@ -1,0 +1,14 @@
+<rasty specificationClass="Mientras\UI\pages\ivas\agregar\IvaAgregar" templateLocation="pages/ivas/agregar/IvaAgregar.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+
+	<component id="ivaForm" type="IvaForm">
+		<param name="legend" value="msg:iva.agregar.legend" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="action" value="linkActionAgregarIva" />
+		<param name="method" value="str:post" />
+		<param name="iva" value="iva" />
+	</component>
+	
+</rasty>

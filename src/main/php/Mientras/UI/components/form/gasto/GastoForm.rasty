@@ -1,0 +1,64 @@
+<rasty specificationClass="Mientras\UI\components\form\gasto\GastoForm" templateLocation="GastoForm.htm">
+
+	<param name="error" value="get:error" />
+
+	<component id="backSuccess" type="InputHidden">
+		<param name="inputId" value="str:backToOnSuccess" />
+		<param name="name" value="str:backToOnSuccess" />
+		<param name="value" value="backToOnSuccess" />
+	</component>
+
+	<component id="oid" type="InputHidden">
+		<param name="inputId" value="str:oid" />
+		<param name="name" value="str:oid" />
+		<param name="value" value="gasto.oid" />
+	</component>
+
+	<component id="fecha" type="InputDate">
+		<param name="inputId" value="str:fecha" />
+		<param name="name" value="str:fecha" />
+		<param name="value" value="gasto.fecha" />
+		<param name="placeholder" value="msg:gasto.fecha" />
+		<param name="format" value="str:d/m/Y H:i" />
+		<param name="requiredMessage" value="msg:gasto.fecha.required" />
+	</component>
+
+	<component id="fechaVencimiento" type="InputDate">
+		<param name="inputId" value="str:fechaVencimiento" />
+		<param name="name" value="str:fechaVencimiento" />
+		<param name="value" value="gasto.fechaVencimiento" />
+		<param name="placeholder" value="msg:gasto.fechaVencimiento" />
+		<param name="format" value="str:d/m/Y" />
+	</component>
+
+	<component id="concepto" type="InputCombo">
+		<param name="inputId" value="str:concepto" />
+		<param name="name" value="str:concepto" />
+		<param name="value" value="gasto.concepto" />
+		<param name="options" value="conceptos" />
+		<param name="finder" value="conceptoGastoFinderClazz" />
+		<param name="requiredMessage" value="msg:gasto.concepto.required" />
+	</component>
+
+	<component id="monto" type="InputCurrency">
+		<param name="inputId" value="str:monto" />
+		<param name="name" value="str:monto" />
+		<param name="value" value="gasto.monto" />
+		<param name="requiredMessage" value="msg:gasto.monto.required" />
+		<param name="placeholder" value="msg:gasto.monto" />
+		<param name="autocomplete" value="str:off" />
+	</component>
+
+
+	
+
+	
+	<component id="observaciones" type="InputText">
+		<param name="inputId" value="str:observaciones" />
+		<param name="name" value="str:observaciones" />
+		<param name="value" value="gasto.observaciones" />
+		<param name="placeholder" value="msg:gasto.observaciones.placeholder" />
+		<param name="autocomplete" value="str:off" />		
+	</component>
+	
+</rasty>

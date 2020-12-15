@@ -1,0 +1,107 @@
+<!-- BEGIN:main -->
+<html>
+<head>
+  <style>
+    @page { margin: 230px 50px; }
+    #header { position: fixed; left: 0px; top: -280px; right: 0px; }
+    #footer { position: fixed; left: 0px; bottom: -180px; right: 0px; height: 2px;  }
+    #footer .page:after { content: counter(page); }
+    #content { page-break-after: auto;}
+  </style>
+  </head>
+<body>
+  <div id="header">
+    <table>
+	<tr>
+	<td width="450px">
+		<p style="font-size:22pt;font-weight: bold;">Orden de presupuesto # {oid}</p>
+		<p style="font-size:22pt;font-weight: bold;">{fecha}</p>
+		<p style="font-size:16pt;">&#60;Documento no v&aacute;lido como factura&#62;</p>
+	</td>
+	<td width="300px">
+		<p style="font-size:12pt;">
+		<img border="0" alt="logo" name="imLogo" id="imLogo" style="margin-top: 30px;" width="200px" height="160px" src="{APP_PATH}/css/images/cabecera_pdf.jpg">
+		<br>
+		<img border="0" alt="whatsapp" name="imwhatsapp" id="imwhatsapp" src="{APP_PATH}/css/images/whatsapp.png"> 249-154 558058
+		<br><img border="0" alt="email" name="imEmail" id="imEmail" src="{APP_PATH}/css/images/mail.png"> ciprianotedesco@gmail.com
+		<br>Rodr&iacute;guez 195 - Rauch - Bs. As.</p>
+	</td>
+	</tr>
+	
+</table>
+
+  </div>
+  <div id="footer" style="padding-top: 10px; border-top: 1px solid #ddd; font-size:13px; color: #333; margin-top: 20px;">
+  	
+    <table>
+			<tr>
+			<td width="580px">
+				
+				Este presupuesto tiene una validez de 10 d&iacute;as <br>
+				
+			    Your Mientras Bebidas / Mayorista de bebidas en Rauch
+			    
+				
+				
+			</td>
+			
+			<td width="120px" align="right">
+				
+				<p class="page">P&aacute;gina </p>
+				
+			</td>
+			
+			</tr>
+	
+		</table>
+  </div>
+  <div id="content">
+  	<hr />
+    <table>
+	<tr>
+	<td colspan="2">
+		<span style="font-size:16pt;font-weight: bold;">CLIENTE</span>
+	</td>
+	</tr>
+	<tr>
+	<td colspan="2"> 
+		<span style="font-size:12pt;">Ap. y Nom./Rs: {cliente}</span>
+		
+	</td>
+	
+	
+	</tr>
+	<tr>
+	<td width="450px"> 
+		<span style="font-size:12pt;">Tel&eacute;fonos: {telefono} - {celular}</span>
+		
+	</td>
+	<td> 
+		<span style="font-size:12pt;">Email: {email}</span>
+		
+	</td>
+	
+	</tr>
+</table>
+<hr />
+<div class="box_details">
+	<table cellspacing="0" cellpadding="0" border="1">
+		<thead><tr><th width="450px">{lbl_detalle_nombre}</th><th>{lbl_detalle_cantidad}</th><th width="100px">{lbl_detalle_precio}</th><th width="100px">{lbl_detalle_subtotal}</th></tr></thead>
+		
+			<!-- BEGIN:detalle -->
+			<tr><td>{producto}</td><td style="text-align: right;">{cantidad}</td><td style="text-align: right;">{precio}</td><td style="text-align: right;">{subtotal}</td></tr>
+			<!-- END:detalle -->
+		
+		<tr><td colspan="4"></td></tr>
+		<tr><td colspan="4"></td></tr>
+		<tr><td colspan="4"></td></tr>
+		<tr><td colspan="4"></td></tr>
+			<tr><td style="text-align: right; font-weight: bold;" colspan="3">{lbl_totales}</td><td style="text-align: right;font-weight: bold;">{total}</td></tr>
+		
+	</table>
+</div>
+
+  </div>
+</body>
+</html>
+<!-- END:main -->

@@ -1,0 +1,120 @@
+<rasty specificationClass="Mientras\UI\components\form\cliente\ClienteForm" templateLocation="ClienteForm.htm">
+
+	<param name="error" value="get:error" />
+
+	
+	
+	<component id="backSuccess" type="InputHidden">
+		<param name="inputId" value="str:backToOnSuccess" />
+		<param name="name" value="str:backToOnSuccess" />
+		<param name="value" value="backToOnSuccess" />
+	</component>
+
+	<component id="oid" type="InputHidden">
+		<param name="inputId" value="str:oid" />
+		<param name="name" value="str:oid" />
+		<param name="value" value="cliente.oid" />
+	</component>
+
+
+	<component id="nombre" type="InputText">
+		<param name="inputId" value="str:nombre" />
+		<param name="name" value="str:nombre" />
+		<param name="value" value="cliente.nombre" />
+		<param name="requiredMessage" value="msg:cliente.nombre.required" />
+		<param name="placeholder" value="msg:cliente.nombre" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	
+
+	<component id="tipoDocumento" type="InputCombo">
+		<param name="inputId" value="str:tipoDocumento" />
+		<param name="name" value="str:tipoDocumento" />
+		<param name="value" value="cliente.tipoDocumento" />
+		<param name="options" value="tiposDocumento" />
+		<param name="placeholder" value="msg:cliente.tipoDocumento" />
+	</component>
+	
+
+	<component id="documento" type="InputText">
+		<param name="inputId" value="str:documento" />
+		<param name="name" value="str:documento" />
+		<param name="value" value="cliente.documento" />
+		<param name="placeholder" value="msg:cliente.documento" />
+	</component>
+
+	<component id="cuit" type="InputText">
+		<param name="inputId" value="str:cuit" />
+		<param name="name" value="str:cuit" />
+		<param name="value" value="cliente.cuit" />
+		<param name="placeholder" value="msg:cliente.cuit" />
+	</component>
+
+	<component id="nacimiento" type="InputDate">
+		<param name="inputId" value="str:nacimiento" />
+		<param name="name" value="str:nacimiento" />
+		<param name="value" value="cliente.nacimiento" />
+		<param name="placeholder" value="msg:cliente.nacimiento" />
+		<param name="format" value="str:d/m/Y" />
+	</component>
+
+	<component id="sexo" type="InputCombo">
+		<param name="inputId" value="str:sexo" />
+		<param name="name" value="str:sexo" />
+		<param name="value" value="cliente.sexo" />
+		<param name="options" value="sexos" />
+		<param name="placeholder" value="msg:cliente.sexo" />
+	</component>
+	
+	<component id="telefono" type="InputText">
+		<param name="inputId" value="str:telefono" />
+		<param name="name" value="str:telefono" />
+		<param name="value" value="cliente.telefono" />
+		<param name="placeholder" value="msg:cliente.telefono" />
+	</component>
+
+	<component id="celular" type="InputText">
+		<param name="inputId" value="str:celular" />
+		<param name="name" value="str:celular" />
+		<param name="value" value="cliente.celular" />
+		<param name="placeholder" value="msg:cliente.celular" />
+	</component>
+	
+	<component id="laboral" type="InputText">
+		<param name="inputId" value="str:laboral" />
+		<param name="name" value="str:laboral" />
+		<param name="value" value="cliente.laboral" />
+		<param name="placeholder" value="msg:cliente.laboral" />
+	</component>
+	
+	<component id="mail" type="InputText">
+		<param name="inputId" value="str:mail" />
+		<param name="name" value="str:mail" />
+		<param name="value" value="cliente.mail" />
+		<param name="placeholder" value="msg:cliente.mail" />
+	</component>
+	
+	<component id="direccion" type="InputText">
+		<param name="inputId" value="str:direccion" />
+		<param name="name" value="str:direccion" />
+		<param name="value" value="cliente.direccion" />
+		<param name="placeholder" value="msg:cliente.direccion" />
+	</component>
+	
+	<component id="observaciones" type="InputTextArea">
+		<param name="inputId" value="str:observaciones" />
+		<param name="name" value="str:observaciones" />
+		<param name="value" value="cliente.observaciones" />
+		<param name="placeholder" value="msg:cliente.observaciones" />	
+		<param name="rows" value="str:5" />	
+	</component>
+	
+	
+	
+	
+	
+	
+	
+</rasty>

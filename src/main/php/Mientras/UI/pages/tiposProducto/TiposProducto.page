@@ -1,0 +1,13 @@
+<rasty specificationClass="Mientras\UI\pages\tiposProducto\TiposProducto" templateLocation="pages/tiposProducto/TiposProducto.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+
+	<component id="tiposProductoFilter" type="TipoProductoFilter">
+		<param name="gridModelClazz" value="modelClazz" />
+		<param name="uicriteriaClazz" value="uicriteriaClazz" />
+		<param name="legend" value="msg:tipoProducto.buscar" />
+		<param name="legendAgain" value="msg:tipoProducto.buscar.again" />
+		<param name="resultDiv" value="str:searchdiv" />
+	</component>
+	
+</rasty>

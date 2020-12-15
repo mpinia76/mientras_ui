@@ -1,0 +1,14 @@
+<rasty specificationClass="Mientras\UI\pages\conceptoMovimientos\agregar\ConceptoMovimientoAgregar" templateLocation="pages/conceptoMovimientos/agregar/ConceptoMovimientoAgregar.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+
+	<component id="conceptoMovimientoForm" type="ConceptoMovimientoForm">
+		<param name="legend" value="msg:conceptoMovimiento.agregar.legend" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="action" value="linkActionAgregarConceptoMovimiento" />
+		<param name="method" value="str:post" />
+		<param name="conceptoMovimiento" value="conceptoMovimiento" />
+	</component>
+	
+</rasty>

@@ -1,0 +1,118 @@
+<!-- BEGIN:main -->
+<script>
+
+
+function submitBuscarVentas(){
+
+	$( "#page" ).val( 1 );
+	
+	//buscarVentas();
+
+	submitBuscar("{WEB_PATH}", "#ventas_filter{id}", "#{resultDiv}");
+}
+
+function ordenarVentas(name, type){
+
+	$( "#orderBy" ).val(name);
+	$( "#orderByType" ).val(type);
+	
+	submitBuscar("{WEB_PATH}", "#ventas_filter{id}", "#{resultDiv}");
+}
+
+function paginarVentas(page){
+	$( "#page" ).val(page);
+
+	submitBuscar("{WEB_PATH}", "#ventas_filter{id}", "#{resultDiv}");
+}
+
+function seleccionarVenta(event, ventaId, rowId, checkboxId){
+
+
+	/* muestro un pop con las opciones sobre el venta */
+	
+	gotoLink("{linkSeleccionar}?oid="+ventaId);
+	
+}
+
+function eliminarCallback(data){
+
+	console.log( data["info"] );
+	submitBuscar("{WEB_PATH}", "#ventas_filter{id}", "#{resultDiv}");
+}
+
+
+$(document).ready(function(){
+
+	submitBuscar("{WEB_PATH}", "#ventas_filter{id}", "#{resultDiv}");
+
+	 $(".item input").keyup(function (e) {
+         if (e.keyCode == 13) {
+             // función para capturar el enter en el filtro default.
+        	 submitBuscar("{WEB_PATH}", "#ventas_filter{id}", "#{resultDiv}");
+         }
+     });
+	
+});
+
+
+</script>
+
+<div id="divVentas{id}Toggle1" style="display:none">
+<form class="cuentas_form">
+		<fieldset>
+		<legend class="search_again" id="legend_buscar{id}_open">{legend_again}</legend>
+		</fieldset>
+</form>		
+</div>
+<div id="divVentas{id}Toggle2">
+<form class="cuentas_form" id="ventas_filter{id}">
+
+		
+	<fieldset>
+		
+		<legend id="legend_buscar{id}">{legend}</legend>		
+
+		<div class="criteria_left">
+			<div class="item">
+			    <label for="fechaDesde">{lbl_fechaDesde}:</label>
+		    	<rasty id="fechaDesde" />
+			</div>
+			
+			<div class="item">
+			    <label for="fechaHasta">{lbl_fechaHasta}:</label>
+		    	<rasty id="fechaHasta" />
+			</div>
+		</div>
+		<div class="criteria_right">
+			<div class="item" style="min-width: {minWidth};">
+			    <label for="cliente">{lbl_cliente}:</label>
+		    	<rasty id="cliente" />
+			</div>
+			<div class="item" style="min-width: {minWidth};">
+			    <label for="observaciones">{lbl_observaciones}:</label>
+		    	<rasty id="observaciones" />
+			</div>
+			<div class="item">
+			    <label for="filtroPredefinido">{lbl_predefinidos}:</label>
+		    	<rasty id="filtroPredefinido" />
+			</div>
+		</div>
+	</fieldset>
+	
+	<input type="hidden" name="model" value="{model}">
+	<input type="hidden" name="filter" value="{filter}">
+	<input type="hidden" name="sortCallback" value="ordenarVentas">
+	<input type="hidden" name="paginationCallback" value="paginarVentas">
+	<input type="hidden" name="selectRowCallback" value="{selectRowCallback}">
+	<input type="hidden" id="orderBy" name="orderBy" value="{orderBy}">
+	<input type="hidden" id="orderByType" name="orderByType" value="{orderByType}">
+	<input type="hidden" id="page" name="page" value="1">
+
+</form>
+<form  class="cuentas_form" id="buttons{id}">
+	<fieldset class="tblFooters">
+		<button id="input_submit_ajax_Venta{id}"  type="button"  onclick="javascript: $( '#page' ).val( 1 ); submitBuscar('{WEB_PATH}', '#ventas_filter{id}', '#{resultDiv}');"><i class="icon-search on-left"></i>{lbl_submit}</button>
+	</fieldset>
+</form>	
+</div>
+<!-- END:main -->

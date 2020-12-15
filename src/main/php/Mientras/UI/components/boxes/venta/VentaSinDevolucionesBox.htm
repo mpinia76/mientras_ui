@@ -1,0 +1,55 @@
+<!-- BEGIN:main -->
+
+<style>
+.buttons button{
+
+	margin: 10px;
+}
+
+</style>
+<div class="box">
+	<div class="item">
+		<h2 class='saldo'>{lbl_fecha}</h2>
+		<p class='saldo'>{fecha}</p>
+	</div>
+	
+	<div class="item">
+		<h2>{lbl_cliente}</h2>
+		<p>{cliente}</p>
+	</div>
+	<div class="item">
+		<h2>{lbl_observaciones}</h2>
+		<p>{observaciones}</p>
+	</div>
+	<div class="item">
+		<h2>{lbl_monto}</h2>
+		<p>{monto}</p>
+	</div>
+	<div class="item">
+		<h2>{lbl_montoPagado}</h2>
+		<p>{montoPagado}</p>
+	</div>
+	<div class="item">
+		<h2>{lbl_montoDebe}</h2>
+		<p><span id="spanDebe">{montoDebe}</span></p>
+	</div>
+	<div class="item">
+		<h2>{lbl_estado}</h2>
+		<p>{estado}</p>
+	</div>
+</div>
+<div class="box_details">
+	<table>
+		<thead><tr><th>{lbl_detalle_nombre}</th><th>{lbl_detalle_cantidad}</th><th>{lbl_detalle_precio}</th><th>{lbl_detalle_subtotal}</th></tr></thead>
+		<tbody>
+			<!-- BEGIN:detalle -->
+			<tr><td>{producto}</td><td class="align-r">{cantidad}</td><td class="align-r">{precio}</td><td class="align-r">{subtotal}</td></tr>
+			<!-- END:detalle -->
+		</tbody>
+		<tfoot>
+			<tr><td>{lbl_totales}</td><td class="align-r">{cantidad_total}</td><td></td><td class="align-r">{total}</td></tr>
+		</tfoot>
+	</table>
+</div>
+
+<!-- END:main -->

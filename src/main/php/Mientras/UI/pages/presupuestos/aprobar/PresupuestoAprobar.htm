@@ -1,0 +1,45 @@
+<!-- BEGIN: main-->
+
+<style>
+.importe{
+	font-size: 18px !important;
+	color: blue;
+	font-weight: bold !important;
+}
+
+</style>
+
+<div id="editar">
+
+	<div align="justify">
+		<p class="titulo">{title}</p>
+	</div>
+
+	<form class="cuentas_form" id="presupuesto_form" onsubmit="return validate('presupuesto_form');" action="{linkAprobarPresupuesto}" method="POST">
+		<input type="hidden" value="{presupuestoOid}" name="presupuestoOid" />
+	
+		<fieldset class="presupuesto">
+			<legend>{presupuesto_legend}</legend>
+			
+			<rasty id="presupuesto" />
+			
+		</fieldset>
+	</form>
+	<!-- BEGIN: msg_error -->
+	<fieldset class="ui-state-error">
+			{msg}	
+	</fieldset>
+	<!-- END: msg_error -->
+	<form  class="cuentas_form" id="buttons{inputId}">
+		<fieldset class="tblFooters">
+		
+			<button  class="shortcut" type="button"  id="input_submit" onclick="javascript: submitFormulario('presupuesto_form'); "><i class="icon-checkmark on-left"></i>{lbl_submit}</button>
+	
+			<button  class="shortcut" type="button"  id="input_button_2" onclick="javascript: history.back(); "><i class="icon-cancel-2 on-left"></i>{lbl_cancel}</button>
+		
+		</fieldset>
+	</form>	
+	
+	
+</div>
+<!-- END: main-->

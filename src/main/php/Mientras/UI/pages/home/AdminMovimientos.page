@@ -1,0 +1,10 @@
+<rasty specificationClass="Mientras\UI\pages\home\AdminMovimientos" templateLocation="pages/home/AdminMovimientos.htm"> 
+
+	<param name="layoutType" value="str:MientrasHomeMetroLayout" />
+
+
+	
+
+	
+	
+</rasty>

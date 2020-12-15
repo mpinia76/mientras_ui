@@ -1,0 +1,83 @@
+<!-- BEGIN:main -->
+<style>
+.buttons button{
+
+	margin: 10px;
+}
+
+td.saldo{
+
+	text-align: right;
+}
+</style>
+<div class="box">
+
+	<div class="item">
+		<h2>{lbl_anio}</h2>
+		<p>{anio}</p>
+	</div>
+	<div class="item">
+		<h2>{lbl_ventas}</h2>
+		<p>{totalVentas}</p>
+	</div>
+	<!--  <div class="item">
+		<h2>{lbl_pagos}</h2>
+		<p>{totalPagos}</p>
+	</div>
+	<div class="item">
+		<h2>{lbl_gastos}</h2>
+		<p>{totalGastos}</p>
+	</div>
+	<div class="item">
+		<h2>{lbl_comisiones}</h2>
+		<p>{totalComisiones}</p>
+	</div> -->
+	<div class="item">
+		<h2>{lbl_ganancia}</h2>
+		<p>{totalGanancia}</p>
+	</div>
+	<div class="item">
+		
+		<p>{productos}</p>
+	</div>	
+	<div class="item">
+		
+		<p>{clientes}</p>
+	</div>
+</div>
+
+<!-- BEGIN: detalle_mes -->
+<div class="box">
+	<fieldset>
+		<legend>{detalle_mes_legend}</legend>
+		
+		<table>
+			<tr>
+				<th>{lbl_mes}</th>
+				<th>{lbl_ventas}</th>
+				<!--  <th>{lbl_pagos}</th>
+				<th>{lbl_gastos}</th>
+				<th>{lbl_comisiones}</th>-->
+				<th>{lbl_ganancia}</th>
+				<th>{lbl_productos}</th>
+				<th>{lbl_clientes}</th>
+			</tr>
+			<!-- BEGIN: mes -->
+			<tr>
+				<td>{mes}</td>
+				<td class='saldo'>{ventas}</td>
+				<!--<td class='saldo'>{pagos}</td>
+				<td class='saldo'>{gastos}</td>
+				<td class='saldo'>{comisiones}</td>-->
+				<td class='saldo'>{ganancia}</td>
+				<td class='saldo'>{producto}</td>
+				<td class='saldo'>{cliente}</td>
+			</tr>
+			<!-- END: mes -->	
+		</table>
+		
+	</fieldset>
+</div>
+<!-- END: detalle_mes -->
+
+<!-- END:main -->

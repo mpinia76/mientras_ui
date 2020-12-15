@@ -1,0 +1,13 @@
+<rasty specificationClass="Mientras\UI\pages\clientes\ClientesCtaCte" templateLocation="pages/clientes/ClientesCtaCte.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+
+	<component id="clientesFilter" type="ClienteCtaCteFilter">
+		<param name="gridModelClazz" value="modelClazz" />
+		<param name="uicriteriaClazz" value="uicriteriaClazz" />
+		<param name="legend" value="msg:clienteCtaCte.buscar" />
+		<param name="legendAgain" value="msg:clienteCtaCte.buscar.again" />
+		<param name="resultDiv" value="str:searchdiv" />
+	</component>
+	
+</rasty>

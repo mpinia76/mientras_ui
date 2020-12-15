@@ -1,0 +1,13 @@
+<rasty specificationClass="Mientras\UI\pages\gastos\agregar\GastoAgregar" templateLocation="pages/gastos/agregar/GastoAgregar.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+
+	<component id="gastoForm" type="GastoForm">
+		<param name="legend" value="msg:gasto.agregar.legend" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="action" value="linkActionAgregarGasto" />
+		<param name="method" value="str:post" />
+		<param name="gasto" value="gasto" />
+	</component>
+	
+</rasty>

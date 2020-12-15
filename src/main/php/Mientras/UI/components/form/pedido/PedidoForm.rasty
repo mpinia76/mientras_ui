@@ -1,0 +1,104 @@
+<rasty specificationClass="Mientras\UI\components\form\pedido\PedidoForm" templateLocation="PedidoForm.htm">
+
+	<param name="error" value="get:error" />
+
+	<component id="backSuccess" type="InputHidden">
+		<param name="inputId" value="str:backToOnSuccess" />
+		<param name="name" value="str:backToOnSuccess" />
+		<param name="value" value="backToOnSuccess" />
+	</component>
+
+	<component id="oid" type="InputHidden">
+		<param name="inputId" value="str:oid" />
+		<param name="name" value="str:oid" />
+		<param name="value" value="pedido.oid" />
+	</component>
+
+	<component id="nombre" type="InputText">
+		<param name="name" value="str:nombreProducto" />
+		<param name="inputId" value="str:nombreProducto" />
+		<param name="placeholder" value="msg:producto.nombre" />
+		
+	</component>
+	
+	<component id="tipoProducto" type="InputFindEntity">
+		<param name="inputId" value="str:tipoProducto" />
+		<param name="name" value="str:tipoProducto" />
+		
+		<param name="placeholder" value="msg:producto.tipoProducto" />
+		<param name="finder" value="tipoProductoFinderClazz" />
+		
+		<param name="popupFilterType" value="str:TipoProductoFilter" />
+		<param name="onSelectCallback" value="str:tipoProductochange" />
+	</component>
+	
+	<component id="marcaProducto" type="InputFindEntity">
+		<param name="inputId" value="str:marcaProducto" />
+		<param name="name" value="str:marcaProducto" />
+		
+		<param name="placeholder" value="msg:producto.marcaProducto" />
+		<param name="finder" value="marcaProductoFinderClazz" />
+		
+		<param name="popupFilterType" value="str:MarcaProductoFilter" />
+		<param name="onSelectCallback" value="str:marcaProductochange" />
+	</component>
+	
+	<component id="proveedor" type="InputCombo">
+		<param name="inputId" value="str:proveedor" />
+		<param name="name" value="str:proveedor" />
+		<param name="value" value="pedido.proveedor" />
+		<param name="options" value="proveedores" />
+		<param name="finder" value="ProveedorFinderClazz" />
+		<param name="requiredMessage" value="msg:pedido.proveedor.required" />
+	</component>
+
+	<component id="fechaHora" type="InputDate">
+		<param name="inputId" value="str:fechaHora" />
+		<param name="name" value="str:fechaHora" />
+		<param name="value" value="pedido.fechaHora" />
+		<param name="placeholder" value="msg:pedido.fechaHora" />
+		<param name="format" value="str:d/m/Y" />
+		<param name="requiredMessage" value="msg:pedido.fecha.required" />
+	</component>
+
+	<component id="observaciones" type="InputText">
+		<param name="inputId" value="str:observaciones" />
+		<param name="name" value="str:observaciones" />
+		<param name="value" value="pedido.observaciones" />
+		<param name="placeholder" value="msg:pedido.observaciones.placeholder" />
+		<param name="autocomplete" value="str:off" />
+		<param name="styleCss" value="str:uppercase" />		
+	</component>
+	
+	
+	<component id="detallePrecio" type="InputCurrency">
+		<param name="inputId" value="str:detallePrecio" />
+		<param name="name" value="str:detallePrecio" />
+		<param name="value" value="detalle.precio" />
+		<param name="requiredMessage" value="msg:pedido.detalle.precio.required" />
+		<param name="placeholder" value="msg:pedido.detalle.precio" />
+		<param name="autocomplete" value="str:off" />
+	</component>
+	
+	<component id="detalleCantidad" type="InputNumber">
+		<param name="inputId" value="str:detalleCantidad" />
+		<param name="name" value="str:detalleCantidad" />
+		<param name="value" value="detalle.cantidad" />
+		<param name="requiredMessage" value="msg:pedido.detalle.cantidad.required" />
+		<param name="placeholder" value="msg:pedido.detalle.cantidad" />
+		<param name="autocomplete" value="str:off" />
+	</component>
+	
+	<component id="detalleProducto" type="InputFindEntity">
+		<param name="inputId" value="str:detalleProducto" />
+		<param name="name" value="str:detalleProducto" />
+		<param name="value" value="detalle.producto" />
+		<param name="placeholder" value="msg:pedido.detalle.producto" />
+		<param name="finder" value="productoFinderClazz" />
+		<param name="hasPopup" value="boolean:true" />
+		<param name="popupFilterType" value="str:ProductoFilter" />
+		<param name="onSelectCallback" value="str:productochange" />
+	</component>
+
+	
+</rasty>

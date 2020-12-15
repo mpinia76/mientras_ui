@@ -1,0 +1,16 @@
+<rasty specificationClass="Mientras\UI\pages\ivas\modificar\IvaModificar" templateLocation="pages/ivas/modificar/IvaModificar.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+	<param name="ivaOid" value="get:oid" />
+
+
+	<component id="ivaForm" type="IvaForm">
+		<param name="legend" value="msg:iva.modificar.legend" />
+		<param name="action" value="linkActionModificarIva" />
+		<param name="method" value="str:post" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="iva" value="iva" />
+	</component>
+	
+</rasty>

@@ -1,0 +1,14 @@
+<rasty specificationClass="Mientras\UI\pages\conceptoGastos\agregar\ConceptoGastoAgregar" templateLocation="pages/conceptoGastos/agregar/ConceptoGastoAgregar.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+
+	<component id="conceptoGastoForm" type="ConceptoGastoForm">
+		<param name="legend" value="msg:conceptoGasto.agregar.legend" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="action" value="linkActionAgregarConceptoGasto" />
+		<param name="method" value="str:post" />
+		<param name="conceptoGasto" value="conceptoGasto" />
+	</component>
+	
+</rasty>

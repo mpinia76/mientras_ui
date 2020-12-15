@@ -1,0 +1,14 @@
+<rasty specificationClass="Mientras\UI\pages\pedidos\agregar\PedidoAgregar" templateLocation="pages/pedidos/agregar/PedidoAgregar.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+
+	<component id="pedidoForm" type="PedidoForm">
+		<param name="legend" value="msg:pedido.agregar.legend" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="action" value="linkActionAgregarPedido" />
+		<param name="method" value="str:post" />
+		<param name="pedido" value="pedido" />
+	</component>
+	
+</rasty>

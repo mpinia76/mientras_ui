@@ -1,0 +1,120 @@
+<!-- BEGIN: main-->
+
+<style>
+.item{
+
+
+}
+.rasty form input[type="text"]{
+
+
+}
+
+.pedido_left{
+	width: 60%;
+	float:left;
+}
+
+.pedido_right{
+	width: 40%;
+	float:right;
+}
+
+.pedido{
+	padding: 25px 40px !important;
+}
+
+.totales{
+
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.pedido div.desc{
+	font-size: 16px;
+	display:block;
+}
+.pedido div.desc label{
+	font-size: 100%;
+	font-style: italic;
+	font-weight: bold;
+	float:left;
+	width: 40%;
+}
+
+.importe{
+	font-size: 18px !important;
+	color: blue;
+	font-weight: bold !important;
+}
+
+.pedido div.desc span{
+	text-align:right;
+	float:right;
+	width: 50%;
+}
+
+.formas_pago button{
+
+	margin: 10px;
+}
+
+</style>
+
+<div id="editar">
+
+	<div align="justify">
+		<p class="titulo">{title}</p>
+	</div>
+
+	<div class="pedido_left">
+	<fieldset class="pedido">
+		<legend>{pedido_legend}</legend>
+		
+		<rasty id="pedido" />
+		
+	</fieldset>
+	</div>
+	<div class="pedido_right">
+	<fieldset class="formas_pago">
+		<legend>{forma_pago_legend}</legend>
+		
+		<!-- BEGIN:forma_pago_caja -->
+		<button class="shortcut" onclick="javascript: window.location.href='{linkPagarEfectivo}'">
+				<img src="{WEB_PATH}/css/images/caja_48.png" />
+				{lbl_efectivo}
+		</button>
+		<!-- END:forma_pago_caja -->
+		
+		<!-- BEGIN:forma_pago_cajaChica -->
+		<!--<button class="shortcut" onclick="javascript: window.location.href='{linkPagarCajaChica}'">
+				<img src="{WEB_PATH}/css/images/cajaChica_48.png" />
+				{lbl_cajaChica}
+		</button> -->
+		<!-- END:forma_pago_cajaChica -->
+		
+		<!-- BEGIN:forma_pago_bapro -->
+		<!--<button class="shortcut" onclick="javascript: window.location.href='{linkPagarBAPRO}'">
+				<img src="{WEB_PATH}/css/images/bapro_48.png" />
+				{lbl_bapro}
+		</button> -->
+		<!-- END:forma_pago_bapro -->
+		
+		<button class="shortcut" onclick="javascript: window.location.href='{linkAnular}'">
+				<img src="{WEB_PATH}/css/images/anular_32.png" />
+				{lbl_anular}
+		</button>
+		<button class="shortcut" onclick="javascript: window.location.href='{linkPendiente}'">
+				<img src="{WEB_PATH}/css/images/pagoPendiente_32.png" />
+				{lbl_pendiente}
+		</button>
+	</fieldset>
+	</div>
+	<div style="clear:both;"></div>
+	<!-- BEGIN: msg_error -->
+	<fieldset class="ui-state-error">
+			{msg}	
+	</fieldset>
+	<!-- END: msg_error -->
+</div>
+<!-- END: main-->

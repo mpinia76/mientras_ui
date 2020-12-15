@@ -1,0 +1,65 @@
+<!-- BEGIN:main -->
+<style>
+.buttons button{
+
+	margin: 10px;
+}
+
+</style>
+<div class="box">
+
+	<div class="item">
+		<h2>{lbl_fecha}</h2>
+		<p>{fecha}</p>
+	</div>
+	<div class="item">
+		<h2>{lbl_ventas}</h2>
+		<p>{ventas}</p>
+	</div>
+	<!--  <div class="item">
+		<h2>{lbl_pagos}</h2>
+		<p>{pagos}</p>
+	</div>
+	<div class="item">
+		<h2>{lbl_gastos}</h2>
+		<p>{gastos}</p>
+	</div>-->
+	<div class="item">
+		<h2>{lbl_ganancias}</h2>
+		<p>{ganancias}</p>
+	</div>	
+	<div class="item">
+		
+		<p>{productos}</p>
+	</div>	
+	<div class="item">
+		
+		<p>{clientes}</p>
+	</div>
+</div>
+
+<!-- BEGIN: ventas -->
+<div class="box">
+	<fieldset>
+		<legend>{legend_detalle_ventas}</legend>
+		
+		<!-- BEGIN: detalle_categoria -->
+		<div class="item">
+			<h2 class='saldo'>{lbl_categoria}</h2>
+			<p class='saldo'>{importe}</p>
+		</div>
+			<!-- BEGIN: categoria_producto -->
+			<div class="item subitem">
+				<h2 class='saldo'>{lbl_producto}</h2>
+				<p class='saldo'>x{cantidad} = {importe}</p>
+			</div>
+			<!-- END: categoria_producto -->
+		<!-- END: detalle_categoria -->
+		<div class="item">
+			<h2 class='saldo'>{lbl_total}</h2>
+			<p class='saldo'>{importe_total}</p>
+		</div>
+	</fieldset>
+</div>
+<!-- END: ventas -->
+<!-- END:main -->

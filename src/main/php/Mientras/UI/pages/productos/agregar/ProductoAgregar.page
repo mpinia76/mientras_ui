@@ -1,0 +1,14 @@
+<rasty specificationClass="Mientras\UI\pages\productos\agregar\ProductoAgregar" templateLocation="pages/productos/agregar/ProductoAgregar.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+
+	<component id="productoForm" type="ProductoForm">
+		<param name="legend" value="msg:producto.agregar.legend" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="action" value="linkActionAgregarProducto" />
+		<param name="method" value="str:post" />
+		<param name="producto" value="producto" />
+	</component>
+	
+</rasty>

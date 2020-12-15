@@ -1,0 +1,445 @@
+<!-- BEGIN:main -->
+<script language="javascript"
+	src="{WEB_PATH}js/autocomplete/simpleAutoComplete.js"></script>
+<link rel="stylesheet"
+	href="{WEB_PATH}css/autocomplete/simpleAutoComplete.css"
+	type="text/css" />
+
+
+<script>
+var productoSelected = "";
+var detalles = "";
+
+function addTrDetalle($detalle, $table, $index){
+
+	$row = $('<tr/>', {'class' : 'detalle'});
+
+    $row.append($('<td/>').append($detalle["producto_nombre"]));
+    $row.append($('<td/>', {'class' : 'importe'}).append("$" +$detalle["precioUnitario"]));
+    $row.append($('<td/>', {'class' : 'importe'}).append($detalle["cantidad"]));
+    $row.append($('<td/>', {'class' : 'importe'}).append("$" +$detalle["subtotal"]));
+
+	$button = $('<button/>', {'onclick' : 'quitarDetalle(' + $index + ')'}).append( $('<i/>', {'class' : 'icon-cancel-2'}) );
+	$row.append($('<td/>', {'class' : 'actions'}).append($button));
+
+
+
+	$table.append($row);
+
+}
+
+function addTrTotales($data, $table){
+
+	$importe = $data["importe"];
+	$cantidad = $data["cantidad"];
+
+	$detalles = $data["detalles"];
+
+	$row = $('<tr/>');
+
+    $row.append($('<td/>', {'class' : 'totales'}).append("Totales"));
+    $row.append($('<td/>', {'class' : 'totales importe'}).append());
+    $row.append($('<td/>', {'class' : 'totales importe'}).append( $cantidad ));
+    $row.append($('<td/>', {'class' : 'totales importe'}).append( "$" + $importe));
+    $row.append($('<td/>').append());
+
+	$table.append($row);
+
+}
+
+
+
+function mostrarDetalles(data){
+
+	$detalles = data["detalles"];
+
+	$table = $('#detalles > tbody');
+	$table.html("");
+
+
+	for( var $i=0; $i < $detalles.length ; $i++){
+
+		$detalle = $detalles[$i];
+		addTrDetalle($detalle, $table, $i);
+
+	}
+
+	addTrTotales( data, $table);
+
+	cleanInputs();
+}
+
+function cleanInputs(){
+
+	$("#detallePrecio").val("") ;
+	$("#detalleCantidad").val("") ;
+	$("#detalleSubtotal").html("") ;
+
+	$("#findentity_detalleProducto_inputCode").val("") ;
+	$("#findentity_detalleProducto_inputCode").blur() ;
+	$("#findentity_detalleProducto_inputCode").focus() ;
+
+
+}
+
+function productochange(entity){
+
+
+
+	//mostramos las obras sociales con las que se ha atendido.
+	if(entity["error"] == undefined){
+
+		productoSelected = entity;
+
+		$precio = entity["costo"];
+
+		$("#detallePrecio").val( $precio ) ;
+		$("#detalleCantidad").val(1) ;
+		$("#detalleSubtotal").html($precio) ;
+
+
+		if($precio>0){
+
+			//agregarDetalle();
+			$("#detalleCantidad").focus() ;
+			$("#detalleCantidad").select() ;
+		}else{
+			$("#detallePrecio").val( "" ) ;
+			$("#detallePrecio").focus() ;
+			$("#detallePrecio").select() ;
+		}
+
+	}
+}
+
+function detalleChange(){
+
+	$precio = $("#detallePrecio").val() ;
+	$cantidad = $("#detalleCantidad").val() ;
+	//$("#detalleSubtotal").html($precio*$cantidad) ;
+
+	$("#detalleSubtotal").html(parseFloat(parseFloat($precio.replace(',','.'))*$cantidad)) ;
+
+	$("#detallePrecio").focus() ;
+
+}
+
+function agregarDetalle(){
+
+	$precio = $("#detallePrecio").val() ;
+	$cantidad = $("#detalleCantidad").val() ;
+	$subtotal = $precio * $cantidad;
+	$producto = $("#detalleProducto").val() ;
+
+	if( $producto<=0)
+		return;
+
+	$.ajax({
+	  	url: "{linkAgregarDetalle}",
+	  	type: "POST",
+	  	data: { precio: $precio, producto: $producto, cantidad: $cantidad },
+	  	dataType: "json",
+	  	cache: false,
+		complete:function(){
+			//$("#loading").hide();
+			//$("#current_action").html("");
+		},
+	  	success: function(data){
+
+			if( data != null && data["error"]!=null){
+				msg = data["error"];
+				showErrorMessage(msg);
+			}
+			if( data != null && data["error"]==undefined){
+				//mostramos los detalles.
+				mostrarDetalles( data );
+			}
+
+	  	}
+	});
+
+
+}
+
+function quitarDetalle( $index ){
+
+	$.ajax({
+	  	url: "{linkBorrarDetalle}",
+	  	type: "POST",
+	  	data: { index: $index },
+	  	dataType: "json",
+	  	cache: false,
+		complete:function(){
+			//$("#loading").hide();
+			//$("#current_action").html("");
+		},
+	  	success: function(data){
+
+			if( data != null && data["error"]!=null){
+				msg = data["error"];
+				showErrorMessage(msg);
+			}
+			if( data != null && data["error"]==undefined){
+				//mostramos los detalles.
+				mostrarDetalles( data );
+			}
+
+	  	}
+	});
+
+
+}
+
+function seleccionarProducto( oid ){
+
+	$("#findentity_detalleProducto_inputCode").val( oid ) ;
+	$("#findentity_detalleProducto_inputCode").blur() ;
+}
+
+function tipoProductochange( ){
+	submitBuscarAccesosRapidos("{WEB_PATH}");
+
+}
+
+function marcaProductochange( ){
+	submitBuscarAccesosRapidos("{WEB_PATH}");
+
+}
+
+
+
+function submitBuscarAccesosRapidos(webpath){
+
+	var $tipoProducto = $("#findentity_tipoProducto_autocomplete").val() ;
+	var $marcaProducto = $("#findentity_marcaProducto_autocomplete").val() ;
+	var $nombreProducto = $("#nombreProducto").val() ;
+	$.ajax({
+		  url: webpath + "AccesosRapidos.rasty",
+		  type: "POST",
+		  data: { nombreProducto: $nombreProducto,marcaProducto: $marcaProducto,tipoProducto: $tipoProducto},
+		  cache: false,
+		  success: function(content){
+
+			$("#accesosRapidos" ).html(content);
+			//$( resultId ).fadeTo("fast", 1);
+
+		  }
+		});
+}
+
+$(function() {
+
+	$("#detalleCantidad").change( function(){
+		detalleChange();
+	});
+	$("#detallePrecio").change( function(){
+		detalleChange();
+	});
+
+	$("#findentity_detalleProducto_inputCode").focus() ;
+
+	$("#nombreProducto").change( function(){
+		submitBuscarAccesosRapidos("{WEB_PATH}");
+	});
+
+	$("#detallePrecio").keyup(function (e) {
+        if (e.keyCode == 13) {
+        	//$("#detalleCantidad").focus().select();
+        	agregarDetalle();
+        }
+    });
+
+	$("#detalleCantidad").keyup(function (e) {
+        if (e.keyCode == 13) {
+        	agregarDetalle();
+        }
+    });
+
+	submitBuscarAccesosRapidos("{WEB_PATH}");
+});
+</script>
+
+<style>
+.item{
+
+
+}
+.rasty form input[type="text"]{
+
+
+}
+
+.pedido_left{
+	width: 45%;
+	float:left;
+}
+
+.pedido_right{
+	width: 55%;
+	float:right;
+}
+
+.importe, .cantidad, #detalleCantidad, #detallePrecio{
+
+	text-align: right;
+}
+
+.totales{
+
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.pedido_left label{
+
+	text-align: left !important;
+}
+
+td.actions, .detalle button{
+
+	text-align: center;
+}
+
+table#detalles td{
+	border-bottom: 2px solid #D8D8D8 !important;
+    border-right: 1px solid #CCCCCC !important;
+    border-top: 2px solid #FFFFFF !important;
+
+}
+
+.no-mostrar{
+
+display:none;
+}
+
+</style>
+
+<div>
+
+<div class="pedido_left">
+
+	<fieldset class="accesos_rapidos">
+
+		<legend>{accesos_rapidos_legend}</legend>
+		<fieldset>
+		<div class="criteria_left">
+
+			<div class="item" style="min-width: {minWidth};">
+			    <label for="nombre">{lbl_nombre}:</label>
+		    	<rasty id="nombre" />
+			</div>
+			<div class="item" style="min-width: {minWidth};">
+			    <label for="tipoProducto">{lbl_tipoProducto}:</label>
+		    	<rasty id="tipoProducto" />
+			</div>
+
+		</div>
+		<div class="criteria_right">
+
+			<div class="item" style="min-width: {minWidth};">
+			    <label for="marcaProducto">{lbl_marcaProducto}:</label>
+		    	<rasty id="marcaProducto" />
+			</div>
+
+		</div>
+		</fieldset>
+		<div id="accesosRapidos">
+		<!-- BEGIN:agregar_producto -->
+		<button class="shortcut" onclick="javascript: seleccionarProducto('{codigo}')"  title="{nombre}" >
+			<img src="{logo}" alt="{nombre}">
+		</button>
+		<!-- END:agregar_producto -->
+		</div>
+
+
+	</fieldset>
+
+</div>
+<div class="pedido_right">
+
+	<form class="cuentas_form" id="pedido_form" onsubmit="return validate('pedido_form');" action="{action}" method="{method}">
+
+	<fieldset>
+		<legend>{legend}</legend>
+
+		<rasty id="backSuccess" />
+	    <rasty id="oid" />
+
+
+		<div class="item no-mostrar">
+		    <label for="fechaHora">{lbl_fechaHora} *:</label>
+		    <rasty id="fechaHora" />
+		</div>
+
+		<div class="item">
+		    <label for="proveedor">{lbl_proveedor} *:</label>
+		    <rasty id="proveedor" />
+		</div>
+		<div class="item">
+		    <label for="observaciones">{lbl_observaciones}:</label>
+		    <rasty id="observaciones" />
+		</div>
+	</fieldset>
+	</form>
+
+
+	<fieldset>
+
+		<legend>{detalles_legend}</legend>
+
+		<table id="detalles">
+			<thead>
+				<tr>
+					<th>{lbl_detalle_nombre}</th>
+					<th>{lbl_detalle_precio}</th>
+					<th>{lbl_detalle_cantidad}</th>
+					<th>{lbl_detalle_subtotal}</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td><rasty id="detalleProducto"/></td>
+					<td class="importe"><rasty id="detallePrecio"/></td>
+					<td class="cantidad"><rasty id="detalleCantidad"/></td>
+					<td class="importe"><span id="detalleSubtotal"></span></td>
+					<td>
+						<button onclick="javascript: agregarDetalle();">
+							<i class="icon-plus"></i>
+						</button>
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+
+
+	</fieldset>
+
+	<!-- BEGIN: msg_error -->
+	<fieldset class="ui-state-error">
+			{msg}
+	</fieldset>
+	<!-- END: msg_error -->
+
+	<form  class="cuentas_form" id="buttons{inputId}">
+		<fieldset class="tblFooters">
+
+			<button  class="shortcut" type="button"  id="input_submit" onclick="javascript: submitFormulario('pedido_form'); ">
+				<i class="icon-checkmark on-left"></i>{lbl_submit}
+			</button>
+
+			<button  class="shortcut" type="button"  id="input_button_2" onclick="javascript: window.location.href = '{cancel}'; ">
+				<i class="icon-cancel-2 on-left"></i>{lbl_cancel}
+			</button>
+
+		</fieldset>
+</form>
+</div>
+<div style="clear: both;"></div>
+
+
+
+</div>
+<!-- END:main -->

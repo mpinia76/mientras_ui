@@ -1,0 +1,43 @@
+<rasty specificationClass="Mientras\UI\components\filter\balance\BalanceAnioFilter" templateLocation="BalanceAnioFilter.htm">
+
+	<component id="fecha" type="InputDate">
+		<param name="inputId" value="str:fecha" />
+		<param name="name" value="str:fecha" />
+		<param name="value" value="criteria.fecha" />
+		<param name="placeholder" value="msg:gasto.fecha" />
+		<param name="format" value="str:d/m/Y H:i" />
+		
+	</component>
+	
+	<component id="nombre" type="InputText">
+		<param name="name" value="str:nombre" />
+		<param name="value" value="criteria.nombre" />
+		<param name="placeholder" value="msg:producto.nombre" />
+		
+	</component>
+	
+	
+
+	<component id="tipoProducto" type="InputText">
+		<param name="name" value="str:tipoProducto" />
+		<param name="value" value="criteria.tipoProducto" />
+		<param name="placeholder" value="msg:producto.tipoProducto" />
+		
+	</component>
+	<component id="marcaProducto" type="InputText">
+		<param name="name" value="str:marcaProducto" />
+		<param name="value" value="criteria.marcaProducto" />
+		<param name="placeholder" value="msg:producto.marcaProducto" />
+		
+	</component>
+	
+	<component id="cliente" type="InputText">
+		<param name="name" value="str:cliente" />
+		<param name="value" value="criteria.cliente" />
+		<param name="placeholder" value="msg:venta.cliente" />
+		
+	</component>
+	
+	
+
+</rasty>

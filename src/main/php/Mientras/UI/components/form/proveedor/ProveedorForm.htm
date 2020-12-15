@@ -1,0 +1,134 @@
+<!-- BEGIN:main -->
+
+
+<script>
+
+$(function() {
+
+	$("#nombre").focus();
+	
+});
+</script>
+
+<div>
+<form class="cuentas_form" id="proveedor_form" onsubmit="return validate('proveedor_form');" action="{action}" method="{method}">
+		<input type="hidden" id="onSuccessCallback" name="onSuccessCallback" value="{onSuccessCallback}">
+		<fieldset>
+		<legend>{legend}</legend>
+
+		<rasty id="backSuccess" />
+	    <rasty id="oid" />
+		<div class="row">
+			<div class="col-6">
+				<div class="item">
+				    <label for="nombre">{lbl_nombre} *:</label>
+				    <rasty id="nombre" />
+				</div>
+			</div>
+			<div class="col-6">
+				<div class="item">
+			    <label for="razonSocial">{lbl_razonSocial}:</label>
+			    <rasty id="razonSocial" />
+				</div>	
+			</div>		  
+			
+			<div style="clear: both"></div>
+		</div>
+		<div class="row">
+			
+			<div class="col-4">
+				<div class="item">
+				    <label for="documento">{lbl_documento}:</label>
+				    <rasty id="documento" />
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="item">
+				    <label for="cuit">{lbl_cuit}:</label>
+				    <rasty id="cuit" />
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="item">
+				    <label for="condicionIva">{lbl_condicionIva}:</label>
+				    <rasty id="condicionIva" />
+				    
+				</div>
+				
+			</div>
+			<div style="clear: both"></div>
+		</div>
+		<div class="row">
+			<div class="col-6">
+				<div class="item">
+				    <label for="mail">{lbl_mail}:</label>
+				    <rasty id="mail" />
+				</div>
+			</div>
+			<div class="col-6">
+				<div class="item">
+			    <label for="direccion">{lbl_direccion}:</label>
+			    <rasty id="direccion" />
+				</div>	
+			</div>		  
+				
+			<div style="clear: both"></div>
+		</div>
+		
+		<div class="row">
+			<div class="col-4">
+				<div class="item">
+				    <label for="telefono">{lbl_telefono}:</label>
+				    <rasty id="telefono" />
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="item">
+			    <label for="celular">{lbl_celular}:</label>
+			    <rasty id="celular" />
+				</div>	
+			</div>		  
+			<div class="col-4">
+				<div class="item">
+			    <label for="laboral">{lbl_laboral}:</label>
+			    <rasty id="laboral" />
+				</div>	
+			</div>			
+			<div style="clear: both"></div>
+		</div>
+
+		
+
+		
+
+	
+		
+		
+		
+		<div class="item">
+		    <label for="observaciones">{lbl_observaciones}:</label>
+		    <rasty id="observaciones" />
+		</div>
+
+		
+	</fieldset>
+	
+
+</form>
+<!-- BEGIN: msg_error -->
+<fieldset class="ui-state-error">
+	{msg}	
+</fieldset>
+<!-- END: msg_error -->
+
+<form  class="turnos_form" id="buttons{inputId}">
+	<fieldset class="tblFooters">
+	
+		<button type="button"  id="input_submit" onclick="javascript: submitFormulario('proveedor_form'); "><i class="icon-checkmark on-left"></i>{lbl_submit}</button>
+
+		<button type="button"  id="input_button_2" onclick="javascript: window.location.href = '{cancel}'; "><i class="icon-cancel-2 on-left"></i>{lbl_cancel}</button>
+	
+	</fieldset>
+</form>	
+</div>
+<!-- END:main -->

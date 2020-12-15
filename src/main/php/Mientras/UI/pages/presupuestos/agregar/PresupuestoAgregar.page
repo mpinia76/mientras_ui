@@ -1,0 +1,13 @@
+<rasty specificationClass="Mientras\UI\pages\presupuestos\agregar\PresupuestoAgregar" templateLocation="pages/presupuestos/agregar/PresupuestoAgregar.htm"> 
+
+	<param name="layoutType" value="str:MientrasMetroLayout" />
+
+	<component id="presupuestoForm" type="PresupuestoForm">
+		<param name="legend" value="msg:presupuesto.agregar.legend" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="action" value="linkActionAgregarPresupuesto" />
+		<param name="method" value="str:post" />
+		<param name="presupuesto" value="presupuesto" />
+	</component>
+	
+</rasty>
