@@ -44,6 +44,7 @@
 	<page name="ProductoModificar"   location="pages/productos/modificar/ProductoModificar.page" url="productos/modificar"/>
 	<page name="StockProductoModificar"   location="pages/productos/stock/StockProductoModificar.page" url="productos/stock/modificar"/>
 
+    <page name="ProductosXLS"   location="pages/productos/ProductosXLS.page" url="productos/productosxls"/>
 
 	<page name="Parametros"   location="pages/parametros/Parametros.page" url="parametros"/>
 
@@ -195,6 +196,10 @@
 	<!-- pdfs -->
 	<component name="VentaPDF"   location="components/pdf/venta"/>
 	<component name="PresupuestoPDF"   location="components/pdf/presupuesto"/>
+    <component name="ProductosPDF"   location="components/pdf/producto"/>
+
+    <!-- xlss -->
+    <component name="ProductosXLS"   location="components/xls/producto"/>
 
 	<!-- layouts -->
 	<component name="MientrasMetroLayout" location="layouts" />
@@ -202,6 +207,7 @@
 	<component name="MientrasHomeMetroLayout" location="layouts" />
 	<component name="RastySecurityLayout" location="layouts" />
 	<component name="RastyCatalogoLayout" location="layouts" />
+    <component name="MientrasXLSLayout" location="layouts" />
 
 
 

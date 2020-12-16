@@ -1,0 +1,36 @@
+<!-- BEGIN:main -->
+<html>
+
+<head>
+  
+  </head>
+<body>
+<table>
+	<tr>
+	<td colspan="2">
+		<span style="font-size:16pt;font-weight: bold;">LISTA DE PRECIOS</span>
+	</td>
+	</tr>
+	<tr>
+	<td colspan="2">
+		<span style="font-size:16pt;font-weight: bold;">{vendedor}</span>
+	</td>
+	</tr>
+</table>
+	<!-- BEGIN:productos -->
+  <table cellspacing="0" cellpadding="0" border="1">
+		<thead><tr><th colspan="2" align="center">{tipoproducto}</th></tr>
+		<tr><th width="450px">{lbl_detalle_nombre}</th><th width="100px">{lbl_detalle_precio}</th></tr></thead>
+		
+			<!-- BEGIN:detalle -->
+			<tr><td>{producto}</td><td style="text-align: right;">{precio}</td></tr>
+			<!-- END:detalle -->
+		
+		
+	</table>
+	<!-- END:productos -->
+	{htmlPacks}
+	{htmlCombos}
+</body>
+</html>
+<!-- END:main -->

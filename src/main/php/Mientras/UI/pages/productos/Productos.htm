@@ -5,6 +5,17 @@ function cuentaCorrienteAgregarCallback( data ){
 	alert( data["productoOid"] );
 	alert( data["cuentaCorrienteOid"] );
 }
+function listarProductos(  ){
+    $("#input_submit_ajax_Producto").click();
+    window.open('{linkPdf}','_blank');
+
+}
+function listarProductosXLS(  ){
+    $("#input_submit_ajax_Producto").click();
+    window.location.href='{linkXls}'
+
+
+}
 </script>
 <style>
 </style>
@@ -12,17 +23,34 @@ function cuentaCorrienteAgregarCallback( data ){
 <div class="grid" >
 
     <div id="productos_filtros" class="grid_filters">
-        
+
         <rasty id="productosFilter" />
-        
+
     </div>
+
+    <!-- BEGIN: opciones -->
+    <div class="grid_filters_actions">
+        <fieldset>
+
+            <!-- BEGIN: add -->
+            <button class="shortcut" onclick="listarProductos()">
+                <i class="icon-pdf"></i>{lbl_pdf}
+            </button>
+
+            <button class="shortcut" onclick="listarProductosXLS()">
+                <i class="icon-xls"></i>{lbl_pdf}
+            </button>
+            <!-- END: add -->
+        </fieldset>
+    </div>
+    <!-- END: opciones -->
 
 	<br class="clear">
 
 	<fieldset>
-        
+
        	<legend>{legend_resultados}</legend>
-    		
+
     	<div id="searchdiv" class="grid_searchdiv">
 		</div>
     </fieldset>

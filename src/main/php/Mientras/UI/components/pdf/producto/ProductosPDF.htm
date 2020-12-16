@@ -1,0 +1,94 @@
+<!-- BEGIN:main -->
+<html>
+
+<head>
+  <style>
+
+    @page {
+  margin-top: 160px !important;
+  margin-bottom: 55px !important;
+  margin-left: 50px !important;
+  margin-right: 50px !important;
+}
+    #header { position: fixed; left: 0px; top: -210px; right: 0px; }
+    #footer { position: fixed; left: 0px; bottom: -5px; right: 0px; height: 2px;  }
+
+    #footer .page:after { content: counter(page);  }
+    #content { page-break-after: auto;}
+    #divPacks { page-break-before: always;}
+    #divCombos { page-break-before: always;}
+  </style>
+  </head>
+<body>
+  <div id="header">
+    <table>
+	<tr>
+	<td width="450px">
+
+		<p style="font-size:22pt;font-weight: bold;">{fecha}</p>
+
+		{vendedor}
+	</td>
+	<td width="300px">
+		<p style="font-size:12pt;">
+		<img border="0" alt="logo" name="imLogo" id="imLogo" style="margin-top: 30px;" width="200px" height="160px" src="{APP_PATH}/css/images/cabecera_pdf.jpg">
+
+	</td>
+	</tr>
+
+</table>
+
+  </div>
+  <div id="footer" style="padding-top: 10px; border-top: 1px solid #ddd; font-size:13px; color: #333; margin-top: 20px;">
+
+    <table>
+			<tr>
+			<td width="580px">
+			    Mientras Tanto Deco Home
+			</td>
+
+			<td width="120px" align="right">
+
+				<p class="page">P&aacute;gina </p>
+
+			</td>
+
+			</tr>
+
+		</table>
+  </div>
+  <div id="content">
+  	<hr />
+    <table>
+	<tr>
+	<td colspan="2">
+		<span style="font-size:16pt;font-weight: bold;">LISTA DE PRECIOS</span>
+	</td>
+	</tr>
+
+</table>
+<hr />
+<div class="box_details">
+
+	<!-- BEGIN:productos -->
+
+	<table cellspacing="0" cellpadding="0" border="1">
+		<thead><tr><th colspan="2" align="center">{tipoproducto}</th></tr>
+		<tr><th width="450px">{lbl_detalle_nombre}</th><th width="100px">{lbl_detalle_precio}</th></tr></thead>
+
+			<!-- BEGIN:detalle -->
+			<tr><td>{producto}</td><td style="text-align: right;">{precio}</td></tr>
+			<!-- END:detalle -->
+
+
+	</table>
+
+	<!-- END:productos -->
+
+</div>
+{htmlPacks}
+{htmlCombos}
+  </div>
+</body>
+</html>
+<!-- END:main -->

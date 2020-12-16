@@ -145,6 +145,8 @@
 	"menu.productos.agregar":"Agregar Producto",
 	"menu.producto.eliminar":"Eliminar el Producto",
 
+	"menu.productos.precios":"Precios",
+
 	"menu.packs":"Packs",
 	"menu.packs.listar":"Listado de Packs",
 	"menu.packs.modificar":"Modificar Pack",
