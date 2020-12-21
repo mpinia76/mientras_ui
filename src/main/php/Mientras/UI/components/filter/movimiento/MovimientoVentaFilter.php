@@ -11,6 +11,8 @@ use Mientras\UI\components\grid\model\idModel;
 
 use Mientras\UI\components\filter\model\UIMovimientoVentaCriteria;
 
+use Mientras\UI\components\grid\model\MovimientoVentaGridModel;
+
 
 use Rasty\Grid\filter\Filter;
 use Rasty\utils\XTemplate;
