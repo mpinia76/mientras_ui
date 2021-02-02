@@ -8397,3 +8397,15 @@ div.copyright{
 .metro .icon-consultar:before {
      content: "";
 }
+
+@media (max-width:770px) {
+    .ocultarMovil{
+        display:none!important;
+    }
+}
+
+@media (min-width:770px) {
+    .ocultarMovil{
+        display:block!important;
+    }
+}

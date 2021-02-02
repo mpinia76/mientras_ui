@@ -18,32 +18,32 @@
 		<param name="name" value="str:nombreProducto" />
 		<param name="inputId" value="str:nombreProducto" />
 		<param name="placeholder" value="msg:producto.nombre" />
-		
+
 	</component>
-	
+
 	<component id="tipoProducto" type="InputFindEntity">
 		<param name="inputId" value="str:tipoProducto" />
 		<param name="name" value="str:tipoProducto" />
-		
+
 		<param name="placeholder" value="msg:producto.tipoProducto" />
 		<param name="finder" value="tipoProductoFinderClazz" />
-		
+
 		<param name="popupFilterType" value="str:TipoProductoFilter" />
 		<param name="onSelectCallback" value="str:tipoProductochange" />
 	</component>
-	
+
 	<component id="marcaProducto" type="InputFindEntity">
 		<param name="inputId" value="str:marcaProducto" />
 		<param name="name" value="str:marcaProducto" />
-		
+
 		<param name="placeholder" value="msg:producto.marcaProducto" />
 		<param name="finder" value="marcaProductoFinderClazz" />
-		
+
 		<param name="popupFilterType" value="str:MarcaProductoFilter" />
 		<param name="onSelectCallback" value="str:marcaProductochange" />
 	</component>
-	
-	
+
+
 
 	<component id="fecha" type="InputDate">
 		<param name="inputId" value="str:fecha" />
@@ -68,36 +68,37 @@
 		<param name="popupFormAction" value="linkActionAgregarCliente" />
 		<param name="popupFormCallback" value="str:VentaAgregar" />
 	</component>
-	
-		
-	
+
+
+
 	<component id="observaciones" type="InputText">
 		<param name="inputId" value="str:observaciones" />
 		<param name="name" value="str:observaciones" />
 		<param name="value" value="venta.observaciones" />
 		<param name="placeholder" value="msg:venta.observaciones.placeholder" />
 		<param name="autocomplete" value="str:off" />
-		<param name="styleCss" value="str:uppercase" />		
+		<param name="styleCss" value="str:uppercase" />
 	</component>
-	
-	
+
+
 	<component id="detallePrecioLista" type="InputCurrency">
 		<param name="inputId" value="str:detallePrecioLista" />
 		<param name="name" value="str:detallePrecioLista" />
 		<param name="value" value="detalle.precioLista" />
-		
+		<param name="size" value="str:5px" />
 		<param name="placeholder" value="msg:venta.detalle.precioLista" />
 		<param name="autocomplete" value="str:off" />
 	</component>
-	
+
 	<component id="detallePrecioEfectivo" type="InputCurrency">
 		<param name="inputId" value="str:detallePrecioEfectivo" />
 		<param name="name" value="str:detallePrecioEfectivo" />
 		<param name="value" value="detalle.precioEfectivo" />
 		<param name="placeholder" value="msg:venta.detalle.precioEfectivo" />
 		<param name="autocomplete" value="str:off" />
+        <param name="size" value="str:5px" />
 	</component>
-	
+
 	<component id="detallePrecio" type="InputCurrency">
 		<param name="inputId" value="str:detallePrecio" />
 		<param name="name" value="str:detallePrecio" />
@@ -105,14 +106,15 @@
 		<param name="requiredMessage" value="msg:venta.detalle.precio.required" />
 		<param name="placeholder" value="msg:venta.detalle.precio" />
 		<param name="autocomplete" value="str:off" />
+		<param name="size" value="str:5px" />
 	</component>
-	
+
 	<component id="detalleCosto" type="InputHidden">
 		<param name="inputId" value="str:detalleCosto" />
 		<param name="name" value="str:detalleCosto" />
 		<param name="value" value="detalle.costo" />
 	</component>
-	
+
 	<component id="detalleCantidad" type="InputNumber">
 		<param name="inputId" value="str:detalleCantidad" />
 		<param name="name" value="str:detalleCantidad" />
@@ -120,8 +122,9 @@
 		<param name="requiredMessage" value="msg:venta.detalle.cantidad.required" />
 		<param name="placeholder" value="msg:venta.detalle.cantidad" />
 		<param name="autocomplete" value="str:off" />
+		<param name="size" value="str:5px" />
 	</component>
-	
+
 	<component id="detalleProducto" type="InputFindEntity">
 		<param name="inputId" value="str:detalleProducto" />
 		<param name="name" value="str:detalleProducto" />
@@ -131,7 +134,7 @@
 		<param name="hasPopup" value="boolean:true" />
 		<param name="popupFilterType" value="str:ProductoFilter" />
 		<param name="onSelectCallback" value="str:productochange" />
-		
+
 	</component>
 
 
@@ -144,7 +147,7 @@
 		<param name="hasPopup" value="boolean:true" />
 		<param name="popupFilterType" value="str:ComboFilter" />
 		<param name="onSelectCallback" value="str:combochange" />
-		
+
 	</component>
-	
+
 </rasty>
