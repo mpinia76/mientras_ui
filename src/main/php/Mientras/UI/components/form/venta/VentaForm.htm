@@ -15,7 +15,7 @@ function addTrDetalle($detalle, $table, $index){
 
 	$row = $('<tr/>', {'class' : 'detalle'});
 
-    $row.append($('<td/>').append($detalle["producto_nombre"]));
+    $row.append($('<td colspan="3"/>').append($detalle["producto_nombre"]));
     $row.append($('<td/>', {'class' : 'importe'}).append("$" +$detalle["precioUnitario"]));
     $row.append($('<td/>', {'class' : 'importe'}).append($detalle["cantidad"]));
     $row.append($('<td/>', {'class' : 'importe'}).append("$" +$detalle["subtotal"]));
@@ -40,8 +40,8 @@ function addTrTotales($data, $table){
 
 	$row = $('<tr/>');
 
+    $row.append($('<td colspan="3"/>', {'class' : 'totales'}).append(""));
     $row.append($('<td/>', {'class' : 'totales'}).append("Totales"));
-    $row.append($('<td/>', {'class' : 'totales importe'}).append());
     $row.append($('<td/>', {'class' : 'totales importe'}).append( $cantidad ));
     $row.append($('<td/>', {'class' : 'totales importe'}).append( "$" + $importe));
     $row.append($('<td/>').append());
@@ -539,13 +539,12 @@ display:none;
 			</thead>
 			<thead>
 				<tr>
-					<th>{lbl_detalle_nombre}</th>
+					<th colspan="3">{lbl_detalle_nombre}</th>
 					<th>{lbl_detalle_precio}</th>
 					<th>{lbl_detalle_cantidad}</th>
 					<th>{lbl_detalle_subtotal}</th>
 					<th></th>
-					<th></th>
-					<th></th>
+
 				</tr>
 			</thead>
 			<tbody>
