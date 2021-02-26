@@ -28,14 +28,14 @@ use Rasty\exception\RastyException;
  */
 class AccesosRapidos extends RastyComponent{
 
-	
-	
-	
+
+
+
 	public function getType(){
 		return "AccesosRapidos";
 	}
-	
-	
+
+
 	protected function parseXTemplate(XTemplate $xtpl){
 
 		parent::parseXTemplate($xtpl);
@@ -44,7 +44,7 @@ class AccesosRapidos extends RastyComponent{
 		$criteria->setMarcaProducto(RastyUtils::getParamPOST("marcaProducto"));
 		$criteria->setTipoProducto(RastyUtils::getParamPOST("tipoProducto"));
 		$criteria->addOrder("tipoProducto", "ASC");
-		
+
 		$productos = UIServiceFactory::getUIProductoService()->getList($criteria);
 		foreach ($productos as $producto) {
 			$xtpl->assign("oid", $producto->getOid() );
@@ -53,7 +53,7 @@ class AccesosRapidos extends RastyComponent{
 			//$xtpl->assign("logo", CuentasUIUtils::getImagenProducto($producto));
 			$xtpl->parse("main.agregar_producto");
 		}
-		
+
 	}
-	
+
 }
