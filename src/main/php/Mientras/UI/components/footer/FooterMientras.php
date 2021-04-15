@@ -11,17 +11,18 @@ class FooterMientras extends RastyComponent{
 
 	public function __construct(){
 	}
-	
+
 	public function getType(){
-		
+
 		return "FooterMientras";
-		
+
 	}
-	
+
 	protected function parseXTemplate(XTemplate $xtpl){
 
-		
+        $xtpl->assign('year', date('Y'));
+
 	}
-	
+
 }
 ?>
